@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hd-parent {
+    position: relative;
+}
+
+.hd-menu {
+    position: absolute;
+    top: 17%;
+    display: flex;
+    right: 12%;
+}
+
+.hd-menu>li {
+    list-style: none;
+    margin: 0 18px;
+}
+
+.hd-menu>li>a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.hd-title {
+    position: absolute;
+    top: 19%;
+    left: 10%;
+    display: grid;
+}
+
+.hd-title>img {
+    margin: 20px 0;
+}
+
+.hd-title2 {
+    position: absolute;
+    top: 52%;
+    left: 10%;
+}
+
+.hd-title2>img {
+    margin: 5px 25px;
+}
+
+.hd-bt>button {
+    margin: 20px 0 0 100px;
+    padding: 12px;
+    background-color: #ffe001;
+    border: black 1px solid;
+    border-radius: 6px;
+}
+
+.hd-bt>button>img {
+    width: 85%;
+    padding-top: 4px;
+}
+
+
+/*container*/
+
+.container {
+    width: 100%;
+    position: relative;
+    height: 700px;
+}
+
+.ctn-title {
+    width: 700px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.ctn-item {
+    position: relative;
+}
+
+.ctnItem-ch {
+    position: absolute;
+    top: -34%;
+}
+
+.ctnItem-ch>img {
+    margin-left: 30px;
+}
+
+
+/*menu*/
+
+.menu {
+    padding: 100px 0;
+}
+
+.slideFrom {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 50px 0;
+}
+
+.fromSlide {
+    position: relative;
+}
+
+.slidePr {
+    width: 800px;
+    height: 460px;
+    overflow: hidden;
+}
+.slideLeft {
+    top: 13%;
+    left: -42%;
+    z-index: -1;
+    position: absolute;
+}
+.slideRight {
+    top: 13%;
+    right: -42%;
+    z-index: -1;
+    position: absolute;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.menu-left {
+    margin-right: 30px;
+    position: relative;
+}
+
+.menu-right {
+    position: relative;
+}
+
+.menu-input {
+    display: flex;
+    justify-content: center;
+}
+
+.input-item>input {
+    width: 300px;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 4px;
+    border: black 1px solid;
+}
+
+.input-left {
+    width: 400px;
+}
+
+.input-right {
+    width: 400px;
+}
+
+
+/*footer*/
+
+.footer {
+    height: 600px;
+}
+
+.ft-pr {
+    position: relative;
+}
+
+.ft-left {
+    width: 500px;
+}
+
+.ft-left>p {
+    color: #ffff;
+    margin: 100px 0;
+}
+
+.ft-mxh {
+    position: absolute;
+    bottom: 12%;
+    right: 5%;
+}
+
+.ft-mxh>a>img {
+    margin: 6px;
+}
