@@ -93,6 +93,14 @@
     justify-content: center;
 }
 
+#banner .banner-color{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top left, #ebe9ac 50%, #ffe001 50%);
+}
+
 #banner .col-left{
     display: flex;
     flex-direction: column;
@@ -225,6 +233,20 @@
     position: absolute;
     left: -7%;
     bottom: 0;
+    width: 300px;
+    height: 170px;
+}
+
+#content{
+    position: relative;
+    height: 750px;
+    background-color:aliceblue;
+}
+
+#content .noodle-crop-2{
+    position: absolute;
+    top: 0;
+    left: -7%;
     width: 300px;
     height: 170px;
 }
