@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 130px;
+    background-color: #ffe001;
+}
+
+.top-nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav .logo{
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 35px;
+}
+
+.top-nav .logo > a > img{
+    width: 170px;
+    height: 43px;
+} 
+
+.top-nav .logo-contact{
+    display: flex;
+    padding-top: 12px;
+    margin-right: 10px;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: flex-end;
+    justify-content: center;
+    width: 20rem;
+}
+
+.top-nav .group-right{
+    display: flex;
+}
+
+.top-nav .iphone-logo{
+    display: flex;
+    padding-top: 10px;
+    width: 70px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 33px;
+}
+
+.top-nav .iphone-logo > a > img{
+    height: 40px;
+}
+
+.top-nav .logo-contact h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.down-nav{
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+.down-nav #nav li{
+    display: inline-block;
+}
+
+.down-nav #nav li a{
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+    padding: 0 12px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#banner{
+    display: flex;
+    position: relative;
+    height: 600px;
+    background-color: white;
+    justify-content: center;
+}
+
+#banner .col-left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: space-between;
+    margin-top: 40px;
+    width: 450px;
+    height: 560px;
+}
+
+#banner .col-left .group-item-1 img{
+    width: 55.5px;
+    height: 70px;
+    margin-right: 45px;
+}
+
+#banner .col-left .group-item-1{
+    width: 500px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#banner .col-left h2{
+    font-size: 37px;
+    font-family: 'Gabriela', serif;
+    text-align: center;
+}
+
+#banner .col-left h1{
+    font-size: 60px;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+#banner .col-left .slogan{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+#banner .col-left > p{
+    margin-bottom: 25px;
+}
+
+#banner .col-left .blessing{
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 500;
+    padding-right: 10px;
+    padding-bottom: 25px;
+}
+
+#banner .col-left .calculate{
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 500;
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+#banner .col-left .group-slogan-two{
+    display: flex;
+}
+
+#banner .col-right{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 520px;
+    height: 560px;
+}
+
+#banner .col-right a .spaghetti{
+    width: 400px;
+    height: 400px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
+}
+
+#banner .col-right .leaf2{
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    bottom: 160px;
+    right: 10px;
+}
+
+#banner .col-right .tomato{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 160px;
+    left: 20px;
+}
+
+#banner .order-btn{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe001;
+    border: 0.5px solid black;
+}
+
+#banner .order-btn:hover a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+#banner .order-btn a{
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
+}
+
+#banner .noodle-crop{
+    position: absolute;
+    left: -7%;
+    bottom: 0;
+    width: 300px;
+    height: 170px;
+}
