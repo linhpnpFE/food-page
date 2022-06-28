@@ -88,7 +88,7 @@
 #banner{
     display: flex;
     position: relative;
-    height: 600px;
+    height: 656px;
     background-color: white;
     justify-content: center;
 }
@@ -96,8 +96,9 @@
 #banner .banner-color{
     position: absolute;
     display: flex;
+    justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(to top left, #ebe9ac 50%, #ffe001 50%);
 }
 
@@ -107,16 +108,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    padding-left: 100px;
     align-content: space-between;
     margin-top: 40px;
-    width: 450px;
+    width: 50vw;
     height: 560px;
-}
-
-#banner .col-left .group-item-1 img{
-    width: 55.5px;
-    height: 70px;
-    margin-right: 45px;
 }
 
 #banner .col-left .group-item-1{
@@ -127,6 +123,12 @@
     align-items: center;
 }
 
+#banner .col-left .group-item-1 img{
+    width: 55.5px;
+    height: 70px;
+    margin-left: 65px;
+}
+
 #banner .col-left h2{
     font-size: 37px;
     font-family: 'Gabriela', serif;
@@ -134,7 +136,7 @@
 }
 
 #banner .col-left h1{
-    font-size: 60px;
+    font-size: 70px;
     font-family: 'Fredericka the Great', cursive;
     font-weight: 100;
     text-transform: uppercase;
@@ -173,8 +175,9 @@
     position: relative;
     display: flex;
     justify-content: center;
+    padding-right: 100px;
     margin-top: 50px;
-    width: 520px;
+    width: 50vw;
     height: 560px;
 }
 
@@ -231,22 +234,116 @@
 
 #banner .noodle-crop{
     position: absolute;
-    left: -7%;
+    left: -12%;
     bottom: 0;
-    width: 300px;
-    height: 170px;
+    width: 350px;
+    height: 140px;
 }
 
 #content{
     position: relative;
+    justify-content: center;
     height: 750px;
-    background-color:aliceblue;
+    background-color:#fff;
 }
 
 #content .noodle-crop-2{
     position: absolute;
     top: 0;
-    left: -7%;
+    left: -12%;
+    width: 350px;
+    height: 140px;
+}
+
+#content .choose_and_enjoy{
+    display: flex;
+    width: 100%;
+    padding-top: 89px;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+}
+
+#content .choose_and_enjoy .title-desc{
+    font-size: 40px;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 100;
+}
+
+#content .choose_and_enjoy .text-desc{
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+#content .choose_and_enjoy .text-desc-2{
+    padding-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+#content .choose-enjoy-food-list{
+    display: flex;
+    justify-content: space-around; 
+    height: 400px;
+}
+
+#content .choose-enjoy-food-list a img{
     width: 300px;
-    height: 170px;
+    height: 300px;
+}
+
+#content .choose-enjoy-food-list .group-food{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content .choose-enjoy-food-list .group-food-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content .choose-enjoy-food-list .group-food-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content .choose-enjoy-food-list h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#content .choose-enjoy-food-list .order-btn{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe001;
+    border: 0.5px solid black;
+}
+
+#content .choose-enjoy-food-list .order-btn a{
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
+}
+
+#content .choose-enjoy-food-list .order-btn:hover a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
 }
