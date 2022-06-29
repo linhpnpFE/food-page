@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <div id="main">
@@ -86,7 +88,8 @@
                         <img class="noodle-choose-enjoy" src="./noodle_choose_enjoy.png" alt="">
                     </a>
                     <h2>Lorem Ipsum Dolor</h2>
-                    <span class="text-desc"></span>
+                    <span class="text-desc">Lorem ipsum dolor sit amet, consectetur</span>
+                    <span class="text-desc-2"> adipiscing elit, sed do</span>
                     <div class="order-btn">
                         <a href="">Order Now</a>
                     </div>
@@ -96,7 +99,8 @@
                         <img class="bread-choose-enjoy" src="./Bread.png" alt="">
                     </a>
                     <h2>Lorem Ipsum Dolor</h2>
-                    <span class="text-desc"></span>
+                    <span class="text-desc">Lorem ipsum dolor sit amet, consectetur </span> 
+                    <span class="text-desc-2"> adipiscing elit, sed do</span>
                     <div class="order-btn">
                         <a href="">Order Now</a>
                     </div>
@@ -106,7 +110,8 @@
                         <img class="vegetable-choose-enjoy" src="./vegetable_choose_enjoy.png" alt="">
                     </a>
                     <h2>Lorem Ipsum Dolor</h2>
-                    <span class="text-desc"></span>
+                    <span class="text-desc">Lorem ipsum dolor sit amet, consectetur </span>
+                    <span class="text-desc-2"> adipiscing elit, sed do</span>
                     <div class="order-btn">
                         <a href="">Order Now</a>
                     </div>
@@ -114,10 +119,57 @@
             </div>
 
         </div>
-        <div id="slider"></div>
+        <div id="slider">
+            <div class="up_coming_event">
+                <h3>Discover</h3>
+                <h2 class="title-desc">Upcoming event</h2>
+                <span class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+                <span class="text-desc-2">Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis</span>
+            </div>
+            <div class="container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./pizza_slider_1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./pizza_slider_2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./noodle_slider.jpg" alt=""></div>
+                    ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <!-- Slider main container -->
+            <div class="try-it-advert">
+                
+            </div>
+        </div>
         <div id="more-content"></div>
         <div id="contact"></div>
         <div id="footer"></div>
     </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
 </body>
 </html>
