@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.group-1 {
+    width: 1440px;
+    height: 825px;
+}
+
+.group-1 .R3 {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.group-1 .R {
+    width: 553px;
+    height: 825px;
+    position: absolute;
+    top: 0;
+    left: 887px;
+}
+
+.group-1 .iP {
+    width: 29px;
+    height: 53px;
+    position: absolute;
+    top: 45px;
+    left: 1357px;
+}
+
+.group-1 .R2 {
+    width: 227px;
+    height: 58px;
+    position: absolute;
+    top: 609px;
+    left: 256px;
+}
+
+.group-1 .order {
+    width: 143px;
+    height: 16px;
+    position: absolute;
+    top: 609px;
+    left: 256px;
+    padding: 21px 42px;
+}
+
+/* .group-1 .R2_2 {
+    width: 1492px;
+    height: 180px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+} */
+
+.group-1 .Shape {
+    width: 469px;
+    height: 2px;
+    position: absolute;
+    top: 486px;
+    left: 136px;
+}
+
+.group-1 .Img {
+    width: 567px;
+    height: 567px;
+    position: absolute;
+    top: 220px;
+    left: 726px;
+}
+
+.group-1 .leaf {
+    width: 59px;
+    height: 96px;
+    position: absolute;
+    top: 185px;
+    left: 80px;
+}
+
+.group-1 .leaf2 {
+    width: 83px;
+    height: 109px;
+    position: absolute;
+    top: 650px;
+    left: 1275px;
+}
+
+.group-1 .pasta {
+    width: 95px;
+    height: 96px;
+    position: absolute;
+    top: 179px;
+    left: 680px;
+}
+
+.group-1 .spa {
+    width: 305px;
+    height: 298px;
+    position: absolute;
+    top: 676px;
+    left: -136px;
+}
+
+.group-1 .tomato {
+    width: 81px;
+    height: 81px;
+    position: absolute;
+    top: 696px;
+    left: 648px;
+}
+
+.group-1 .logo {
+    width: 251px;
+    height: 63px;
+    position: absolute;
+    top: 42px;
+    left: 58px;
+}
+
+.group-1 ._113 {
+    width: 126px;
+    height: 44px;
+    position: absolute;
+    top: 524px;
+    left: 385px;
+}
+
+.group-1 .monday {
+    width: 147px;
+    height: 39px;
+    position: absolute;
+    top: 530px;
+    left: 223px;
+}
+
+.group-1 .bodyText {
+    width: 471px;
+    height: 20px;
+    position: absolute;
+    top: 424px;
+    left: 136px;
+}
+
+
+
+.group-1 .phone {
+    width: 197px;
+    height: 42px;
+    position: absolute;
+    top: 56px;
+    left: 1142px;
+}
+
+.group-1 .sub {
+    width: 568px;
+    height: 74px;
+    position: absolute;
+    top: 315px;
+    left: 85px;
+}
+
+.group-1 .title {
+    width: 369px;
+    height: 66px;
+    position: absolute;
+    top: 220px;
+    left: 183px;
+}
+
+.group-1 .nav {
+    width: 578px;
+    height: 12px;
+    position: absolute;
+    top: 105px;
+    display: flex;
+    justify-content: space-between;
+    left: 868px;
+}
+
+.nav > li {
+    list-style: none;
+    margin-right: 60px;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+
+.group-2 {
+    width: 1440px;
+    height: 930px;
+    position: relative;
+}
+
+.group-2 .sub2 {
+    width: 466px;
+    height: 40px;
+    position: absolute;
+    top: 80px;
+    left: 470px;
+}
+
+.group-2 .bT2 {
+    width: 1055px;
+    height: 46px;
+    position: absolute;
+    top: 155px;
+    left: 194px;
+}
+
+.group-2 .rec {
+    width: 1440px;
+    height: 139px;
+    position: absolute;
+    top: 369px;
+}
+
+.group-2 .i1 {
+    width: 359px;
+    height: 357px;
+    position: absolute;
+    top: 253px;
+    left: 69px;
+}
+
+.group-2 .i2 {
+    width: 372px;
+    height: 353px;
+    position: absolute;
+    top: 253px;
+    left: 528px;
+}
+
+.group-2 .i3 {
+    width: 351px;
+    height: 353px;
+    position: absolute;
+    top: 253px;
+    left: 1000px;
+}
+
+.group-2 .title {
+    width: 241px;
+    height: 16px;
+    position: absolute;
+    top: 655px;
+    left: 119px;
+}
+
+.group-2 .title2 {
+    width: 241px;
+    height: 16px;
+    position: absolute;
+    top: 655px;
+    left: 600px;
+}
+
+.group-2 .title3 {
+    width: 241px;
+    height: 16px;
+    position: absolute;
+    top: 655px;
+    left: 1081px;
+}
+
+.group-2 .bT2_2-1 {
+    width: 332px;
+    height: 38px;
+    position: absolute;
+    top: 696px;
+    left: 72px;
+}
+
+.group-2 .bT2_2-2 {
+    width: 332px;
+    height: 38px;
+    position: absolute;
+    top: 696px;
+    left: 554px;
+}
+
+.group-2 .bT2_2-3 {
+    width: 332px;
+    height: 38px;
+    position: absolute;
+    top: 696px;
+    left: 1036px;
+}
+
+.group-2 .btn {
+    width: 1150px;
+    height: 57px;
+    position: absolute;
+    top: 772px;
+    left: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn ._btn {
+    width: 195px;
+    height: 57px;
+    background-color: #ffe001;
+    font-size: medium;
+    border: none;
+}
+
+.btn ._btn:hover {
+    background-color: pink;
+}
+
+.group-3 {
+    width: 1440px;
+    position: relative;
+}
+
+.group-3 .title {
+    width: 120px;
+    height: 16px;
+    position: absolute;
+    top: 48px;
+    left: 660px;
+}
+
+.group-3 .sub {
+    width: 424px;
+    height: 34px;
+    position: absolute;
+    top: 77px;
+    left: 508px;
+}
+
+.group-3 .bT {
+    width: 1014px;
+    height: 42px;
+    position: absolute;
+    top: 143px;
+    left: 213px;
+}
