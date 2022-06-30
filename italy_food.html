@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
 </head>
 <body>
@@ -126,25 +126,18 @@
                 <span class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
                 <span class="text-desc-2">Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis</span>
             </div>
-            <div class="container">
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="./pizza_slider_1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./pizza_slider_2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./noodle_slider.jpg" alt=""></div>
-                    ...
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
             <!-- Slider main container -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./pizza_slider_1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./noodle_slider.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./pizza_slider_2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./pizza_slider_3.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
         </div>
         <div id="more-content">
                 <div class="try-it-containter">
@@ -164,8 +157,67 @@
         <div id="contact"></div>
         <div id="footer"></div>
     </div>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoplay:{
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+        //   type: "fraction",
+        clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var appendNumber = 4;
+      var prependNumber = 1;
+      document
+        .querySelector(".prepend-2-slides")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.prependSlide([
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+          ]);
+        });
+      document
+        .querySelector(".prepend-slide")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.prependSlide(
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+          );
+        });
+      document
+        .querySelector(".append-slide")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.appendSlide(
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+          );
+        });
+      document
+        .querySelector(".append-2-slides")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.appendSlide([
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+          ]);
+        });
+      </script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <!-- <script>
         const swiper = new Swiper('.swiper', {
             autoplay: {
                 delay: 3000,
@@ -181,6 +233,6 @@
             prevEl: '.swiper-button-prev',
         },
         });
-    </script>
+    </script> -->
 </body>
 </html>
