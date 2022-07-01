@@ -129,10 +129,30 @@
             <!-- Slider main container -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="./pizza_slider_1.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./noodle_slider.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./pizza_slider_2.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./pizza_slider_3.jpg" alt=""></div>
+                  <div class="swiper-slide">
+                    <div class="test">
+                        <div class="set-overlay"></div>
+                        <img src="./pizza_slider_1.jpg" alt="">
+                    </div>
+                </div>
+                  <div class="swiper-slide">
+                    <div class="test">
+                        <div class="set-overlay"></div>
+                        <img src="./noodle_slider.jpg" alt="">
+                    </div>
+                </div>
+                  <div class="swiper-slide">
+                    <div class="test">
+                        <div class="set-overlay"></div>
+                        <img src="./pizza_slider_2.jpg" alt="">
+                    </div>
+                </div>
+                  <div class="swiper-slide">
+                    <div class="test">
+                        <div class="set-overlay"></div>
+                        <img src="./pizza_slider_3.jpg" alt="">
+                    </div>
+                </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -160,14 +180,14 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        autoplay:{
-            delay: 2000,
-            disableOnInteraction: false,
-        },
+        // autoplay:{
+        //     delay: 2000,
+        //     disableOnInteraction: false,
+        // },
         loop: true,
         slidesPerView: 3,
         centeredSlides: true,
-        spaceBetween: 30,
+        spaceBetween: 0,
         pagination: {
           el: ".swiper-pagination",
         //   type: "fraction",

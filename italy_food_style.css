@@ -441,7 +441,7 @@ body {
 .swiper-slide img {
     display: block;
     width: 100%;
-    height: 70%;
+    height: 50%;
     object-fit: cover;
 }
 
@@ -453,9 +453,43 @@ body {
     background-color: #000;
 }
 
-.swiper-slide.swiper-slide-duplicate.swiper-slide-duplicate-active{
-    transform: scale(2.4);
+.swiper-slide .test{
+    position: relative;
 }
+
+.swiper-slide .test .set-overlay{
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.swiper-slide.swiper-slide-active{
+    transform: scale(1.3) !important;
+    z-index: 1;
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.swiper-slide-active .set-overlay {
+    display: none;
+}
+
+/* .swiper-slide.swiper-slide-prev .test, 
+.swiper-slide.swiper-slide-duplicate.swiper-slide-next .test{
+    position: relative;
+} */
+
+/* .swiper-slide.swiper-slide-prev .set-overlay, 
+.swiper-slide.swiper-slide-duplicate.swiper-slide-next .set-overlay{
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+} */
 
 #more-content{
     background-color: #fff;
