@@ -85,7 +85,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-#banner{
+.banner{
     display: flex;
     position: relative;
     height: 656px;
@@ -93,7 +93,7 @@
     justify-content: center;
 }
 
-#banner .banner-color{
+.banner .banner-color{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -102,7 +102,7 @@
     background-image: linear-gradient(to top left, #ebe9ac 50%, #ffe001 50%);
 }
 
-#banner .col-left{
+.banner .col-left{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -115,7 +115,7 @@
     height: 560px;
 }
 
-#banner .col-left .group-item-1{
+.banner .col-left .group-item-1{
     width: 500px;
     height: 70px;
     display: flex;
@@ -123,19 +123,19 @@
     align-items: center;
 }
 
-#banner .col-left .group-item-1 img{
+.banner .col-left .group-item-1 img{
     width: 55.5px;
     height: 70px;
     margin-left: 65px;
 }
 
-#banner .col-left h2{
+.banner .col-left h2{
     font-size: 37px;
     font-family: 'Gabriela', serif;
     text-align: center;
 }
 
-#banner .col-left h1{
+.banner .col-left h1{
     font-size: 70px;
     font-family: 'Fredericka the Great', cursive;
     font-weight: 100;
@@ -143,35 +143,35 @@
     padding-bottom: 10px;
 }
 
-#banner .col-left .slogan{
+.banner .col-left .slogan{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     padding-bottom: 15px;
 }
 
-#banner .col-left > p{
+.banner .col-left > p{
     margin-bottom: 25px;
 }
 
-#banner .col-left .blessing{
+.banner .col-left .blessing{
     font-family: 'Fredericka the Great', cursive;
     font-weight: 500;
     padding-right: 10px;
     padding-bottom: 25px;
 }
 
-#banner .col-left .calculate{
+.banner .col-left .calculate{
     font-family: 'Fredericka the Great', cursive;
     font-weight: 500;
     font-size: 35px;
     padding-left: 10px;
 }
 
-#banner .col-left .group-slogan-two{
+.banner .col-left .group-slogan-two{
     display: flex;
 }
 
-#banner .col-right{
+.banner .col-right{
     position: relative;
     display: flex;
     justify-content: center;
@@ -181,13 +181,13 @@
     height: 560px;
 }
 
-#banner .col-right a .spaghetti{
+.banner .col-right a .spaghetti{
     width: 400px;
     height: 400px;
     /* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
 }
 
-#banner .col-right .leaf2{
+.banner .col-right .leaf2{
     position: absolute;
     width: 60px;
     height: 80px;
@@ -195,7 +195,7 @@
     right: 10px;
 }
 
-#banner .col-right .tomato{
+.banner .col-right .tomato{
     position: absolute;
     width: 60px;
     height: 60px;
@@ -203,7 +203,7 @@
     left: 20px;
 }
 
-#banner .order-btn{
+.banner .order-btn{
     display: flex;
     width: 150px;
     height: 40px;
@@ -213,7 +213,7 @@
     border: 0.5px solid black;
 }
 
-#banner .order-btn:hover a{
+.banner .order-btn:hover a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,7 +224,7 @@
     height: 100%;
 }
 
-#banner .order-btn a{
+.banner .order-btn a{
     color: #000;
     text-transform: uppercase;
     text-decoration: none;
@@ -232,7 +232,7 @@
     font-weight:900;
 }
 
-#banner .noodle-crop{
+.banner .noodle-crop{
     position: absolute;
     left: -12%;
     bottom: 0;
@@ -240,14 +240,14 @@
     height: 140px;
 }
 
-#content{
+.content{
     position: relative;
     justify-content: center;
     height: 750px;
     background-color:#fff;
 }
 
-#content .noodle-crop-2{
+.content .noodle-crop-2{
     position: absolute;
     top: 0;
     left: -12%;
@@ -255,7 +255,7 @@
     height: 140px;
 }
 
-#content .choose_and_enjoy{
+.content .choose_and_enjoy{
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -265,54 +265,54 @@
     padding-bottom: 50px;
 }
 
-#content .choose_and_enjoy .title-desc{
+.content .choose_and_enjoy .title-desc{
     font-size: 40px;
     font-family: 'Fredericka the Great', cursive;
     font-weight: 100;
 }
 
-#content .choose_and_enjoy .text-desc{
+.content .choose_and_enjoy .text-desc{
     padding-top: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 
-#content .choose_and_enjoy .text-desc-2{
+.content .choose_and_enjoy .text-desc-2{
     padding-top: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 
-#content .choose-enjoy-food-list{
+.content .choose-enjoy-food-list{
     display: flex;
     justify-content: space-around; 
     height: 600px;
 }
 
-#content .choose-enjoy-food-list a img{
+.content .choose-enjoy-food-list a img{
     width: 300px;
     height: 300px;
 }
 
-#content .choose-enjoy-food-list .group-food{
+.content .choose-enjoy-food-list .group-food{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#content .choose-enjoy-food-list .group-food-2{
+.content .choose-enjoy-food-list .group-food-2{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#content .choose-enjoy-food-list .group-food-3{
+.content .choose-enjoy-food-list .group-food-3{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#content .choose-enjoy-food-list h2{
+.content .choose-enjoy-food-list h2{
     padding-top: 15px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -320,19 +320,19 @@
     text-transform: uppercase;
 }
 
-#content .choose-enjoy-food-list .text-desc{
+.content .choose-enjoy-food-list .text-desc{
     padding-top: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
 }
 
-#content .choose-enjoy-food-list .text-desc-2{
+.content .choose-enjoy-food-list .text-desc-2{
     padding-bottom: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
 }
 
-#content .choose-enjoy-food-list .order-btn{
+.content .choose-enjoy-food-list .order-btn{
     display: flex;
     width: 150px;
     height: 40px;
@@ -342,7 +342,7 @@
     border: 0.5px solid black;
 }
 
-#content .choose-enjoy-food-list .order-btn a{
+.content .choose-enjoy-food-list .order-btn a{
     color: #000;
     text-transform: uppercase;
     text-decoration: none;
@@ -350,7 +350,7 @@
     font-weight:900;
 }
 
-#content .choose-enjoy-food-list .order-btn:hover a{
+.content .choose-enjoy-food-list .order-btn:hover a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -361,39 +361,39 @@
     height: 100%;
 }
 
-#slider{
+.slider{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#slider .up_coming_event{
+.slider .up_coming_event{
     display: flex;
     height: 150px;
     flex-direction: column;
     align-items: center;
 }
 
-#slider .up_coming_event h3{
+.slider .up_coming_event h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-#slider .up_coming_event .title-desc{
+.slider .up_coming_event .title-desc{
     font-family: 'Fredericka the Great', cursive;
     font-size: 40px;
     font-weight: 100;
     text-transform: uppercase;
 }
 
-#slider .up_coming_event .text-desc{
+.slider .up_coming_event .text-desc{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
 
-#slider .up_coming_event .text-desc-2{
+.slider .up_coming_event .text-desc-2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
@@ -450,7 +450,7 @@ body {
 }
 
 .swiper .swiper-pagination-bullet-active{
-    background-color: #000;
+    background-color: #ffe001;
 }
 
 .swiper-slide .test{
@@ -539,27 +539,47 @@ body {
 }
 
 #more-content .try-it-one h3{
-    
-}
-
-#more-content .try-it-one .title-more-content-one{
     position: absolute;
     top: 50px;
-    left: 80px;
+    left: 100px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
-#more-content .try-it-one .title-more-content-two{
+#more-content .try-it-one .title-more-content.word_one{
     position: absolute;
-    top: 100px;
-    left: 80px;
+    top: 90px;
+    left: 100px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
-    font-weight: 500;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#more-content .try-it-one .title-more-content.word_two{
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#more-content .try-it-one .title-more-content.word_three{
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 #more-content .try-it-two h3{
@@ -570,6 +590,51 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     font-weight: 500;
+    text-transform: uppercase;
+}
+
+#more-content .try-it-two .title-more-content.word_one{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#more-content .try-it-two .title-more-content.word_two{
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#more-content .try-it-three h3{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#more-content .try-it-three .title-more-content.word_one{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 #more-content .try-it-one > img{
@@ -588,6 +653,76 @@ body {
     height: 165px;
 }
 
-#more-content .group-try-it-right{
+#contact{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    background-color: #fff;
+}
 
+#contact .book-table-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+}
+
+#contact .book-table-title h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 510;
+}
+
+#contact .book-table-title h1{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#contact .form-infor{
+    display: grid;
+    grid-template-columns: 22vw 22vw;
+    grid-gap: 15px 25px;
+}
+
+#contact .form-infor input{
+    padding: 14px;
+}
+
+#contact .form-infor .book-btn{
+    display: flex;
+    width: 22vw;
+    height: 46px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe001;
+    border: 0.5px solid black;
+}
+
+#contact .form-infor .book-btn:hover a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+#contact .form-infor .book-btn a{
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+#footer{
+    height: 60vh;
+    background-color: #000;
 }
