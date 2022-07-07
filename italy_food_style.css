@@ -91,7 +91,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 100px;
     align-content: space-between;
     margin-top: 40px;
     /* width: 60vw;
@@ -329,6 +328,7 @@
     align-items: center;
 }
 .slider .up_coming_event h3{
+
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -342,10 +342,12 @@
 .slider .up_coming_event .text-desc{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    text-align: center;
 }
 .slider .up_coming_event .text-desc-2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    text-align: center;
 }
 
 .swiper {
@@ -397,7 +399,7 @@
 .swiper-slide.swiper-slide-active{
     transform: scale(1.3) !important;
     z-index: 1;
-    background-color: rgba(0,0,0,0) !important;
+    /* background-color: rgba(0,0,0,0) !important; */
 }
 .swiper-slide-active .set-overlay {
     display: none;
@@ -574,7 +576,7 @@
 }
 #contact .form-infor{
     display: grid;
-    grid-template-columns: 22vw 22vw;
+    grid-template-columns: 350px 350px;
     grid-gap: 15px 25px;
 }
 #contact .form-infor input{
@@ -582,7 +584,7 @@
 }
 #contact .form-infor .book-btn{
     display: flex;
-    width: 22vw;
+    width: 350px;
     height: 46px;
     justify-content: center;
     align-items: center;
@@ -616,13 +618,17 @@
 #footer .footer-group-two{
     display: flex;
     justify-content: space-between;
-    height: 35vh;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 #footer .footer-group-three{
-    height: 15vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 #footer .footer-group-one .logo-footer{
     display: flex;
@@ -640,7 +646,6 @@
 #footer .footer-group-two .footer-desc{
     display: flex;
     align-items: center;
-    padding-left: 30px;
 }
 #footer .footer-group-two .footer-desc p{
     color: #fff;
@@ -652,8 +657,10 @@
 #footer .footer-group-two .footer-infor{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     padding-right: 25px;
+    padding-bottom: 30px;
 }
 #footer .footer-group-two .footer-infor .location{
     width: 30px;
@@ -665,15 +672,14 @@
 }
 #footer .footer-group-two .footer-infor-group-one{
     display: flex;
-    height: 8vh;
     width: 100%;
+    padding-bottom: 20px;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 #footer .footer-group-two .footer-infor-group-two{
     display: flex;
-    height: 8vh;
     width: 100%;
     flex-direction: row;
     justify-content: flex-start;
@@ -696,7 +702,7 @@
 #footer .footer-group-three .footer-sign{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 30px;
 }
 #footer .footer-group-three .footer-sign h2{
@@ -706,10 +712,9 @@
     font-weight: 300;
 }
 #footer .footer-group-three .footer-social_media{
-    width: 30vw;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 #footer .footer-group-three .footer-social_media img{
     margin-right: 10px;
@@ -733,6 +738,16 @@
         font-size: 14px;
     }
 }
+@media only screen and (max-width: 1170px) and (min-width: 360px){
+    .more-content .try-it-containter{
+        display: flex !important;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .more-content .try-it-containter .try-it-one{
+        padding-bottom: 25px;
+    }
+}
 @media only screen and (max-width: 1100px){
 }
 @media only screen and (max-width: 1066px){
@@ -742,6 +757,14 @@
     .banner .col-left{
         display: flex;
         justify-content: center;
+    }
+}
+@media only screen and(max-width: 1060px){
+    .slider .up_coming_event .text-desc{
+        text-align: center;
+    }
+    .slider .up_coming_event .text-desc-2{
+        text-align: center;
     }
 }
 @media only screen and (max-width: 1046px){
@@ -759,7 +782,6 @@
 }
 @media only screen and (max-width: 1000px){
 }
-
 @media only screen and (max-width: 960px){
     .content .choose-enjoy-food-list{
         display: flex;
@@ -775,11 +797,7 @@
         padding-left: 10px !important;
     }
 }
-
-@media only screen and (max-width: 960px){
-}
-
-@media only screen and (max-width: 870px) and (min-width: 400px){
+@media only screen and (max-width: 870px) and (min-width: 360px){
 
     #footer .footer-group-two{
         display: flex;
@@ -790,36 +808,46 @@
         display: flex;
         flex-direction: column !important;
         flex-wrap: wrap !important;
-        padding-left: 30px;
+    }
+    #footer .footer-group-two .footer-desc{
+        padding-bottom: 50px;
     }
 }
-@media only screen and (max-width: 1170px) and (min-width: 400px){
-    .more-content .try-it-containter{
+@media only screen and (max-width: 750px) and (min-width: 360px){
+    #contact .form-infor{
         display: flex !important;
         flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .more-content .try-it-containter .try-it-one{
-        padding-bottom: 25px;
     }
 }
-@media only screen and(max-width: 1060px){
-    .slider .up_coming_event .text-desc{
-        text-align: center;
-    }
-    .slider .up_coming_event .text-desc-2{
-        text-align: center;
+@media only screen and(max-width: 500px) and (min-width: 360px){
+    #footer .footer-group-two .footer-desc p{
+        text-align:justify;
     }
 }
-
 @media only screen and (max-width: 600px){
     .more-content{
         display: none;
     }
 }
 
-@media only screen and (max-width: 630px) and (min-width: 360px){
-    #footer{
-        
+@media only screen and (max-width: 570px){
+    #footer .footer-group-three{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
+    #footer .footer-sign{
+        padding-bottom: 20px;
+    }
+    #footer .footer-social_media{
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 540px) and (min-width: 360px){
+    #footer .footer-desc p{
+        text-align: justify;
+    }
+}
+@media only screen and (max-width: 630px) and (min-width: 360px){
 }
