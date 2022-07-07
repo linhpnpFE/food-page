@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
 </head>
 <body>
     <div id="main">
@@ -31,7 +30,6 @@
                         <a href=""> <img src="./img_and_fonts/image/iPhone.png" alt=""> </a>
                     </div>
                 </div>
-
             </div>
             <div class="down-nav">
                 <ul id="nav">
@@ -68,7 +66,9 @@
                     <img class="leaf2" src="./img_and_fonts/image/leaf2.png" alt="">
                     <img class="tomato" src="./img_and_fonts/image/Tomato1.png" alt="">
                 </div>
-                <img class="noodle-crop" src="./img_and_fonts/image/Spaghetti2_crop_upper.png" alt="">
+                <div class="noodle-crop-upper">
+                    <img class="noodle-crop" src="./img_and_fonts/image/Spaghetti2_crop_upper.png" alt="">
+                </div>
             </div>
         </div>
         <div class="content">
@@ -78,8 +78,8 @@
 
             <div class="choose_and_enjoy">
                 <h2 class="title-desc">CHOOSE & ENJOY</h2>
-                <span class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> 
-                <span class="text-desc-2"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                <h2 class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2> 
+                <h2 class="text-desc-2"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
             </div>
 
             <div class="choose-enjoy-food-list">
@@ -126,7 +126,7 @@
                 <span class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
                 <span class="text-desc-2">Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis</span>
             </div>
-            <!-- Slider main container -->
+    
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -159,7 +159,7 @@
                 <div class="swiper-pagination"></div>
               </div>
         </div>
-        <div id="more-content">
+        <div class="more-content">
                 <div class="try-it-containter">
                     <div class="try-it-one">
                         <h3>Try It Today</h3>
@@ -219,7 +219,7 @@
                     </div>
                     <div class="footer-infor-group-two">
                         <img src="./img_and_fonts/image/Email_Icon.png" class="email" alt=""> 
-                        <h2 class="company-email">infor@companyname.com</h2>
+                        <h2 class="company-email">info@companyname.com</h2>
                     </div>
                 </div>
             </div>
@@ -261,8 +261,8 @@
       var appendNumber = 4;
       var prependNumber = 1;
       document
-        .querySelector(".prepend-2-slides")
-        .addEventListener("click", function (e) {
+      .querySelector(".prepend-2-slides")
+      .addEventListener("click", function (e) {
           e.preventDefault();
           swiper.prependSlide([
             '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
