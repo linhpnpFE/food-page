@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.header-page {
+    width: 144rem;
+    height: 82.5rem;
+    background: url(/img/header/header.png) no-repeat 88.6rem;
+    background-color: #ffe001;
+}
+
+    .header {
+        width: 36.7rem;
+        height: 14.7rem;
+        background: url(/img/header/header-logo.png) no-repeat 5.8rem 4.2rem / 25.1rem 6.3rem;
+    }
+
+    .iP {
+        width: 2.9rem;
+        height: 5.3rem;
+        margin-top: 4.6rem;
+        margin-left: 135.7rem;
+    }
+
+    .phone {
+        width: 19.7rem;
+        height: 4.2rem;
+        margin-top: -4.3rem;
+        margin-left: 114.4rem;
+        text-align: right;
+    }
+
+    .phone #p1 {
+        font-family: myriad-pro, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.6667rem;
+        line-height: 1.6667rem;
+    }
+
+    .phone #p2 {
+        font-size: 2.9167rem;
+        line-height: 2.5333rem;
+    }
+
+    .nav-menu {
+        width: 57.8rem;
+        height: 1.2rem;
+        margin-top: 3.1rem;
+        margin-left: 80.2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-menu > li {
+        list-style: none;
+    }
+
+    .nav-menu > li > a {
+        text-decoration: none;
+        color: black;
+        line-height: 1.2rem;
+        font-size: 1.6667rem;
+    }
+
+    .banner-img {
+        width: 144rem;
+        height: 67.8rem;
+        background: url(/img/banner/Noodle.png) no-repeat 72.6rem 7.3rem / 56.7rem 56.7rem,
+                    url(/img/banner/Leaf-up.png) no-repeat 8.1rem 3.8rem / 5.9rem 9.6rem,
+                    url(/img/banner/Leaf-down.png) no-repeat 127.5rem 50.3rem / 8.3rem 10.9rem,
+                    url(/img/banner/Pasta.png) no-repeat 68.1rem 3.2rem / 9.5rem 9.6rem,
+                    url(/img/banner/Tomato.png) no-repeat 64.8rem 54.9rem / 8.1rem 8.1rem,
+                    url(/img/banner/Shape.png) no-repeat 13.6rem 33.9rem / 46.9rem 0.2rem;
+    }
+
+    .banner-img .Spa {
+        width: 30.5rem;
+        height: 29.8rem;
+        margin-left: -13.6rem;
+        margin-top: 52.9rem;
+    }
+
+    #b1 {
+        width: 36.9rem;
+        height: 6.6rem;
+        font-size: 5.7rem;
+        font-family: Gabelisa, sans-serif;
+        text-align: center;
+        margin-top: 7.6rem;
+        margin-left: 18.7rem;
+    }
+
+    #b2 {
+        width: 56.8rem;
+        height: 7.4rem;
+        font-size: 9rem;
+        line-height: 7.5rem;
+        font-family: Fredericka the Great, sans-serif;
+        text-align: center;
+        margin-top: 2.7rem;
+        margin-left: 8.8rem;
+    }
+    
+    @font-face {
+        font-family: 'Fredericka the Great';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Fredericka the Great'), local('FrederickatheGreat'), url(http://fonts.gstatic.com/s/frederickathegreat/v5/7Es8Lxoku-e5eOZWpxw18oRQ8DD0aAk7ES4QQYHqQcw.ttf) format('truetype');
+    }
+
+    #b3 {
+        width: 47.1rem;
+        height: 2rem;
+        font-size: 2.6rem;
+        line-height: 2rem;
+        text-align: center;
+        margin-top: 3.5rem;
+        margin-left: 13.6rem;
+    }
+    
+    #b4 {
+        width: 14.7rem;
+        height: 3.9rem;
+        font-size: 1.9rem;
+        line-height: 2.1rem;
+        font-family: Fredericka the Great, sans-serif;
+        text-align: center;
+        word-break: break-all;
+        margin-top: 8.6rem;
+        margin-left: 22.5rem;
+    }
+
+    #b5 {
+        width: 12.6rem;
+        height: 4.4rem;
+        font-size: 5.7rem;
+        line-height: 4.4rem;
+        font-family: Fredericka the Great, sans-serif;
+        text-align: center;
+        margin-top: -4.4rem;
+        margin-left: 38.7rem;
+    }
+
+    .btn {
+        width: 22.7rem;
+        height: 5.8rem;
+        background-color: #ffe001;
+        margin-top: 3.9rem;
+        margin-left: 25.3rem;
+    }
+
+    .btn:hover {
+        background-color: pink;
+    }
+
+.choose_enjoy {
+    width: 144rem;
+    height: 93rem;
+    background: url(/img/main/choose&enjoy/BG.png) no-repeat 0 28.1rem / 144rem 13.9rem;
+}
+
+    .subTitle_1 {
+        height: 4rem;
+        font-size: 4.1rem;
+        line-height: 4rem;
+        font-family: Fredericka the Great, sans-serif;
+        text-align: center;
+        margin-top: 8.8rem;
+    }
+
+    ._bodyText {
+        width: 105.5rem;
+        height: 4.6rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+
+    .enjoy {
+        width: 130rem;
+        height: 57.4rem;
+        margin-top: 5rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .enjoy .food {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .enjoy .food .title {
+        width: 24.1rem;
+        height: 1.6rem;
+        font-size: 2rem;
+        line-height: 1.6rem;
+    }
+
+    .enjoy .food .bodyText {
+        width: 33.2rem;
+        height: 3.8rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .enjoy .food ._btn {
+        width: 19.5rem;
+        height: 5.7rem;
+        background-color: #ffe001;
+        border: none;
+    }
+
+    .enjoy .food ._btn:hover {
+        background-color: pink;
+    }
+
+.upcoming_events {
+    width: 144rem;
+    height: 80.5rem;
+}
+
+    ._title {
+        height: 1.6rem;
+        font-size: 2.2rem;
+        line-height: 1.6rem;
+        text-align: center;
+        margin-top: 4.7rem;
+    }
+
+    .subTitle_2 {
+        height: 3.4rem;
+        font-size: 4.1rem;
+        line-height: 3.4rem;
+        font-family: Fredericka the Great, sans-serif;
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+
+    .slider {
+        height: 48.3rem;
+        margin-top: 7rem;
+        display: flex;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .slider .items {
+        width: 69.6rem;
+        height: 40.7rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+        position: relative;
+    }
+    .slider .items img {
+        width: 69.6rem;
+        height: 40.7rem;
+        transition: all 0.2s linear;
+    }
+
+    .slider .slick-center .overlay {
+        opacity: 0;
+    }
+
+    .slider .slick-center img {
+        transform: scale(1.27, 1.27);
+    }
+
+    .slider .slick-slide {
+        transform: scale(0.92, 0.92);
+    }
+    
+    .slider .items .overlay {
+        position: absolute;
+        top: 0;
+        width: 69.6rem;
+        height: 40.7rem;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    
+ 
+    .slick-dots {
+        position: absolute;
+        bottom: 0;
+        left: 68.8rem;
+        transform: translateX(-50%, 0);
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: 0 0.8rem;
+        list-style: none;
+    }
+
+    .slick-dots button {
+        font-size: 0;
+        width: 1.7rem;
+        height: 1.7rem;
+        border-radius: 100%;
+        background-color: #eee;
+        border: none;
+        outline: none;
+        transition: all 0.2s linear;
+    }
+
+    .slick-dots .slick-active button {
+        background-color: #eff001;
+    }
+
+    
+
+.most_popular {
+    width: 123.3rem;
+    height: 42rem;
+    margin-left: 10.9rem;
+    display: grid;
+    grid-template-areas: 
+        "img img-2"
+        "img img-3";
+    column-gap: 4.1rem;
+    row-gap: 3.5rem;
+}
+
+    .img {
+        width: 59.7rem;
+        height: 42rem;
+        grid-area: img;
+        background: url(/img/main/most_popular/Image.png) no-repeat;
+    }
+
+    .img-2 {
+        width: 59.5rem;
+        height: 19.2rem;
+        grid-area: img-2;
+        background: url(/img/main/most_popular/Image-2.png) no-repeat;
+    }
+
+    .img-3 {
+        width: 59.5rem;
+        height: 19.2rem;
+        grid-area: img-3;
+        background: url(/img/main/most_popular/Image-3.png) no-repeat;
+    }
+
+    .most_popular > div > ul {
+        color: white;
+    }
+
+    .most_popular .tit {
+        width: 17.9rem;
+        height: 1.9rem;
+        line-height: 2rem;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+.box {
+    width: 144rem;
+    height: 60.8rem;
+}
+
+    .box .title {
+        height: 1.6rem;
+        font-size: 2.2rem;
+        line-height: 1.6rem;
+        text-align: center;
+        margin-top: 9.2rem;
+    }
+
+    .box .subTitle {
+        height: 3.4rem;
+        font-size: 4.1rem;
+        line-height: 3.4rem;
+        font-family: Fredericka the Great, sans-serif;
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .box-left {
+        width: 37.9rem;
+        height: 24.9rem;
+        margin-top: 8.8rem;
+        margin-left: 32.9rem;
+    }
+
+    .box-right {
+        width: 37.9rem;
+        height: 24.9rem;
+        margin-top: -24.9rem;
+        margin-left: 73.4rem;
+    }
+
+    .it {
+        width: 379px;
+        height: 65px;
+        padding: 23px;
+        margin-bottom: 27px;
+        border: black 1px solid;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: large;
+    }
+
+    .box-right #_fat {
+        background-color: #ffe001;
+    }
+    
+    .box-right #_fat:hover {
+        background-color: pink;
+    }
+
+.footer-page {
+    width: 144rem;
+    height: 58.4rem;
+    background: url(/img/footer/BG\ Image.png) no-repeat;
+}
+    .footer-body > div > ul > li {
+        list-style: none;
+        color: white;
+    }
+
