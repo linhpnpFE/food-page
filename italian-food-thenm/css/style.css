@@ -11,14 +11,14 @@ html {
 .header-page {
     width: 144rem;
     height: 82.5rem;
-    background: url(/img/header/header.png) no-repeat 88.6rem;
+    background: url(../img/header/header.png) no-repeat 88.6rem;
     background-color: #ffe001;
 }
 
     .header {
         width: 36.7rem;
         height: 14.7rem;
-        background: url(/img/header/header-logo.png) no-repeat 5.8rem 4.2rem / 25.1rem 6.3rem;
+        background: url(../img/header/header-logo.png) no-repeat 5.8rem 4.2rem / 25.1rem 6.3rem;
     }
 
     .iP {
@@ -72,12 +72,12 @@ html {
     .banner-img {
         width: 144rem;
         height: 67.8rem;
-        background: url(/img/banner/Noodle.png) no-repeat 72.6rem 7.3rem / 56.7rem 56.7rem,
-                    url(/img/banner/Leaf-up.png) no-repeat 8.1rem 3.8rem / 5.9rem 9.6rem,
-                    url(/img/banner/Leaf-down.png) no-repeat 127.5rem 50.3rem / 8.3rem 10.9rem,
-                    url(/img/banner/Pasta.png) no-repeat 68.1rem 3.2rem / 9.5rem 9.6rem,
-                    url(/img/banner/Tomato.png) no-repeat 64.8rem 54.9rem / 8.1rem 8.1rem,
-                    url(/img/banner/Shape.png) no-repeat 13.6rem 33.9rem / 46.9rem 0.2rem;
+        background: url(../img/banner/Noodle.png) no-repeat 72.6rem 7.3rem / 56.7rem 56.7rem,
+                    url(../img/banner/Leaf-up.png) no-repeat 8.1rem 3.8rem / 5.9rem 9.6rem,
+                    url(../img/banner/Leaf-down.png) no-repeat 127.5rem 50.3rem / 8.3rem 10.9rem,
+                    url(../img/banner/Pasta.png) no-repeat 68.1rem 3.2rem / 9.5rem 9.6rem,
+                    url(../img/banner/Tomato.png) no-repeat 64.8rem 54.9rem / 8.1rem 8.1rem,
+                    url(../img/banner/Shape.png) no-repeat 13.6rem 33.9rem / 46.9rem 0.2rem;
     }
 
     .banner-img .Spa {
@@ -163,7 +163,7 @@ html {
 .choose_enjoy {
     width: 144rem;
     height: 93rem;
-    background: url(/img/main/choose&enjoy/BG.png) no-repeat 0 28.1rem / 144rem 13.9rem;
+    background: url(../img/main/choose&enjoy/BG.png) no-repeat 0 28.1rem / 144rem 13.9rem;
 }
 
     .subTitle_1 {
@@ -336,21 +336,21 @@ html {
         width: 59.7rem;
         height: 42rem;
         grid-area: img;
-        background: url(/img/main/most_popular/Image.png) no-repeat;
+        background: url(../img/main/most_popular/Image.png) no-repeat;
     }
 
     .img-2 {
         width: 59.5rem;
         height: 19.2rem;
         grid-area: img-2;
-        background: url(/img/main/most_popular/Image-2.png) no-repeat;
+        background: url(../img/main/most_popular/Image-2.png) no-repeat;
     }
 
     .img-3 {
         width: 59.5rem;
         height: 19.2rem;
         grid-area: img-3;
-        background: url(/img/main/most_popular/Image-3.png) no-repeat;
+        background: url(../img/main/most_popular/Image-3.png) no-repeat;
     }
 
     .most_popular > div > ul {
@@ -423,7 +423,7 @@ html {
 .footer-page {
     width: 144rem;
     height: 58.4rem;
-    background: url(/img/footer/BG\ Image.png) no-repeat;
+    background: url(../img/footer/BGImage.png) no-repeat;
 }
     .footer-body > div > ul > li {
         list-style: none;
