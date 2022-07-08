@@ -306,9 +306,25 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+.box-choose {
+    position: relative;
+}
 .content .choose-enjoy-food-list{
     display: flex;
     justify-content: space-around; 
+    position: relative;
+    z-index: 2;
+}
+.box-choose::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: #ebe9ac;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 .content .choose-enjoy-food-list a img{
     width: 300px;
