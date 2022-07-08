@@ -75,7 +75,7 @@
     align-items: center;
     width: 22px;
     height: 100%;
-    color: #000;
+    color: red;
     display: none;
 }
 .nav_overlay{
@@ -130,8 +130,9 @@
     color:#fff;
     opacity: 1;
 }
-.close-icon{
+.sidebar-close svg{
     line-height: 2;
+    color: #fff;
 }
 .banner{
     display: flex;
