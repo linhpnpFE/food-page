@@ -89,39 +89,40 @@
                 <h2 class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2> 
                 <h2 class="text-desc-2"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
             </div>
-
-            <div class="choose-enjoy-food-list">
-                <div class="group-food">
-                    <a href="">
-                        <img class="noodle-choose-enjoy" src="./img_and_fonts/image/noodle_choose_enjoy.png" alt="">
-                    </a>
-                    <h2>Lorem Ipsum Dolor</h2>
-                    <span class="text-desc">Lorem ipsum dolor sit amet, consectetur</span>
-                    <span class="text-desc-2"> adipiscing elit, sed do</span>
-                    <div class="order-btn">
-                        <a href="">Order Now</a>
+            <div class="box-choose">
+                <div class="choose-enjoy-food-list">
+                    <div class="group-food">
+                        <a href="">
+                            <img class="noodle-choose-enjoy" src="./img_and_fonts/image/noodle_choose_enjoy.png" alt="">
+                        </a>
+                        <h2>Lorem Ipsum Dolor</h2>
+                        <span class="text-desc">Lorem ipsum dolor sit amet, consectetur</span>
+                        <span class="text-desc-2"> adipiscing elit, sed do</span>
+                        <div class="order-btn">
+                            <a href="">Order Now</a>
+                        </div>
                     </div>
-                </div>
-                <div class="group-food-2">
-                    <a href="">
-                        <img class="bread-choose-enjoy" src="./img_and_fonts/image/Bread.png" alt="">
-                    </a>
-                    <h2>Lorem Ipsum Dolor</h2>
-                    <span class="text-desc">Lorem ipsum dolor sit amet, consectetur </span> 
-                    <span class="text-desc-2"> adipiscing elit, sed do</span>
-                    <div class="order-btn">
-                        <a href="">Order Now</a>
+                    <div class="group-food-2">
+                        <a href="">
+                            <img class="bread-choose-enjoy" src="./img_and_fonts/image/Bread.png" alt="">
+                        </a>
+                        <h2>Lorem Ipsum Dolor</h2>
+                        <span class="text-desc">Lorem ipsum dolor sit amet, consectetur </span> 
+                        <span class="text-desc-2"> adipiscing elit, sed do</span>
+                        <div class="order-btn">
+                            <a href="">Order Now</a>
+                        </div>
                     </div>
-                </div>
-                <div class="group-food-3">
-                    <a href="">
-                        <img class="vegetable-choose-enjoy" src="./img_and_fonts/image/vegetable_choose_enjoy.png" alt="">
-                    </a>
-                    <h2>Lorem Ipsum Dolor</h2>
-                    <span class="text-desc">Lorem ipsum dolor sit amet, consectetur </span>
-                    <span class="text-desc-2"> adipiscing elit, sed do</span>
-                    <div class="order-btn">
-                        <a href="">Order Now</a>
+                    <div class="group-food-3">
+                        <a href="">
+                            <img class="vegetable-choose-enjoy" src="./img_and_fonts/image/vegetable_choose_enjoy.png" alt="">
+                        </a>
+                        <h2>Lorem Ipsum Dolor</h2>
+                        <span class="text-desc">Lorem ipsum dolor sit amet, consectetur </span>
+                        <span class="text-desc-2"> adipiscing elit, sed do</span>
+                        <div class="order-btn">
+                            <a href="">Order Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -247,9 +248,7 @@
     <div class="nav_overlay js-sidebar-overlay">
         <div class="nav_sidebar">
             <div class="sidebar-close js-sidebar-close">    
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                    <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/>
-                </svg>
+                <i class="ti-close"></i>
             </div>
             <ul class="nav_list">
                 <li>
@@ -305,15 +304,15 @@
 
       var appendNumber = 4;
       var prependNumber = 1;
-      document
-      .querySelector(".prepend-2-slides")
-      .addEventListener("click", function (e) {
-          e.preventDefault();
-          swiper.prependSlide([
-            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-          ]);
-        });
+          document
+          .querySelector(".prepend-2-slides")
+            .addEventListener("click", function (e) {
+              e.preventDefault();
+              swiper.prependSlide([
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+              ]);
+            });
       document
         .querySelector(".prepend-slide")
         .addEventListener("click", function (e) {
