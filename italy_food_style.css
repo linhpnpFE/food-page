@@ -70,13 +70,17 @@
     font-weight: bolder;
     font-family: 'Montserrat', sans-serif;
 }
-.down-nav .nav_bars-btn{
+.top-nav .nav_bars-btn{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     width: 22px;
-    height: 100%;
+    /* height: 100%; */
     color: red;
     display: none;
+}
+.top-nav .nav_bars-btn svg{
+
 }
 .nav_overlay{
     position: fixed;
@@ -639,7 +643,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
     height: 20vh;
 }
 #contact .book-table-title h3{
@@ -690,6 +693,10 @@
 
 #footer{
     background-color: #000;
+    background: url(./img_and_fonts/image/Footer_image.png);
+    background-position: right;
+    background-repeat: none;
+    background-size: cover;
 }
 #footer .footer-group-one{
     height: 20vh;
@@ -801,6 +808,9 @@
     height: 25px;
     aspect-ratio: 1 / 1;
 }
+.swiper_element{
+    display: none;
+}
 
 @media only screen and (max-width: 1360px){
 }
@@ -893,7 +903,7 @@
     }
 }
 @media only screen and (max-width: 700px) and (min-width: 360px){
-    #header .down-nav .nav_bars-btn{
+    #header .top-nav .nav_bars-btn{
         display: block;
         align-items: center;
     }
@@ -907,7 +917,18 @@
         margin-right: 25px;
         padding-left: 10px;
     }
-    .top-nav .logo{
+    /* .top-nav .logo{
+        display: none;
+    } */
+    .top-nav .group-right{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .top-nav .logo-contact{
+        display: none;
+    }
+    .top-nav .iphone-logo{
         display: none;
     }
 }
