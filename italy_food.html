@@ -1,287 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./italy_food_style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./img_and_fonts/fonts/themify-icons/themify-icons.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./italy_food_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabriela&family=Montserrat:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./img_and_fonts/fonts/themify-icons/themify-icons.css"
+    />
+  </head>
+
+  <body>
     <div id="main">
-        <div id="header">
-            <div class="top-nav">
-                <div class="logo">
-                    <a href=""> <img src="./img_and_fonts/image/food_4_you.png" alt=""> </a>
-                </div>
-                <div class="group-right">
-                    <div class="logo-contact">
-                        <h3>Express Delivery</h3>
-                        <h3>1800 258 888</h3>
-                    </div>
-                    <div class="iphone-logo">
-                        <a href=""> <img src="./img_and_fonts/image/iPhone.png" alt=""> </a>
-                    </div>
-                </div>
+      <div id="header">
+        <div class="top-nav">
+          <div class="logo">
+            <a href="">
+              <img src="./img_and_fonts/image/food_4_you.png" alt="" />
+            </a>
+          </div>
+          <div class="group-right">
+            <div class="logo-contact">
+              <h3>Express Delivery</h3>
+              <h3>1800 258 888</h3>
             </div>
-            <div class="down-nav">
-                <div class="nav_bars-btn js-open-sidebar">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/>
-                    </svg>
-                </div>
-                <div class="nav_pc">
-                    <ul id="nav">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Our Story</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
-                </div>
+            <div class="iphone-logo">
+              <a href="">
+                <img src="./img_and_fonts/image/iPhone.png" alt="" />
+              </a>
             </div>
+            <div class="nav_bars-btn js-open-sidebar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
-        <div class="banner">
-            <div class="banner-color">
-                <div class="col-left">
-                    <div class="group-item-1">
-                        <img src="./img_and_fonts/image/Leaf1.png" alt="">
-                        <h2>Are You Hungry?</h2>
-                    </div>
-    
-                    <h1>Don't Wait</h1>
-                    <h3 class="slogan">Let Start To Order Food Now</h3>
-                    <p>_________________________________________</p>
-    
-                    <div class="group-slogan-two">
-                        <h3 class="blessing">This Monday <br> Happy Hours</h3>
-                        <h3 class="calculate">1+1=3</h3>
-                    </div>
-    
-                    <div class="order-btn">
-                        <a href="">Order Now</a>
-                    </div>
-                </div>
-                <div class="col-right">
-                    <a href=""> <img class="spaghetti" src="./img_and_fonts/image/dishes_spaghetti.png" alt=""> </a>
-                    <img class="leaf2" src="./img_and_fonts/image/leaf2.png" alt="">
-                    <img class="tomato" src="./img_and_fonts/image/Tomato1.png" alt="">
-                </div>
-                <div class="noodle-crop-upper">
-                    <img class="noodle-crop" src="./img_and_fonts/image/Spaghetti2_crop_upper.png" alt="">
-                </div>
-            </div>
+        <div class="down-nav">
+          <div class="nav_pc">
+            <ul id="nav">
+              <li><a href="">Home</a></li>
+              <li><a href="">Menu</a></li>
+              <li><a href="">Our Story</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="content">
-            <div class="noodle-crop-under">
-                <img class="noodle-crop-2" src="./img_and_fonts/image/Spaghetti2_crop_under.png" alt="">
+      </div>
+      <div class="banner">
+        <div class="banner-color">
+          <div class="col-left">
+            <div class="group-item-1">
+              <img src="./img_and_fonts/image/Leaf1.png" alt="" />
+              <h2>Are You Hungry?</h2>
             </div>
 
-            <div class="choose_and_enjoy">
-                <h2 class="title-desc">CHOOSE & ENJOY</h2>
-                <h2 class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2> 
-                <h2 class="text-desc-2"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
-            </div>
-            <div class="box-choose">
-                <div class="choose-enjoy-food-list">
-                    <div class="group-food">
-                        <a href="">
-                            <img class="noodle-choose-enjoy" src="./img_and_fonts/image/noodle_choose_enjoy.png" alt="">
-                        </a>
-                        <h2>Lorem Ipsum Dolor</h2>
-                        <span class="text-desc">Lorem ipsum dolor sit amet, consectetur</span>
-                        <span class="text-desc-2"> adipiscing elit, sed do</span>
-                        <div class="order-btn">
-                            <a href="">Order Now</a>
-                        </div>
-                    </div>
-                    <div class="group-food-2">
-                        <a href="">
-                            <img class="bread-choose-enjoy" src="./img_and_fonts/image/Bread.png" alt="">
-                        </a>
-                        <h2>Lorem Ipsum Dolor</h2>
-                        <span class="text-desc">Lorem ipsum dolor sit amet, consectetur </span> 
-                        <span class="text-desc-2"> adipiscing elit, sed do</span>
-                        <div class="order-btn">
-                            <a href="">Order Now</a>
-                        </div>
-                    </div>
-                    <div class="group-food-3">
-                        <a href="">
-                            <img class="vegetable-choose-enjoy" src="./img_and_fonts/image/vegetable_choose_enjoy.png" alt="">
-                        </a>
-                        <h2>Lorem Ipsum Dolor</h2>
-                        <span class="text-desc">Lorem ipsum dolor sit amet, consectetur </span>
-                        <span class="text-desc-2"> adipiscing elit, sed do</span>
-                        <div class="order-btn">
-                            <a href="">Order Now</a>
-                        </div>
-                    </div>
-                </div>
+            <h1>Don't Wait</h1>
+            <h3 class="slogan">Let Start To Order Food Now</h3>
+            <p>_________________________________________</p>
+
+            <div class="group-slogan-two">
+              <h3 class="blessing">
+                This Monday <br />
+                Happy Hours
+              </h3>
+              <h3 class="calculate">1+1=3</h3>
             </div>
 
-        </div>
-        <div class="slider">
-            <div class="up_coming_event">
-                <h3>Discover</h3>
-                <h2 class="title-desc">Upcoming event</h2>
-                <span class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
-                <span class="text-desc-2">Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis</span>
+            <div class="order-btn">
+              <a href="">Order Now</a>
             </div>
-    
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="test">
-                        <div class="set-overlay"></div>
-                        <img src="./img_and_fonts/image/pizza_slider_1.jpg" alt="">
-                    </div>
-                </div>
-                  <div class="swiper-slide">
-                    <div class="test">
-                        <div class="set-overlay"></div>
-                        <img src="./img_and_fonts/image/noodle_slider.jpg" alt="">
-                    </div>
-                </div>
-                  <div class="swiper-slide">
-                    <div class="test">
-                        <div class="set-overlay"></div>
-                        <img src="./img_and_fonts/image/pizza_slider_2.jpg" alt="">
-                    </div>
-                </div>
-                  <div class="swiper-slide">
-                    <div class="test">
-                        <div class="set-overlay"></div>
-                        <img src="./img_and_fonts/image/pizza_slider_3.jpg" alt="">
-                    </div>
-                </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+          </div>
+          <div class="col-right">
+            <a href="">
+              <img
+                class="spaghetti"
+                src="./img_and_fonts/image/dishes_spaghetti.png"
+                alt=""
+              />
+            </a>
+            <img class="leaf2" src="./img_and_fonts/image/leaf2.png" alt="" />
+            <img
+              class="tomato"
+              src="./img_and_fonts/image/Tomato1.png"
+              alt=""
+            />
+          </div>
+          <div class="noodle-crop-upper">
+            <img
+              class="noodle-crop"
+              src="./img_and_fonts/image/Spaghetti2_crop_upper.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="noodle-crop-under">
+          <img
+            class="noodle-crop-2"
+            src="./img_and_fonts/image/Spaghetti2_crop_under.png"
+            alt=""
+          />
+        </div>
+
+        <div class="choose_and_enjoy">
+          <h2 class="title-desc">CHOOSE & ENJOY</h2>
+          <h2 class="text-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h2>
+          <h2 class="text-desc-2">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </h2>
+        </div>
+        <div class="box-choose">
+          <div class="choose-enjoy-food-list">
+            <div class="group-food">
+              <a href="">
+                <img
+                  class="noodle-choose-enjoy"
+                  src="./img_and_fonts/image/noodle_choose_enjoy.png"
+                  alt=""
+                />
+              </a>
+              <h2>Lorem Ipsum Dolor</h2>
+              <span class="text-desc"
+                >Lorem ipsum dolor sit amet, consectetur</span
+              >
+              <span class="text-desc-2"> adipiscing elit, sed do</span>
+              <div class="order-btn">
+                <a href="">Order Now</a>
               </div>
+            </div>
+            <div class="group-food-2">
+              <a href="">
+                <img
+                  class="bread-choose-enjoy"
+                  src="./img_and_fonts/image/Bread.png"
+                  alt=""
+                />
+              </a>
+              <h2>Lorem Ipsum Dolor</h2>
+              <span class="text-desc"
+                >Lorem ipsum dolor sit amet, consectetur
+              </span>
+              <span class="text-desc-2"> adipiscing elit, sed do</span>
+              <div class="order-btn">
+                <a href="">Order Now</a>
+              </div>
+            </div>
+            <div class="group-food-3">
+              <a href="">
+                <img
+                  class="vegetable-choose-enjoy"
+                  src="./img_and_fonts/image/vegetable_choose_enjoy.png"
+                  alt=""
+                />
+              </a>
+              <h2>Lorem Ipsum Dolor</h2>
+              <span class="text-desc"
+                >Lorem ipsum dolor sit amet, consectetur
+              </span>
+              <span class="text-desc-2"> adipiscing elit, sed do</span>
+              <div class="order-btn">
+                <a href="">Order Now</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="more-content">
-                <div class="try-it-containter">
-                    <div class="try-it-one">
-                        <h3>Try It Today</h3>
-                        <h2 class="title-more-content word_one">Most</h2>
-                        <h2 class="title-more-content word_two">Popular</h2>
-                        <h2 class="title-more-content word_three">Pasta</h2>
-                        <img src="./img_and_fonts/image/Image31.png" alt="">
-                    </div>
-                    <div class="group-try-it-right">
-                        <div class="try-it-two">
-                            <h3>Try It Today</h3>
-                            <h2 class="title-more-content word_one">More Fun</h2>
-                            <h2 class="title-more-content word_two">More Taste</h2>
-                            <img src="./img_and_fonts/image/Image41.png" alt="">
-                        </div>
-                        <div class="try-it-three">
-                            <h3>Try It Today</h3>
-                            <h2 class="title-more-content word_one">Fresh & Chili</h2>
-                            <img src="./img_and_fonts/image/Image51.png" alt="">
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="slider">
+        <div class="up_coming_event">
+          <h3>Discover</h3>
+          <h2 class="title-desc">Upcoming event</h2>
+          <span class="text-desc"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua</span
+          >
+          <span class="text-desc-2"
+            >Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+            maecenas accumsan lacus vel facilisis</span
+          >
         </div>
-        <div id="contact">
-            <div class="book-table-title">
-                <h3>Reservation</h3>
-                <h1>Book Your Table</h1>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="test">
+                <div class="set-overlay"></div>
+                <img src="./img_and_fonts/image/pizza_slider_1.jpg" alt="" />
+              </div>
             </div>
-            <div class="form-infor">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Date">
-                <input type="text" placeholder="Time">
-                <input type="text" placeholder="People">
-                <div class="book-btn">    
-                <a href="">Find A Table</a>
-                </div>
+            <div class="swiper-slide">
+              <div class="test">
+                <div class="set-overlay"></div>
+                <img src="./img_and_fonts/image/noodle_slider.jpg" alt="" />
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="test">
+                <div class="set-overlay"></div>
+                <img src="./img_and_fonts/image/pizza_slider_2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="test">
+                <div class="set-overlay"></div>
+                <img src="./img_and_fonts/image/pizza_slider_3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div id="footer">
-            <div class="footer-group-one">
-                <div class="logo-footer">
-                    <img src="./img_and_fonts/image/food_4_you_footer.png" alt="">
-                </div>
+      </div>
+      <div class="more-content">
+        <div class="try-it-containter">
+          <div class="try-it-one">
+            <h3>Try It Today</h3>
+            <h2 class="title-more-content word_one">Most</h2>
+            <h2 class="title-more-content word_two">Popular</h2>
+            <h2 class="title-more-content word_three">Pasta</h2>
+            <img src="./img_and_fonts/image/Image31.png" alt="" />
+          </div>
+          <div class="group-try-it-right">
+            <div class="try-it-two">
+              <h3>Try It Today</h3>
+              <h2 class="title-more-content word_one">More Fun</h2>
+              <h2 class="title-more-content word_two">More Taste</h2>
+              <img src="./img_and_fonts/image/Image41.png" alt="" />
             </div>
-            <div class="footer-group-two">
-                <div class="footer-desc">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. <br> Quis ipsum suspendisse ultrices gravida.
-                        Risus commodo viver <br> ra maecenas accumsan lacus vel facilisis.
-                    </p>
-                </div>
-                <div class="footer-infor">
-                    <div class="footer-infor-group-one">
-                        <img src="./img_and_fonts/image/Location_Icon.png" class="location" alt="">  
-                        <h2 class="address">Main Road, Building Name, Country</h2>
-                    </div>
-                    <div class="footer-infor-group-two">
-                        <img src="./img_and_fonts/image/Email_Icon.png" class="email" alt=""> 
-                        <h2 class="company-email">info@companyname.com</h2>
-                    </div>
-                </div>
+            <div class="try-it-three">
+              <h3>Try It Today</h3>
+              <h2 class="title-more-content word_one">Fresh & Chili</h2>
+              <img src="./img_and_fonts/image/Image51.png" alt="" />
             </div>
-            <div class="footer-group-three">
-                <div class="footer-sign">
-                    <h2>@Company Name 2020. All rights reserved.</h2>
-                </div>
-                <div class="footer-social_media">
-                    <img src="./img_and_fonts/image/Instagram.png" alt="">
-                    <img src="./img_and_fonts/image/Facebook.png" alt="">
-                    <img src="./img_and_fonts/image/Twitter.png" alt="">
-                    <img src="./img_and_fonts/image/WhatsApp.png" alt="">
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <div id="contact">
+        <div class="book-table-title">
+          <h3>Reservation</h3>
+          <h1>Book Your Table</h1>
+        </div>
+        <div class="form-infor">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Date" />
+          <input type="text" placeholder="Time" />
+          <input type="text" placeholder="People" />
+          <div class="book-btn">
+            <a href="">Find A Table</a>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footer-group-one">
+          <div class="logo-footer">
+            <img src="./img_and_fonts/image/food_4_you_footer.png" alt="" />
+          </div>
+        </div>
+        <div class="footer-group-two">
+          <div class="footer-desc">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              <br />
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+              Quis ipsum suspendisse ultrices gravida. Risus commodo viver
+              <br />
+              ra maecenas accumsan lacus vel facilisis.
+            </p>
+          </div>
+          <div class="footer-infor">
+            <div class="footer-infor-group-one">
+              <img
+                src="./img_and_fonts/image/Location_Icon.png"
+                class="location"
+                alt=""
+              />
+              <h2 class="address">Main Road, Building Name, Country</h2>
+            </div>
+            <div class="footer-infor-group-two">
+              <img
+                src="./img_and_fonts/image/Email_Icon.png"
+                class="email"
+                alt=""
+              />
+              <h2 class="company-email">info@companyname.com</h2>
+            </div>
+          </div>
+        </div>
+        <div class="footer-group-three">
+          <div class="footer-sign">
+            <h2>@Company Name 2020. All rights reserved.</h2>
+          </div>
+          <div class="footer-social_media">
+            <img src="./img_and_fonts/image/Instagram.png" alt="" />
+            <img src="./img_and_fonts/image/Facebook.png" alt="" />
+            <img src="./img_and_fonts/image/Twitter.png" alt="" />
+            <img src="./img_and_fonts/image/WhatsApp.png" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
     <div class="nav_overlay js-sidebar-overlay">
-        <div class="nav_sidebar">
-            <div class="sidebar-close js-sidebar-close">    
-                <i class="ti-close"></i>
-            </div>
-            <ul class="nav_list">
-                <li>
-                    <a class="nav_link" href="">Home</a>
-                </li>
-                <li>
-                    <a class="nav_link" href="">Menu</a>
-                </li>
-                <li>
-                    <a class="nav_link" href="">Our Story</a>
-                </li>
-                <li>
-                    <a class="nav_link" href="">Contact Us</a>
-                </li>
-            </ul>
+      <div class="nav_sidebar">
+        <div class="sidebar-close js-sidebar-close">
+          <i class="ti-close"></i>
         </div>
+        <ul class="nav_list">
+          <li>
+            <a class="nav_link" href="">Home</a>
+          </li>
+          <li>
+            <a class="nav_link" href="">Menu</a>
+          </li>
+          <li>
+            <a class="nav_link" href="">Our Story</a>
+          </li>
+          <li>
+            <a class="nav_link" href="">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="swiper_element">
+        <p class="append-buttons">
+            <button class="prepend-2-slides">Prepend 2 Slides</button>
+            <button class="prepend-slide">Prepend Slide</button>
+            <button class="append-slide">Append Slide</button>
+            <button class="append-2-slides">Append 2 Slides</button>
+          </p>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        const click_sidebar = document.querySelector('.js-open-sidebar')
-        const sidebar_overlay = document.querySelector('.js-sidebar-overlay')
-        const close_sidebar = document.querySelector('.js-sidebar-close')
-        
-        function showSidebar(){
-            sidebar_overlay.classList.add('open')
-        }
+      const click_sidebar = document.querySelector(".js-open-sidebar");
+      const sidebar_overlay = document.querySelector(".js-sidebar-overlay");
+      const close_sidebar = document.querySelector(".js-sidebar-close");
 
-        function hideSidebar(){
-            sidebar_overlay.classList.remove('open')
-        }
+      function showSidebar() {
+        sidebar_overlay.classList.add("open");
+      }
 
-        click_sidebar.addEventListener('click',showSidebar)
-        close_sidebar.addEventListener('click',hideSidebar)
+      function hideSidebar() {
+        sidebar_overlay.classList.remove("open");
+      }
+
+      click_sidebar.addEventListener("click", showSidebar);
+      close_sidebar.addEventListener("click", hideSidebar);
       var swiper = new Swiper(".mySwiper", {
         // autoplay:{
         //     delay: 2000,
@@ -293,8 +388,8 @@
         spaceBetween: 0,
         pagination: {
           el: ".swiper-pagination",
-        //   type: "fraction",
-        clickable: true,
+          //   type: "fraction",
+          clickable: true,
         },
         navigation: {
           nextEl: ".swiper-button-next",
@@ -304,15 +399,15 @@
 
       var appendNumber = 4;
       var prependNumber = 1;
-          document
-          .querySelector(".prepend-2-slides")
-            .addEventListener("click", function (e) {
-              e.preventDefault();
-              swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-              ]);
-            });
+      document
+        .querySelector(".prepend-2-slides")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.prependSlide([
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+          ]);
+        });
       document
         .querySelector(".prepend-slide")
         .addEventListener("click", function (e) {
@@ -338,6 +433,6 @@
             '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
           ]);
         });
-      </script>
-</body>
+    </script>
+  </body>
 </html>
