@@ -15,7 +15,7 @@ html {
 header {
     height: 14.7rem;
     width: 144rem;
-    background: url(/img/header-logo.png) no-repeat 6.1rem 4.2rem / 25.1rem 6.3rem;
+    background: url(../img/header-logo.png) no-repeat 6.1rem 4.2rem / 25.1rem 6.3rem;
     background-color: #e9e7e7;
     font-family: "Montserrat", sans-serif;
     position: relative;
@@ -301,7 +301,7 @@ main .bg2 {
     }
 
     .carousel-control-next-icon {
-        background-image: url(/img/Arrow.png);
+        background-image: url(../img/Arrow.png);
         height: 5.3rem;
         width: 13.9rem;
     }
@@ -310,8 +310,8 @@ main .bg2 {
         width: 144rem;
         height: 87.2rem;
         margin-top: 107.2rem;
-        background: url(/img/main-3.png) no-repeat 68.3rem 15.5rem / 75.7rem 56.2rem,
-                    url(/img/background-3.png) no-repeat -17.7rem 73.8rem / 52.3rem 14.4rem;
+        background: url(../img/main-3.png) no-repeat 68.3rem 15.5rem / 75.7rem 56.2rem,
+                    url(../img/background-3.png) no-repeat -17.7rem 73.8rem / 52.3rem 14.4rem;
         background-color: #232323;
         color: white;
         position: relative;
@@ -358,7 +358,7 @@ main .bg2 {
     .main-end {
         width: 144rem;
         height: 87rem;
-        background: url(/img/main-4.png) no-repeat 92.5rem 0 / 39rem 51.6rem;
+        background: url(../img/main-4.png) no-repeat 92.5rem 0 / 39rem 51.6rem;
     }
 
     .title-main-end {
@@ -383,7 +383,7 @@ main .bg2 {
     }
     
     .accordion-button::after {
-        background-image: url(/img/+.png);
+        background-image: url(../img/+.png);
     }
 
     .accordion-header button {
