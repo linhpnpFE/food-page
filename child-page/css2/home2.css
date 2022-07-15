@@ -22,7 +22,7 @@ body {
     text-align: center;
 }
 .hdItem >h2 {
-    font-family: Cardo;
+    font-family: 'Cardo', serif;
     font-size: 44px;
     font-weight: 600;
 }
@@ -112,7 +112,7 @@ body {
     margin-bottom: 50px;
     font-size: 70px;
     font-weight: 600;
-    font-family: Cardo;
+    font-family: 'Cardo', serif;
 }
 
 .ft-left>span {
