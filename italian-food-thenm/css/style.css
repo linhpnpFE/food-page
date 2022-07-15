@@ -429,4 +429,9 @@ html {
         list-style: none;
         color: white;
     }
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: calc(62.5% * 1349/1440);
+    }
+}
 
