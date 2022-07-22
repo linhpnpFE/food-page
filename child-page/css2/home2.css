@@ -17,8 +17,13 @@ body {
     text-align: center;
 }
 .hdItem >h2 {
+<<<<<<< HEAD
     font-family: Cardo;
     font-size: 80px;
+=======
+    font-family: 'Cardo', serif;
+    font-size: 44px;
+>>>>>>> 24b3963be1c7e54f56bb1fa8c94514859069c832
     font-weight: 600;
 }
 .hdItem >h2 > a {
@@ -111,7 +116,7 @@ body {
     margin-bottom: 50px;
     font-size: 70px;
     font-weight: 600;
-    font-family: Cardo;
+    font-family: 'Cardo', serif;
 }
 
 .containerItem {
