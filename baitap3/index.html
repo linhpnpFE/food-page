@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+	<div class="imgParent position-absolute">
+		<header>
+			<div class="headerMenu position-relative px-3">
+				<div class="container ">
+					<div class="row">
+						<div class="leftHeader ">
+							<img src="img/menuhd1.png">
+						</div>
+						<div class="justify-content-end w-50 midHeader">
+							<li class="item1 mx-lg-2"><a class="hdItem1" href="#">HOME</a></li>
+							<li class="item1 mx-lg-2"><a class="hdItem1" href="#">SERVICES</a></li>
+							<li class="item1 mx-lg-2"><a class="hdItem1" href="#">ABOUT</a></li>
+							<li class="item1 mx-lg-2"><a class="hdItem1" href="#">CONTACT</a></li>
+							<li class="item1 mx-lg-2"><a class="login hdItem1" href="#">SIGN IN</a></li>
+						</div>
+						<div class="d-flex justify-content-end m-auto topHeader">
+							<i class="fas fa-user item2 mx-3"></i>
+							<i class="fas fa-shopping-bag item2 mx-3"></i>
+							<button class="btnPr btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars item2 mx-3"></i>
+			                </button>
+			                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+			                    <div class="offcanvas-header">
+			                        <h3 id="offcanvasRightLabel">MENU</h3>
+			                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			                    </div>
+			                    <div class="offcanvas-body">
+			                        <div class="mobiItem m-5"><i class="fas fa-home"><a href="#">HOME</a></i></div>
+			                        <div class="mobiItem m-5"><i class="fas fa-bell"><a href="#">ODER</a></i></div>
+			                        <div class="mobiItem m-5"><i class="fas fa-phone-square-alt"><a href="#">1800 258 888</a></i></div>
+			                    </div>
+			                </div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="header px-3 px-lg-0">
+				<div class="row">
+					<div class="leftHeader2 col-12 col-lg-6">
+						<div class="d-grid justify-content-center item4">
+							<div class="hdBox">
+								<h1 class="item5 mb-4">Flower <br> Arrangements</h1>
+								<h3 class="item6">• For all special occasions •</h3>
+								<p class="item7">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua.</p>
+								<div class="hdBox2 d-flex justify-content-end my-5">
+									<li class="item8 mx-3"><a href="#">Shop</a></li>
+									<li class="item9 mx-3"><a href="#">READ MORE</a></li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rightHader position-relative col-12 col-lg-6 mb-4 mb-lg-0">
+						<img src="img/hd1.png" width="100%">
+					</div>
+				</div>
+			</div>
+			<div class="headerFooter py-5">
+				<div class="container">
+					<div class="row headerItem">
+						<div class="w-25 text-white">
+							<h1>3000+</h1>
+							<span>Packages Sold</span>
+						</div>
+						<div class="w-25 text-white">
+							<h1>5000+</h1>
+							<span>Bouquet Sold</span>
+						</div>
+						<div class="w-25 text-white">
+							<h1>7000+</h1>
+							<span>Happy Clients</span>
+						</div>
+						<div class="w-25 text-white">
+							<h1>10+</h1>
+							<span>Years of Experience</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="py-5">
+			<div class="containerHeader d-flex justify-content-center my-5"> 
+				<div class="w-25"><img src="img/ctn1.png" alt=""></div>
+				<div class="w-50 containerItem">
+					<h2>Our Top Priducts</h2>
+					<span>Lorem ipsum dolor sit amet, consectetur.</span>
+				</div>
+				<div class="w-25 d-flex justify-content-end">
+					<div><img src="img/ctn1.png" width="100%"></div>
+				</div>
+			</div>
+			<div class="containerBetween px-5">
+				<div class="swiper mySwiper">
+			      <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<img src="img/ctn3.png">
+			        	<div class="containerItem2">
+			        		<div class="d-flex justify-content-end ctnItem1"><img src="img/ctn7.png"></div>
+			        		<h3>Lorem impsun</h3>
+				        	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</span>
+				        	<button class="my-4"><span>READ MORE</span></button>
+				        </div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="img/ctn4.png">
+			        	<div class="containerItem2">
+			        		<div class="d-flex justify-content-end ctnItem1"><img src="img/ctn7.png"></div>
+			        		<h3>Lorem impsun</h3>
+				        	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</span>
+				        	<button class="my-4"><span>READ MORE</span></button>
+				        </div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="img/ctn5.png">
+			        	<div class="containerItem2">
+			        		<div class="d-flex justify-content-end ctnItem1"><img src="img/ctn7.png"></div>
+			        		<h3>Lorem impsun</h3>
+				        	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</span>
+				        	<button class="my-4"><span>READ MORE</span></button>
+				        </div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="img/ctn6.png">
+			        	<div class="containerItem2">
+			        		<div class="d-flex justify-content-end ctnItem1"><img src="img/ctn7.png"></div>
+			        		<h3>Lorem impsun</h3>
+				        	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</span>
+				        	<button class="my-4"><span>READ MORE</span></button>
+				        </div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="img/ctn3.png">
+			        	<div class="containerItem2">
+			        		<div class="d-flex justify-content-end ctnItem1"><img src="img/ctn7.png"></div>
+			        		<h3>Lorem impsun</h3>
+				        	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</span>
+				        	<button class="my-4"><span>READ MORE</span></button>
+				        </div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="img/ctn4.png">
+			        	<div class="containerItem2">
+			        		<div class="d-flex justify-content-end ctnItem1"><img src="img/ctn7.png"></div>
+			        		<h3>Lorem impsun</h3>
+				        	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</span>
+				        	<button class="my-4"><span>READ MORE</span></button>
+				        </div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="img/ctn5.png">
+			        	<div class="containerItem2">
+			        		<div class="d-flex justify-content-end ctnItem1"><img src="img/ctn7.png"></div>
+			        		<h3>Lorem impsun</h3>
+				        	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</span>
+				        	<button class="my-4"><span>READ MORE</span></button>
+				        </div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="img/ctn6.png">
+			        	<div class="containerItem2">
+			        		<div class="d-flex justify-content-end ctnItem1"><img src="img/ctn7.png"></div>
+			        		<h3>Lorem impsun</h3>
+				        	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</span>
+				        	<button class="my-4"><span>READ MORE</span></button>
+				        </div>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="d-flex mt-5" >
+			    	<div class="d-flex justify-content-start w-50 ms-5"><img src="img/ctn8.png"></div>
+			    	<div class="d-flex justify-content-end w-50 me-5"><img src="img/ctn9.png"></div>
+			    </div>
+			    <div class="d-flex justify-content-center">
+			  		<div class="swiper-button-prev"></div>
+			  		<div class="swiper-button-next"></div>
+			    </div>
+			</div>
+			<div class="containerBottom position-relative mt-5 mt-lg-0">
+				<div class="containerItem3">
+					<h2>How we do it</h2>
+					<span>Lorem ipsum dolor sit amet, consectetur.</span>
+				</div>
+				<div class="containerItem7"><img src="img/ctn10.png" width="100%"></div>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="containerItem5 position-relative">
+							<div class="containerItem4"><img src="img/ctn12.png" width="100%"></div>
+							<img src="img/ctn11.png" width="100%">
+							<div class="containerItem6"><img src="img/ctn13.png" width="100%"></div>
+						</div>
+					</div>
+				</div>
+				<div class="containerItem8"><img src="img/ctn14.png" width="100%"></div>
+			</div>
+			<div class="containerBanner mb-5 px-3 px-lg-0">
+				<div class="row">
+					<div class="leftctnBanner col-md-6">
+						<div class="d-flex justify-content-center mt-md-2 mb-md-3 mt-lg-5 mb-lg-4"><button class="ctnBanner-item"><span class="ctnBanner-item2">SPECIAL OFFER</span></button></div>
+						<div class="d-flex justify-content-center">
+							<div class="ctnBanner-item3"><img src="img/ctn15.png" width="100%"w></div>
+							<div class="ctnBanner-item4 mx-3 mx-lg-0"><h3 class="ctnBanner-item5">20%</h3></div>
+							<div class="ctnBanner-item3"><img class="ctnBanner-item8" src="img/ctn16.png" width="100%"w></div>
+						</div>
+						<div class="ctnBanner-item6">
+							<p class="ctnBanner-item7">Discount on your <br>first purchase</p>
+						</div>
+					</div>
+					<div class="rightctnBanner col-md-6">
+						<div><img src="img/ctn17.png" width="100%"></div>
+					</div>
+				</div>
+			</div>
+			<div class="container2 pt-5 px-3 px-lg-0">
+				<div class="row">
+					<div class="leftctn2 col-12 col-lg-7 d-flex justify-content-center">
+						<div class="ctn2-item position-relative">
+							<img src="img/ctn18.png" width="100%">
+							<div class="position-absolute ctn2-item2"><img src="img/ctn19.png" width="100%"></div>
+							<div class="position-absolute ctn2-item3"><img src="img/ctn20.png" width="100%"></div>
+						</div>
+					</div>
+					<div class="rigtctn2 col-12 col-lg-5">
+						<div class="ctn2-item4 my-3 my-lg-5 pt-md-5 pt-lg-0"><img src="img/ctn22.png" width="80px"></div>
+						<div class="w-100"><h3 class="ctn2-item5">We select the <br>best flowers</h3></div>
+						<div class="ctn2-item6"><p class="ctn2-item7">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna</p></div>
+						<div class="ctn2-item11"><button class="ctn2-item8"><span class="ctn2-item9">READ MORE</span></button></div>
+						<div class=" justify-content-end ctn2-item10"><img src="img/ctn23.png" width="120px"></div>
+					</div>
+				</div>
+			</div>
+			<div class="container3">
+				<div class="row">
+					<div class="leftctn3 col-lg-5">
+						<div class="ctn2-item4 my-3 my-lg-5"><img src="img/ctn22.png" width="80px"></div>
+						<div class="w-100"><h3 class="ctn2-item5">We take care <br>of the details</h3></div>
+						<div class="ctn2-item6"><p class="ctn3-item7">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna</p></div>
+						<div class="ctn2-item11"><button class="ctn2-item8"><span class="ctn2-item9">READ MORE</span></button></div>
+						<div class="d-flex justify-content-start"><img class="ctn2-item12" src="img/ctn28.png" width="100px"></div>
+					</div>
+					<div class="rightcnt3 col-lg-7 d-flex justify-content-center mt-5 mt-lg-0 mb-md-5 mb-lg-0 ">
+						<div class="ctn3-item position-relative mb-5 mb-lg-0 px-3 px-lg-0">
+							<img src="img/ctn27.png" width="100%">
+							<div class="position-absolute ctn3-item2"><img src="img/ctn19.png" width="100%"></div>
+							<div class="position-absolute ctn3-item3"><img src="img/ctn20.png" width="100%"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container4">
+				<div class="row">
+					<div class="leftctn2 col-lg-7 d-flex justify-content-center">
+						<div class="ctn2-item position-relative px-3 px-lg-0">
+							<img src="img/ctn29.png" width="100%">
+							<div class="position-absolute ctn4-item2"><img src="img/ctn19.png" width="100%"></div>
+							<div class="position-absolute ctn4-item3"><img src="img/ctn20.png" width="100%"></div>
+						</div>
+					</div>
+					<div class="rigtctn2 col-lg-5">
+						<div class="ctn2-item4 my-5"><img src="img/ctn22.png" width="80px"></div>
+						<div class="w-100"><h3 class="ctn2-item5">We love what <br> we do</h3></div>
+						<div class="ctn2-item6"><p class="ctn2-item7">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna</p></div>
+						<div class="ctn2-item11"><button class="ctn2-item8"><span class="ctn2-item9">READ MORE</span></button></div>
+						<div class="d-flex justify-content-end"><img class="ctn2-item12" src="img/ctn23.png" width="120px"></div>
+					</div>
+				</div>
+			</div>
+			<div class="container5 mt-md-5 mt-lg-0">
+				<div class="container">
+					<div class="row ctn5-item">
+						<div><h3 class="ctn5-item2">Subscribe to our <br>newsletter</h3></div>
+						<div><p class="ctn5-item3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p></div>
+						<div ><input class="ctn5-item4 my-2 ps-4" type="text" placeholder="Your Name"></div>
+						<div ><input class="ctn5-item4 my-2 ps-4" type="text" placeholder="Mail"></div>
+						<div ><input class="ctn5-item4 ctn5-item5 my-2 ps-4 pb-5" type="text" placeholder="Messages"></div>
+						<div><button class="ctn5-item6 mt-4"><span class="ctn5-item7">SEND MESSAGE</span></button></div>
+					</div>
+				</div>
+			</div>
+		</main>	
+		<footer>
+			<div class="footer position-relative pb-5">
+				<div class="container">
+					<div class="row footerItem pt-5">
+						<div class="col-lg-4 col-md-4 ftItem">
+							<h3>About</h3>
+							<li><a href="#">History</a></li>
+							<li><a href="#">Our Teame</a></li>
+							<li><a href="#">Mission Statement</a></li>
+							<li><a href="#">Terms&Condition</a></li>
+							<li><a href="#">privacy Policy</a></li> 
+						</div>
+						<div class="col-lg-4 col-md-4 ftItem">
+							<h3>What We Do</h3>
+							<li><a href="#">News and stories</a></li>
+							<li><a href="#">Publications</a></li>
+							<li><a href="#">Take action</a></li>
+							<li><a href="#">Recomendations</a></li>
+							<li><a href="#">Help</a></li>
+						</div>
+						<div class="col-lg-4 col-md-4 ftItem">
+							<h3>Your Copany</h3>
+							<li><a href="#">Halimun Street 25</a></li>
+							<li><a href="#">Jakarta, City 1234</a></li>
+							<li><a href="#">www.yourflowersite.com</a></li>
+						</div>
+					</div>
+					<div class="footerMxh d-flex pt-3">
+						<div class="col-6 col-lg-2 ftMxh-item4"><h4 class="me-lg-5 ftMxh-item2">Follow us</h4></div>
+						<div class="col-6 col-lg-2 ftMxh-item">
+							<i class="fab fa-facebook mxhItem mx-lg-2 ftMxh-item3"></i>
+							<i class="fab fa-instagram mxhItem2 mx-lg-2 ftMxh-item3"></i>
+							<i class="fab fa-youtube mxhItem3 mx-lg-2 ftMxh-item3"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>	
+	<!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+</body>
+</html>

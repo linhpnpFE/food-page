@@ -18,8 +18,8 @@
                 spaceBetween: 0,
                 loop: true,
                 loopedSlides: 16,
-                speed: 250,
-                autoplay: true,
+                speed: 300,
+               
                 autoplayDisableOnInteraction: true,
                 centeredSlides: true
             });

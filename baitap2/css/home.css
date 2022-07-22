@@ -6,23 +6,20 @@
 body {
     font-family: 'Times New Roman', Times, serif;
 }
-
-.wrap {
-    width: 100%;
-    overflow: hidden;
-}
 /* header */
 .header {
     position: relative;
     background-color: #ffe001;
-    height: 700px;
+    min-height: 700px;
 }
 .hdMenu {
     position: relative;
     right: 12%;
     display: flex;
 }
-
+.hdMenu > li > a:hover {
+    color: red;
+}
 .hdMenu>li {
     list-style: none;
     margin: 0 18px;
@@ -38,15 +35,15 @@ body {
 }
 
 .hdTitle {
-    font-size: 45px;
-    font-family: Gabelisa;
+    font-size: 40px;
+    font-family: 'Gabriela', serif;
     margin-bottom: 1rem;
 }
 
 .hdTitle2 {
     font-size: 100px;
     margin-bottom : 1rem;
-    font-family: FrederickatheGreat;
+    font-family: Fredericka the Great;
 }
 .hdTitle3 {
     font-size: 20px;
@@ -59,7 +56,15 @@ body {
     font-size: 70px;
 }
 .hdBox {
-    font-family: FrederickatheGreat;
+    font-family: Fredericka the Great;
+}
+.hdBox2 {
+    position: relative;
+    z-index: 1;
+}
+.hdBox2:hover > button {
+    color: red;
+    cursor: pointer;
 }
 .phone {
     z-index: 2;
@@ -143,8 +148,12 @@ body {
     font-size: 20px;
     text-align: center;
 }
+.row {
+    margin: 0 !important;
+}
 .ctnParent2 {
     position: relative;
+   
 }
 .ctnItem1 {
     position: absolute;
@@ -349,7 +358,7 @@ body {
 
 .mn-bt>button {
     margin: 20px 0 0 20px;
-    padding: 4px;
+    padding: 6px;
     background-color: #ffe001;
     border: black 1px solid;
     border-radius: 6px;
@@ -357,12 +366,10 @@ body {
 }
 /*footer*/
 .footer {
-    height: 500px;
 }
-
-.ft-pr>img {
-    position: absolute;
-    z-index: -2;
+.ft-pr {
+    background: url('../img/ft1.png');
+    background-size: 100%;
 }
 
 .ft-left>p {
@@ -402,7 +409,7 @@ body {
     margin: 3rem 3rem 3rem 0;
     width: 50%;
 }
-@media (min-width: 993px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     /* header */
     .hdItem2 {
         width: 680px;
@@ -420,6 +427,9 @@ body {
     }
     .hdItem6 > img {
         width: 70px;
+    }
+    .hdItem8 {
+       margin-top: -5%;
     }
     .hdTitle {
         font-size: 40px;
@@ -467,7 +477,7 @@ body {
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .ctnItem1 {
         display: none;
     }
@@ -494,6 +504,7 @@ body {
     }
     .hdItem7 {
         margin-top: 6%;
+        margin-right: 30%;
     }
     .hdItem7 > img {
         width: 40px;
@@ -572,6 +583,10 @@ body {
         padding: 8px;
     }
     /* footer */
+    .ft-pr {
+        background-position-x: 100%;
+        background-size: cover;
+    }
     .ft-left>p {
         white-space: nowrap;
         overflow: hidden;
@@ -601,9 +616,121 @@ body {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .ft-left , .hdMenu , .itemdt2 , .ctnItem1 , .hdItem6 , .hdItem7 , .hdItem8{
+        display: none;
+    }
+    .header , .ctn , .menu{
+        padding: 0 15px;
+    }
+    .hdItem2 {
+        width: 500px;
+        left: 15%;
+    }
+    .hdItem3 , .phone{
+        width: 100%;
+    }
+    .hdItem3 > img {
+        width: 200px;
+    }
+    .hdItem4 {
+        margin-left :0 !important;
+    }
+    .hdItem5 {
+        bottom: -14%;
+        left: 0;
+    }
+    .hdItem4 {
+        margin-top: 65%;
+        justify-content: center;
+        position: relative;
+    }
+    .hdTitle > h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .hdTitle2 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .hdTitle3 > p{
+        font-size: 20px;
+    }
+    .hdItem5 > img {
+        width: 100px;
+    }
+    .hdTitle4 , .hdTitle5 {
+        font-size: 22px;
+    }
+    .itemdt {
+        width: 150px;
+    }
+    .headerImg {
+        float: none;
+    }
+    .headerImg3 > img {
+        width: 100%;
+        top: 0;
+    }
+    .fl-left>img {
+        width: 25%;
+    }
+    .btnPr {
+        display: block;
+        position: relative;
+        z-index: 2;
+        float: right;
+    }
+    /* ctni */
+    .containerItem > img , .menuItem4 > img {
+        width: 300px;
+    }
+    .ctn-title {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    /* menu */
+    .menu-list {
+        grid-template-columns: 400px;
+        display: block;
+    }
+    .menuItem2 , .menuItem3 {
+        grid-column-start: 1;
+    }
+    .menuItem1 > img , .menuItem2 > img , .menuItem3 > img{
+        width: 100%;
+    }
+    .input-left , .input-right {
+        text-align: center;
+    }
+    .mn-bt>button {
+        margin: 0;
+        padding: 8px;
+    }
+    .menuItem1>h2  {
+        font-size: 24px;
+        width: 150px;
+    }
+    .menuItem1>h3 , .menuItem2 > h3 , .menuItem3 > h3{
+        font-size: 24px;
+    }
+    .menuItem2 > h2 , .menuItem3 > h2 {
+        font-size: 20px;
+    }
+    .menuItem2>h2, .menuItem3>h2  {
+        top: 40%;
+        width: 180px;
+    }
+    .in4 {
+        margin-bottom: 50px;
+    }
+    /* footer */
     .ft-left>span,
     .ft-left {
         display: none;
+    }
+    .ft-pr {
+        background-position-x: 100%; 
+        background-size: cover;
     }
     .fl-left>img {
         width: 45% !important;
@@ -617,18 +744,14 @@ body {
     .ft-right {
         width: 100% !important;
     }
-}
-
-@media (min-width: 421px) and (max-width: 575px) {
-    .ft-left{
-        display: none;
+    .mobiItem > i {
+        font-size: 40px;
     }
-    .ft-right {
-        width: 100% !important;
-    }
-    .ftMxh {
-        margin-left: 0 !important;
-        width: 30% !important;
+    .mobiItem > i > a {
+        font-size: 30px;
+        text-decoration: none;
+        margin-left: 30px;
+        color: black;
     }
 }
 
@@ -741,6 +864,10 @@ body {
         margin-bottom: 50px;
     }
     /* footer */
+    .ft-pr {
+        background-position-x: 100%; 
+        background-size: cover;
+    }
     .ft-right {
         width: 100% !important;
     }
@@ -750,5 +877,14 @@ body {
     }
     .ftItem {
         margin-right: 0 !important;
+    }
+    .mobiItem > i {
+        font-size: 40px;
+    }
+    .mobiItem > i > a {
+        font-size: 30px;
+        text-decoration: none;
+        margin-left: 30px;
+        color: black;
     }
 }

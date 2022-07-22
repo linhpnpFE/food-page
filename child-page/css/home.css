@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*ctn */
+.item1 {
+    width: 400px;
+}
+.item1-ch , .itemmid-ch , .ctn4-ch {
+    font-family: 'Cardo', serif;
+    font-weight: 600;
+}
+.item1-ch {
+    font-size: 70px;
+}
+.itemmid-ch {
+    font-size: 60px;
+}
+.ctn2-left {
+    z-index: 1;
+}
+.ctn4-ch {
+    font-size: 40px;
+    text-align: start;
+}
+.ctn4-ch2 {
+    text-align: start;
+}
+.ctnItem , .ctnItem2 {
+    position: absolute;
+}
+.ctnItem {
+    top: 25%;
+}
+.ctnItem2 {
+    top: 50%;
+}
+.ctnItem3 , .ctnItem4{
+    width: 30%
+}
+.ctnItem5 {
+    width: 40%;
+}
+.item1 {
+    text-align: center;
+}
+.item1 > button {
+    padding: 8px 30px;
+    border-radius: 6px;
+    border: 1px #ccc solid;
+    background-color: #000;
+}
+.item1 > button > span {
+    color: #fff;
+    font-weight: 800;
+}
+
+.container3 {
+    background-color: #232323;
+    position: relative;
+}
+.ctnMid {
+    color: #ffff;
+    text-align: center;
+}
+.ctnMid>button {
+    background-color: #232323;
+    padding: 6px 20px;
+    margin: 30px 0;
+    border-radius: 6px;
+    border: #ffff 2px solid;
+    border-radius: 8px;
+}
+.ctnMid>button > h3 {
+    margin: 0 ;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+}
+.ctnMid > p {
+    margin: 2rem auto;
+}
+.ctnItem4 {
+    margin-top: 15rem;
+}
+/*footer */
+.container4 {
+    margin: 6rem 0;
+}
+.ctn4Right {
+    margin-top: 15rem;
+}
+.ctn4Left > img , .ctn4Right > img {
+    width: 40px
+}
+.ft-box {
+    text-align: center;
+}
+@media (min-width: 576px) { 
+    .ctn2-left{
+        margin: 3rem 0;
+    }
+
+}
+@media (max-width: 575.98px) {
+    .ctn2-left {
+        margin: 3rem 0;
+    }
+    .ctnItem {
+        top: 20% !important;
+        width: 100% !important;
+    }
+}
+@media (max-width: 767.98px) { 
+    .ctnItem1 , .ctnItem2 , .ctnItem3 ,.ctnItem4 {
+        display: none;
+    }
+    .container3 {
+        justify-content: center;
+    }
+    
+}
+@media (max-width: 991px) { 
+    .ctnItem {
+        top: 0;
+        width: 70%;
+    }
+
+}
+
+
