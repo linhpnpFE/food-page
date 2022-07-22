@@ -4,7 +4,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: calc(62.5% * 1349/1440);
 }
 
 .container {
@@ -14,8 +14,8 @@ html {
 
 header {
     height: 14.7rem;
-    width: 144rem;
-    background: url(../img/header-logo.png) no-repeat 6.1rem 4.2rem / 25.1rem 6.3rem;
+    /* width: 144rem; */
+    background: url(/img/header-logo.png) no-repeat 6.1rem 4.2rem / 25.1rem 6.3rem;
     background-color: #e9e7e7;
     font-family: "Montserrat", sans-serif;
     position: relative;
@@ -51,7 +51,8 @@ header {
         display: none;
         position: absolute;
         top: -10.15rem;
-        left: 131.6rem;
+        /* left: 131.6rem; */
+        right: 0;
         padding: 0;
     }
 
@@ -161,8 +162,8 @@ header {
     }
 
 main {
-    width: 144rem;
-    height: 344.2rem;
+    /* width: 144rem; */
+    /* height: 344.2rem; */
     position: relative;
     background-color: #e9e7e7;
 }
@@ -170,14 +171,15 @@ main {
 main .airplace {
     width: 7.3rem;
     height: 7.4rem;
-    margin: 18.7rem 0 0 68.3rem;
+    margin: calc(187/1440 * 100%) 0 0 calc(683/1440 * 100%);
 }
 
 main .bg1 {
     width: 26.6rem;
     height: 88.4rem;
     position: absolute;
-    left: 117.4rem;
+    /* left: 117.4rem; */
+    right: 0;
     top: -0.1rem;
 }
 
@@ -185,7 +187,7 @@ main .bg2 {
     width: 42.4rem;
     height: 10.8rem;
     position: absolute;
-    left: 13.4rem;
+    left: calc(134/1440 * 100%);
     top: 61.5rem;
 }
 
@@ -197,7 +199,7 @@ main .bg2 {
         width: 77.7rem;
         height: 19.9rem;
         margin-top: 6.1rem;
-        margin-left: 33.2rem;
+        margin-left: calc(332/1440 * 100%);
     }
 
     main > ul > li {
@@ -225,7 +227,7 @@ main .bg2 {
         height: 77.6rem;
         position: absolute;
         top: 87.6rem;
-        left: 11.9rem;
+        left: calc(119/1440 * 100%);
     }
 
     main .tape {
@@ -233,7 +235,7 @@ main .bg2 {
         height: 25.4rem;
         position: absolute;
         top: 113rem;
-        left: 8.4rem;
+        left: calc(84/1440 * 100%);
     }
 
     main #carouselExampleFade {
@@ -241,7 +243,7 @@ main .bg2 {
         width: 59.9rem;
         height: 77.6rem;
         top: 87.6rem;
-        left: 72.6rem;
+        left: calc(726/1440 * 100%);
     }
     
     main #carouselExampleFade img {
@@ -301,25 +303,25 @@ main .bg2 {
     }
 
     .carousel-control-next-icon {
-        background-image: url(../img/Arrow.png);
+        background-image: url(/img/Arrow.png);
         height: 5.3rem;
         width: 13.9rem;
     }
 
     .main-black {
-        width: 144rem;
+        /* width: 144rem; */
         height: 87.2rem;
         margin-top: 107.2rem;
-        background: url(../img/main-3.png) no-repeat 68.3rem 15.5rem / 75.7rem 56.2rem,
-                    url(../img/background-3.png) no-repeat -17.7rem 73.8rem / 52.3rem 14.4rem;
+        background: url(/img/main-3.png) no-repeat 68.3rem 15.5rem / 75.7rem 56.2rem,
+                    url(/img/background-3.png) no-repeat -17.7rem 73.8rem / 52.3rem 14.4rem;
         background-color: #232323;
         color: white;
         position: relative;
     }
 
     .text-left {
-        width: 45.3rem;
-        height: 56.2rem;
+        width: calc(453/1440 * 100%);
+        /* height: 56.2rem; */
         padding-top: 15.5rem;
         margin-left: 11.8rem;
     }
@@ -356,9 +358,17 @@ main .bg2 {
     }
 
     .main-end {
-        width: 144rem;
+        position: relative;
         height: 87rem;
-        background: url(../img/main-4.png) no-repeat 92.5rem 0 / 39rem 51.6rem;
+        /* background: url(/img/main-4.png) no-repeat 92.5rem 0 / 39rem 51.6rem; */
+    }
+
+    .main-4 {
+        position: absolute;
+        top: 0;
+        left: calc(925/1440 * 100%);
+        width: 39rem;
+        height: 51.6rem;
     }
 
     .title-main-end {
@@ -383,7 +393,7 @@ main .bg2 {
     }
     
     .accordion-button::after {
-        background-image: url(../img/+.png);
+        background-image: url(/img/+.png);
     }
 
     .accordion-header button {
@@ -394,14 +404,100 @@ main .bg2 {
     }
 
     /* @media only screen and (min-width: 375px) {
-       
+        html {
+            font-size: calc(62.5% * 375/1440);
+        }
+        .flex-column,
+        .iP,
+        .justify-content-end {
+            display: none;
+        }
+        
+        .nav__bars-btn {
+            display: block;
+        }
+
+        .justify-content-end {
+            width: 50%;
+            top: 12.8rem;
+            left: 66.2rem;
+        }
+        main .airplace {
+            width: 15rem;
+            height: 15.1rem;
+        }
+        h1 {
+            font-size: 15rem;
+            text-align: center;
+        }
+
+        main > ul > li {
+            font-size: 25px;
+        }
+
+        main .justify-content-center {
+            margin-top: 40rem;
+        }
+
+        main .main-1 {
+            width: 100%;
+            height: auto;
+            top: 140rem;
+            left: 0;
+        }
+
+        main #carouselExampleFade {
+            top: 330rem;
+            left: 0;
+            width: 100%;
+            height: 464px;
+        }
+
+        main #carouselExampleFade img {
+            width: 100%;
+            height: auto;
+        }
+
+        main #carouselExampleFade .carousel-item {
+            grid-template-areas: 
+                "img"
+                "text-1"
+                "text-2"
+                "text-3";
+        }
+        main #carouselExampleFade .carousel-item .text-1 {
+            font-size: 20px;
+            line-height: 1.3;
+            width: 100%;
+            text-align: center;
+        }
+
+        main #carouselExampleFade .carousel-item .text-2,
+        main #carouselExampleFade .carousel-item .text-3 {
+            
+        }
+        
+        .main-black {
+            margin-top: 500rem;
+        }
+        h4 {
+            width: 45.3rem;
+            font-size: 2.5rem;
+        }
+
+        .justify-content-end .nav-link,
+        main #carouselExampleFade .carousel-item .text-2,
+        main #carouselExampleFade .carousel-item .text-3,
+        .accordion-button, 
+        .accordion-body {
+            font-size: 2rem;
+        }
     } */
 
-    @media only screen and (min-width: 768px) {
+    @media screen  and (min-width: 768px) {
         html {
             font-size: calc(62.5% * 768/1440);
         }
-
         .flex-column,
         .iP,
         .justify-content-end {
@@ -424,8 +520,7 @@ main .bg2 {
 
         main #carouselExampleFade .carousel-item .text-3 {
             margin-top: 0;
-        }
-
+        } 
         h4 {
             width: 45.3rem;
             font-size: 2.5rem;
@@ -434,19 +529,98 @@ main .bg2 {
         .justify-content-end .nav-link,
         main #carouselExampleFade .carousel-item .text-2,
         main #carouselExampleFade .carousel-item .text-3,
-        .text-left p,
         .accordion-button, 
         .accordion-body {
             font-size: 2rem;
         }
-        
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media screen  and (min-width: 992px) {
         html {
-            font-size: calc(62.5% * 1349/1440);
+            font-size: calc(62.5% * 992/1440);
+        }
+        .flex-column,
+        .iP,
+        .justify-content-end {
+            display: none;
+        }
+        
+        .nav__bars-btn {
+            display: block;
         }
 
+        .justify-content-end {
+            width: 50%;
+            top: 12.8rem;
+            left: 66.2rem;
+        }
+
+        main #carouselExampleFade .carousel-item .text-1 {
+            line-height: 1.3;
+        }
+
+        main #carouselExampleFade .carousel-item .text-3 {
+            margin-top: 0;
+        } 
+        h4 {
+            width: 45.3rem;
+            font-size: 2.5rem;
+        }
+
+        .justify-content-end .nav-link,
+        main #carouselExampleFade .carousel-item .text-2,
+        main #carouselExampleFade .carousel-item .text-3,
+        .accordion-button, 
+        .accordion-body {
+            font-size: 2rem;
+        }
+    }
+
+    @media screen  and (min-width: 1024px) {
+        html {
+            font-size: calc(62.5% * 1024/1440);
+        }
+        .flex-column,
+        .iP,
+        .justify-content-end {
+            display: none;
+        }
+        
+        .nav__bars-btn {
+            display: block;
+        }
+
+        .justify-content-end {
+            width: 50%;
+            top: 12.8rem;
+            left: 66.2rem;
+        }
+
+        main #carouselExampleFade .carousel-item .text-1 {
+            line-height: 1.3;
+        }
+
+        main #carouselExampleFade .carousel-item .text-3 {
+            margin-top: 0;
+        } 
+        h4 {
+            width: 45.3rem;
+            font-size: 2.5rem;
+        }
+
+        .justify-content-end .nav-link,
+        main #carouselExampleFade .carousel-item .text-2,
+        main #carouselExampleFade .carousel-item .text-3,
+        .accordion-button, 
+        .accordion-body {
+            font-size: 2rem;
+        }
+    }
+
+    @media screen and (min-width: 1103px) {
+        html {
+            font-size: calc(62.5% * 1103/1440);
+        }
         .iP {
             display: block;
         }
@@ -461,5 +635,58 @@ main .bg2 {
         }
     }
 
+    @media screen and (min-width: 1349px) {
+        html {
+            font-size: calc(62.5% * 1349/1440);
+        }
+        .iP {
+            display: block;
+        }
+
+        .flex-column,
+        .justify-content-end {
+            display: flex;
+        }
+
+        .nav__bars-btn {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1663px) {
+        html {
+            font-size: calc(62.5% * 1663/1440);
+        }
+        .iP {
+            display: block;
+        }
+
+        .flex-column,
+        .justify-content-end {
+            display: flex;
+        }
+
+        .nav__bars-btn {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1903px) {
+        html {
+            font-size: calc(62.5% * 1903/1440);
+        }
+        .iP {
+            display: block;
+        }
+
+        .flex-column,
+        .justify-content-end {
+            display: flex;
+        }
+
+        .nav__bars-btn {
+            display: none;
+        }
+    }
     
 
