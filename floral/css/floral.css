@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-image: url(/floral/img_and_fonts/image/Texture.png);
+}
+.header{
+    background-color: #c87e6b;
+    height: 100px;
+}
+.flower-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.flower-logo > img{
+    width: 150px;
+    height: 45px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.nav-bar .nav-bar-list {
+    display: inline-block;
+}
+.nav-bar .nav-bar-list li{
+    display: inline-block;
+    position: relative;
+}
+.nav-bar-list .sign_in{
+    height: 50px;
+    border: 2px solid white;
+}
+.nav-bar .nav-bar-list a{
+    line-height: 100px;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-bar .nav-bar-list{
+    list-style-type: none;
+}
+.user-icon{
+    display: flex;
+    flex-direction: row;   
+    justify-content: flex-end; 
+}
+.icon-user, .icon-shopping{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-user i, .icon-shopping i{
+    font-size: 20px;
+    color: #fff;
+}
+.icon-shopping{
+    padding: 0 30px;
+}
+.flower-arrange-banner{
+    height: auto;
+}
+.flower-arrange-banner .col-left{
+    min-height: 756px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #e3e0d6;
+    padding-left: 0;
+    padding-right: 0;
+}
+.col-left .decor-leaf-flower{
+    display: flex;
+    justify-content: end;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 50px;
+}
+.text-contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-contain li{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: rgb(118, 90, 51);
+    font-size: 25.3px;
+}
+.text-contain p{
+    text-align: justify;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Josefin Slab', serif;
+    color: rgb(118, 90, 51);
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.flower-arrange-banner .col-left h2{
+    margin-bottom: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(72, 74, 75);
+    padding-bottom: 20px;
+}
+.decor-leaf-flower-bottom-left > img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.flower-arrange-banner .col-right{
+    padding-left: 0;
+    padding-right: 0;
+}
+.flower-arrange-banner .col-right > img{
+    width: 100%;
+    height: 100%;
+}
+.sales{
+    background-color: #765a33;
+    min-height: 265px;
+}
+.sales .number-run h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.sales .package-sold{
+    color: #fff;
+}
+.our-top-product-content{
+    background-color: #e5e2d8;
+    min-height: 1045px;
+}
+.how-we-do-it-content{
+
+}
+.special-sale-off{
+
+}
+.intro-product-best-flower{
+
+}
+.intro-take-care-details{
+
+}
+.intro-love-what-we-do{
+
+}
+.form-subcribe{
+
+}
+.footer{
+
+}

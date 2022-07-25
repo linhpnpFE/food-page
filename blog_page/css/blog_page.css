@@ -34,6 +34,10 @@
     position: relative;
     padding-top: 90px;
 }
+.image-spectacle .image-natural > img {
+    width: 650px;
+    height: auto;
+}
 .image-spectacle .scribble-black .scribble-dark{
     position: absolute;
     bottom: 0;
@@ -63,11 +67,13 @@
     height: 56px;
     border-radius: 5px;
 }
-.book-btn:hover{
-    background-color: #fff;
-    color: black;
-    cursor: pointer;
-    border: 3px solid #000;
+
+.book-btn a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    font-size: 21px;
 }
 .travel_logs{
     width: 100%;
@@ -96,19 +102,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     border: 3px solid #fff;
     border-radius: 5px;
 }
-.travel-log-btn:hover{
-    background-color: #fff;
-    color: black;
-    cursor: pointer;
-}
-.travel-log-btn h4{
+.travel-log-btn a{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
+    color: #fff;
     margin-bottom: 0;
+    text-decoration: none;
+    font-size: 21px;
 }
 .travel-logs-heading-desc{
     display: flex;
@@ -125,7 +128,7 @@
     padding: 0 23px;
 }
 .sec-3-place-lists{
-    padding-top: 144px;
+    padding-top: 50px;
 }
 .place_lists .scribble-dark-3 > img{
     position: absolute;
@@ -203,7 +206,7 @@
         text-align: center; 
     }
     .section-1{
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
     .image-desc-sec-3{
         align-items: center;
@@ -232,13 +235,25 @@
     .place_lists .image-desc-sec-3{
         padding-bottom: 50px;
     }
-}    
+} 
+@media (max-width: 500px){
+    .travel_logs .travel-logs-heading-desc p{
+        padding: 0 30px;
+        text-align: center;
+    }   
+}   
 @media (max-width: 480px){
     .scribble-dark-3{
         display: none;
     }
     .scribble-dark-4{
         display: none;
+    }
+}
+@media (max-width: 454px){
+    .travel_logs .travel-logs-heading-desc h3{
+        /* padding: 0 10px; */
+        font-size: 45px;
     }
 }
 @media (max-width: 414px){
