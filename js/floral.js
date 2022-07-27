@@ -1,3 +1,17 @@
+
+const click_sidebar = document.querySelector(".js-open-sidebar");
+const sidebar_overlay = document.querySelector(".js-sidebar-overlay");
+const close_sidebar = document.querySelector(".js-sidebar-close");
+function showSidebar() {
+  sidebar_overlay.classList.add("open");
+}
+
+function hideSidebar() {
+  sidebar_overlay.classList.remove("open");
+}
+click_sidebar.addEventListener("click", showSidebar);
+close_sidebar.addEventListener("click", hideSidebar);
+
 function animateNumber(finalNumber, delay, startNumber = 0, callback) {
     let currentNumber = startNumber
     const interval = window.setInterval(updateNumber, delay)
