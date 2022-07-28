@@ -31,17 +31,17 @@ function animateNumber(finalNumber, delay, startNumber = 0, callback) {
       document.getElementById('package-sold-number').innerText = formattedNumber
     })
     
-    animateNumber(5000, 10, 0, function (number) {
+    animateNumber(5000, 5, 0, function (number) {
       const formattedNumber = number.toLocaleString()
       document.getElementById('bouquet-sold-number').innerText = formattedNumber
     })
     
-    animateNumber(7000, 10, 0, function (number) {
+    animateNumber(7000, 3, 0, function (number) {
       const formattedNumber = number.toLocaleString()
       document.getElementById('happy-clients-number').innerText = formattedNumber
     })
 
-    animateNumber(10, 500, 0, function (number) {
+    animateNumber(10, 3000, 0, function (number) {
       const formattedNumber = number.toLocaleString()
       document.getElementById('year-of-exp-number').innerText = formattedNumber
     })
