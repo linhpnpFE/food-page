@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-}
-body{
+}body{
     background-image: url(/floral/img_and_fonts/image/Texture.png);
 }
 .header{
@@ -24,12 +23,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-}
+    height: 100%;}
 .nav-bar .nav-bar-list {
-    display: inline-block;
-    margin-bottom: 0;
-    padding-left: 0;
+    display: inline-block;margin-bottom: 0;padding-left: 0;
 }
 .nav-bar .nav-bar-list li{
     display: inline-block;
@@ -58,13 +54,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 20px;
 }
 .icon-user i, .icon-shopping i{
     font-size: 20px;
     color: #fff;
-}
-.icon-shopping{
-    padding: 0 20px;
 }
 .sidebar-btn{
     display: none;
@@ -879,13 +873,13 @@ body{
         width: 20%;
         height: 15%;
         position: absolute;
-        top: 22%;
+        top: 18%;
         left: 8%;
     }
     .image-take-care-detail .box-brown-take-care-detail {
         width: 40%;
         height: 30%;
-        bottom: 22%;
+        bottom: 18%;
         right: 8%;
     }
     .text-best-flower h2{
