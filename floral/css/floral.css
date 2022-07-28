@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     border: 0;
+<<<<<<< HEAD
 }body{
+=======
+}
+body{
+>>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
     background-image: url(/floral/img_and_fonts/image/Texture.png);
 }
 .header{
@@ -23,9 +28,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     height: 100%;}
 .nav-bar .nav-bar-list {
     display: inline-block;margin-bottom: 0;padding-left: 0;
+=======
+    height: 100%;
+}
+.nav-bar .nav-bar-list {
+    display: inline-block;
+    margin-bottom: 0;
+    padding-left: 0;
+>>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
 }
 .nav-bar .nav-bar-list li{
     display: inline-block;
@@ -54,12 +68,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     padding: 0 20px;
+=======
+>>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
 }
 .icon-user i, .icon-shopping i{
     font-size: 20px;
     color: #fff;
 }
+<<<<<<< HEAD
 .sidebar-btn{
     display: none;
     align-items: center;
@@ -127,6 +145,10 @@
 }
 .sidebar-close, .sidebar-close .nav_list li{
     cursor: pointer;
+=======
+.icon-shopping{
+    padding: 0 30px;
+>>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
 }
 .flower-arrange-banner{
     height: auto;
@@ -139,6 +161,7 @@
     background-color: #e3e0d6;
     padding-left: 0;
     padding-right: 0;
+<<<<<<< HEAD
     padding-bottom: 50px;
 }
 .flower-arr-choose{
@@ -178,6 +201,8 @@
     text-transform: uppercase;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
+=======
+>>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
 }
 .col-left .decor-leaf-flower{
     display: flex;
@@ -203,7 +228,13 @@
     font-family: 'Josefin Slab', serif;
     color: rgb(118, 90, 51);
     margin-bottom: 0;
+<<<<<<< HEAD
     padding: 15px 150px 50px;
+=======
+    padding-top: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
+>>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
 }
 .flower-arrange-banner .col-left h2{
     margin-bottom: 0;
@@ -218,12 +249,18 @@
 }
 .decor-leaf-flower-bottom-left > img{
     position: absolute;
+<<<<<<< HEAD
     object-fit: contain;
+=======
+>>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
     bottom: 0;
     left: 0;
 }
 .flower-arrange-banner .col-right{
+<<<<<<< HEAD
     background-color: #e4e1d7;
+=======
+>>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
     padding-left: 0;
     padding-right: 0;
 }
@@ -233,7 +270,10 @@
     object-fit: cover;
 }
 .sales{
+<<<<<<< HEAD
     padding: 50px 0;
+=======
+>>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
     background-color: #765a33;
     min-height: 270px;
 }
@@ -254,6 +294,7 @@
     margin-bottom: 0;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
+<<<<<<< HEAD
     text-align: center;
 }
 .our-top-product-content{
@@ -659,6 +700,24 @@
     width: 85%;
     height: 100%;
     object-fit: contain;
+=======
+}
+.our-top-product-content{
+    background-color: #e5e2d8;
+    min-height: 1045px;
+}
+.how-we-do-it-content{
+
+}
+.special-sale-off{
+
+}
+.intro-product-best-flower{
+
+}
+.intro-take-care-details{
+
+>>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
 }
 .intro-love-what-we-do{
 
@@ -668,6 +727,7 @@
 }
 .footer{
 
+<<<<<<< HEAD
 }
 /* @media (max-width: 1440px) and (min-width: 768px){
     .how-we-do-it-content{
@@ -903,3 +963,6 @@
         line-height: 25px;
     }
 }
+=======
+}
+>>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
