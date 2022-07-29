@@ -13,6 +13,11 @@ $(document).ready(function() {
         }
     });
 
+    $(".fa-play-circle").click(function() {
+        $(".fa-play-circle").hide();
+        $(".aboutus_pic").trigger('play');
+    })
+
 })
 
 $(function(){
