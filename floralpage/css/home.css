@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: MontserratAlternates , serif;
 }
 .headerMenu {
 	background-color: #c87e6b;
@@ -68,9 +68,12 @@ body {
 	z-index: -1;
 	
 }
+.imgParent2 {
+	max-height: 2400px;
+}
 /* headerFooter */
 .headerFooter {
-	background-color: #765a33;
+	background: url('../img/ctn30.png');
 }
 .headerItem {
 	text-align: center;
@@ -86,6 +89,8 @@ body {
 }
 .item6 {
 	color: #765a33;
+	font-family: MontserratAlternates;
+	font-weight: 600;
 }
 .item7 {
 	color: #765a33;	
@@ -93,25 +98,41 @@ body {
 .item8 , .item9 {
 	list-style: none;
 }
-.item8 > a {
+.click-hd {
 	text-decoration: none;
-	color: #fff;
+	color: #787878;
+}
+.active {
+	text-decoration: none;
+	color: #fff !important;
 	padding: 4px 20px;
 	border-radius: 12px;
 	background-color: #787878;
 }
-.item8 > a:hover {
-	background-color: #292626;
-	color: #fff;
-}
-.item9 > a {
+.click-hd2 {
 	text-decoration: none;
 	color: #787878;
 }
-.item9 > a:hover {
-	color: #292626;
+.click-hd2:hover {
+	opacity: 0.8;
+	color: #787878;
+}
+.click-hd:hover {
+	opacity: 0.8;
+	color: #787878;
 }
 /* container */
+.ctnvideo2 {
+	display: none;
+}
+.ctnvideo-click {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 60px;
+	color: #fff;
+	cursor: pointer;
+}
 .containerItem , .containerItem2 , .containerItem3{
 	text-align: center;
 	font-family: PlayfairDisplay;
@@ -144,7 +165,6 @@ body {
 	margin: 15px 15px 0 0;
 }
 .containerItem4 {
-	width: 570px !important;
 	position: absolute;
     right: -3%;
     top: -6%;
@@ -154,7 +174,6 @@ body {
 	width: 1100px !important;
 }
 .containerItem6 {
-	width: 290px !important;
 	position: absolute;
     bottom: -6%;
     left: -3%;
@@ -202,8 +221,6 @@ body {
 	width: 50%
 }
 .ctnBanner-item5 {
-	font-size: 160px;
-    line-height: 140px;
     font-weight: 600;
     font-family: MontserratAlternates;
     color: #424242;
@@ -214,9 +231,20 @@ body {
 .ctnBanner-item7 {
 	font-family: MontserratAlternates;
 	color: #424242;
-	font-size: 26px;
 }
 /* container2 */
+
+.ctnItem1 {
+	margin: 10px 10px 0 0;
+}
+.ctnItem1 > i {
+	font-size: 20px;
+	color: #e8a9a9;
+}
+.containerItem2:hover .item-heart {
+	transition: 3s;
+	color: red;
+}
 .ctn2-item {
 	width: 500px;
 }
@@ -254,6 +282,10 @@ body {
 	border: none;
 	border-radius: 20px;
 }
+.ctn2-item8:hover {
+	opacity: 0.8;
+	transition: 1s;
+}
 .ctn2-item9 {
 	color: #fff;
 }
@@ -265,13 +297,10 @@ body {
 	width: 500px;
 }
 .ctn3-item2 {
-	left: -20px;
-    top: -20px;
+	width: 200px;
     z-index: -1
 }
 .ctn3-item3 {
-	top: 280px;
-    right: -30px;
     z-index: -1;
     width: 200px;
 }
@@ -295,7 +324,7 @@ body {
 .ctn5-item3 {
 	font-family: JosefinSlab;
 	color: #484a4b;
-	font-size: 18px;
+	font-size: 16px;
 }
 .ctn5-item4 {
 	width: 800px !important;
@@ -312,17 +341,22 @@ body {
 	border-radius: 20px;
 	border: none;
 }
+.ctn5-item6:hover {
+	background-color: #c85234;
+	transition: 1s;
+}
 .ctn5-item7 {
 	color: #fff;
 	font-family: MontserratAlternates;
 	font-weight: 600;
 }
+
 /* footer */
 .footer {
 	background-color: #424242;
 }
 .ftItem > h3 , .ftMxh-item2 {
-	font-family: MontserratAlternates;
+	font-family: Montserrat  Alternates;
 	color: #fff;
 	font-weight: 600;
 }
@@ -336,18 +370,23 @@ body {
 .ftItem > li > a {
 	text-decoration: none;
 	color: #fff;
-	font-family: Myriad;
+	font-family: Montserrat Alternates;
 }
-.footerMxh {
-	font-size: 28px;	
+.ft-item7 , .ft-item8{
+	width: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.mxhItem , .mxhItem2 , .mxhItem3 {
-	color: #fff;
+.ft-item8 {
+	width: 22px;
+}
+.ftMxh-item2 {
+	line-height: 50px;
 }
 /* swiper */
-.swiper-slide {
-	
-}
+
 .swiper-slide > img{
 	width: 100%;
 }
@@ -363,6 +402,96 @@ body {
 .swiper-button-prev {
 	left: -30px !important;
 }
+@media (max-width: 280px) {
+	.midHeader , .ctnhd-item , .item3{
+		display: none !important;
+	}
+	.item2 {
+	    font-size: 25px;
+	}
+	.containerItem3 > h2 {
+		font-size: 50px;	
+	}
+	.ctnvideo2 {
+		height: 300px !important;
+	}
+	.leftHeader , .topHeader {
+		width: 50% !important;
+	}
+	.leftHeader > img {
+		width: 100%;
+	}
+	.item4 {
+		margin-top: 0;
+	}
+	.hdBox {
+		width: 100%
+	}
+	.item5 {
+		font-size: 36px;
+	}
+	/* container3 */
+	.containerItem7 , .containerItem8 , .containerItem6 , .containerItem4 ,
+	.ctn2-item2 , .ctn2-item3  , .ctn2-item10 , .ctn3-item2 , .ctn3-item3 , .ctn4-item2 , .ctn4-item3{
+		display: none;
+	}
+	.row {
+		--bs-gutter-x: 0 !important; {
+			font-size: 40px;	
+		}
+	}
+	.ctnBanner-item5 {
+		font-size: 70px;
+	}
+	.ctnBanner-item3 {
+		width: 50px;
+	}
+	/* container2 */
+	.ctn2-item4  {
+		display: flex;
+	}
+	.ctn2-item5 , .ctn2-item6{
+		text-align: center;
+	}
+	.ctn2-item7 {
+		width: 100%;
+	}
+	.ctn2-item11 {
+		justify-content: center;
+		display: flex;
+	}
+	.ctn2-item12 {
+		width: 70px !important;
+	}
+	.ctn5-item4 {
+		width: 100% !important;
+	}
+	.containerBottom {
+	    padding-bottom: 50px;
+	}
+	.ctnBanner-item {
+		margin: 20px 0;
+	}
+	.click-hd2 {
+		font-size: 13px;
+	}
+	/* footer */
+	.ftMxh-item2 {
+		width: 100%;
+		margin : 0;
+		font-size: 30px
+	}
+	.ftMxh-item3 {
+		margin: 0 8px;
+	}
+	.ftMxh-item4 {
+		display: none;
+	}
+	.ftMxh-item {
+		width: 100%;
+    	justify-content: center;
+	}
+}
 @media (min-width: 320px) {
 	.midHeader {
 		display: none;
@@ -377,7 +506,7 @@ body {
 		width: 100%
 	}
 	.item5 {
-		font-size: 30px;
+		font-size: 36px;
 	}
 	/* container3 */
 	.containerItem7 , .containerItem8 , .containerItem6 , .containerItem4 ,
@@ -413,6 +542,12 @@ body {
 	.ctn5-item4 {
 		width: 100% !important;
 	}
+	.ctnBanner-item {
+		margin: 30px 0;
+	}
+	.ctnvideo2 {
+		height: 400px !important;
+	}
 	/* footer */
 	.ftMxh-item2 {
 		width: 100%;
@@ -424,8 +559,26 @@ body {
 	}
 }
 @media (min-width: 768px) {
-	.containerItem4 , .containerItem6  , .ctn2-item2 , .ctn2-item3{
-		display: block;
+	/* hd */
+	.item5 {
+	    font-size: 60px;
+	}
+	.item6 {
+		font-size: 26px;
+	}
+	/* container */
+	.containerItem4 {
+		width: 350px;
+	}
+	.containerItem6 {
+		width: 220px;
+	}
+	.ctn3-item2 {
+	    left: -10px;
+	}
+	.ctn3-item3 {
+	    top: 250px;
+	    right: -15px;
 	}
 	.ctn2-item12 {
 		display: none;
@@ -444,6 +597,17 @@ body {
 	    z-index: -1;
 	    width: 200px;
 	}
+	.ctn3-item2 {
+	    left: -10px;
+	    top: -20px;
+	}
+	.ctn3-item3 {
+	    top: 250px;
+	    right: -15px;
+	}
+	.ctnBanner-item {
+		margin: 0;
+	}
 	/* footer */
 	.ftItem > h3 {
 	    font-size: 30px;
@@ -461,6 +625,10 @@ body {
 	.ctnBanner-item8 {
 		width: 45px !important;
 	}
+	.righthd-item1 {
+		width: 600px;
+	}
+
 }
 @media (min-width: 992px) {
 	/* header */
@@ -478,12 +646,19 @@ body {
 		width: 25% !important;
 	}
 	.item5 {
-	    font-size: 50px;
+	    font-size: 60px;
 	    margin-top: 50px !important
 	}
 	.item7 {
 		font-size: 18px;
     	text-align: start;
+	}
+	.item13 {
+		bottom: -5%;
+		width: 80px;
+	}
+	.righthd-item1 {
+	    width: 100%;
 	}
 	/* main */
 	.ctnBanner-item5 {
@@ -506,6 +681,14 @@ body {
 	    z-index: -1;
 	    width: 200px;
 	}
+	.ctn3-item2 {
+	    left: -20px;
+	    top: -20px;
+	}
+	.ctn3-item3 {
+	    top: 270px;
+	    right: -20px;
+	}
 	/* footer */
 	.footerMxh {
 		justify-content: end;
@@ -519,12 +702,77 @@ body {
 	.ctn2-item12 {
 		width: 100px;
 	}
+	.ctnvideo2 {
+		height: 600px !important;
+	}
 }
 @media (min-width: 1200px ) {
 	/* header */ 
 	.item5 {
-		margin-top: 100px !important;
 		font-size : 80px;
+	}
+	.item7 {
+		display: flex;
+		justify-content: center;
+		font-size: 22px;
+	}
+	.item13 {
+		bottom: -5%;
+		width: 100px;
+	}
+	.righthd-item1 {
+		width: 100%;
+	}
+	/* container */
+	.ctn3-item2 {
+	    left: -20px;
+	    top: -20px;
+	}
+	.ctn3-item3 {
+	    top: 270px;
+	    right: -20px;
+	}
+	.ctn5-item4 {
+	    width: 1100px !important;
+	}
+	.containerItem4 {
+		right: -30px;
+    	top: -30px;
+	}
+	.containerItem6 {
+		bottom: -25px;
+   		left: -30px;
+	}
+	/* footer */
+	.ftItem > h3 {
+    	font-size: 45px;
+	}
+	.ftMxh-item2 {
+		text-align: end;
+		line-height: 50px;
+	}
+	.ctn2-item5, .ctn2-item6 {
+	    text-align: start;
+	}
+	.ctn2-item11 {
+	    justify-content: start;
+	}
+	.ctn2-item4 {
+		justify-content: start;
+	}
+	.ctn3-title {
+		display: grid;
+		justify-content: end;
+	}
+	.ctnBanner-item5 {
+		font-size: 160px;
+    	line-height: 140px;
+	}
+	.ctnBanner-item7 {
+		font-size: 30px;
+	}
+	.ctn5-item3 {
+	    font-size: 20px;
 	}
 }
 

@@ -17,13 +17,8 @@ body {
     text-align: center;
 }
 .hdItem >h2 {
-<<<<<<< HEAD
     font-family: Cardo;
     font-size: 80px;
-=======
-    font-family: 'Cardo', serif;
-    font-size: 44px;
->>>>>>> 24b3963be1c7e54f56bb1fa8c94514859069c832
     font-weight: 600;
 }
 .hdItem >h2 > a {
@@ -39,9 +34,17 @@ body {
 .hdItem4:hover {
     color: red;
 }
+.dropdown-menu {
+    width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 30px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
 /*container*/
 .row {
-    margin: 0 !important;
+    --bs-gutter-x: 0 !important;
 }
 .ctn {
     padding-top: 100px;
@@ -70,22 +73,22 @@ body {
 }
 
 /*container2*/
+.row  {
+    padding-right: 0 !important;
+}
 .container2 {
     background-color: black;
     margin-top: 50px;
 }
 
 .ctn2-group {
-    padding: 100px 100px 50px 100px;
-}
-
-.ctn2-left {
-    width: 400px;
+    padding: 100px 0 50px 0;
 }
 
 .ctn2-item {
     color: #ffff;
     margin-bottom: 20px;
+    width: 400px;
 }
 
 .ctn2-item>h1 {
@@ -114,17 +117,18 @@ body {
 }
 .ctnItem1 {
     margin-bottom: 50px;
-    font-size: 70px;
+    font-size: 65px;
     font-weight: 600;
-    font-family: 'Cardo', serif;
+    font-family: Cardo;
 }
 
 .containerItem {
     padding: 20px;
-    font-size: 16px;
-    border-top: black 1px solid;
-    border-bottom: black 1px solid;
-    width: 650px;
+    font-size: 18px;
+    border-bottom: black 2px solid;
+}
+.ctnItem2 {
+    border-top: black 2px solid;
 }
 .dropdown {
     display: contents;
@@ -174,8 +178,52 @@ body {
     .ftItem1 > h2 {
         text-align: center;
     }
+    .dropdown-menu {
+        width: 100%;
+    }
+    .ctn2-item {
+        width: 100%;
+    }
+    
 }
-
+@media (min-width: 320px) {
+    .ctn2-right {
+        justify-content: center;
+    }
+}
+@media (min-width: 768px) {
+    .ctn2-item2 {
+        width: 400px;
+    }
+    .ctn1-item1 {
+        width: 400px;
+    }
+    .ctn1-item {
+        justify-content: center;
+    }
+}
+@media (min-width: 992px) {
+    .ctnItem1 {
+        font-size: 55px;
+    }
+    .ctn2-right {
+        justify-content: end;
+    }
+    .ctn2-item2 {
+        width: 100%;
+    }
+    .ctn1-item1 {
+        width: 100%;
+    }
+    .ctnright-item2 {
+        width: 400px;
+    }
+}
+@media (min-width: 1200px) {
+    .ctnItem1 {
+        font-size: 65px;
+    }
+}
 
 
 

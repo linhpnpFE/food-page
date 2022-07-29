@@ -11,32 +11,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css2/home.css">
-    <link rel="stylesheet" href="css1/home1.css">
+    <link rel="stylesheet" href="cssmain/home.css">
+    <link rel="stylesheet" href="contactcss/home1.css">
 </head>
 
 <body>
     <header>
         <div class="headerItem position-relative">
-            <div class="d-flex justify-content-center w-100 mb-lg-3 py-2 headerItem2">
-                <div class="hdItem2 me-lg-3">
-                    <img class="imgItem" src="img/hd8.png" alt="">
-                </div>
-                <div class="hdItem3 ms-lg-4">
-                    <img class="imgItem2" src="img/hd9.png">
-                </div>
-            </div>
-            <button class="btnPr btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars"></i>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h3 id="offcanvasRightLabel">MENU</h3>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="mobiItem m-5"><i class="fas fa-home"><a class="hdItem5" href="#">HOME</a></i></div>
-                    <div class="mobiItem m-5"><i class="fas fa-bell"><a class="hdItem5" href="#">ODER</a></i></div>
-                    <div class="mobiItem m-5"><i class="fas fa-phone-square-alt"><a class="hdItem5" href="#">1800 258 888</a></i></div>
+            <div class="headerItem position-relative">
+                <div class="d-flex py-2 headerItem2">
+                    <div class="hdItem2  justify-content-start col-sm-6">
+                        <img class="imgItem" src="img/hd8.png" width="100%">
+                    </div>
+                    <div class="hdItem3 justify-content-end col-sm-6">
+                        <img class="imgItem2" src="img/hd9.png">
+                    </div>
+                    <button class="btnPr btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h3 id="offcanvasRightLabel">MENU</h3>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="mobiItem m-5"><i class="fas fa-home"><a class="hdItem5" href="#">HOME</a></i></div>
+                            <div class="mobiItem m-5"><i class="fas fa-bell"><a class="hdItem5" href="#">ODER</a></i></div>
+                            <div class="mobiItem m-5"><i class="fas fa-phone-square-alt"><a class="hdItem5" href="#">1800 258 888</a></i></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,7 +46,7 @@
     <main>
         <div class="my-5">
             <div class="d-flex mb-5">
-                <div class="ctnleft"><img src="img1/hd1.png" width="70%"></div>
+                <div class="ctnleft d-none d-lg-block"><img src="img1/hd1.png" width="70%"></div>
                 <div class="ctnright"><h1 class="d-flex justify-content-center ctnright-item">Here’s what they <br>have to say...</h1></div>
             </div>
             <div class="container position-relative px-4">
@@ -52,7 +54,11 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide ctnBox my-4">
                             <div class="boxItem p-4 border border-dark">
-                                <div class="slideImg"></div>
+                               <div class="d-flex justify-content-center">
+                                    <div class="slideImg"> 
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYTL1LWrSmZUM5C8eCDNYBNqfWWP3kmJBRTg&usqp=CAU" width="100%"> 
+                                    </div>
+                               </div>
                                 <div class="title-box">
                                     <h3 class="my-5 slideTitle">Customer Name</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua.</p>
@@ -61,7 +67,9 @@
                         </div>
                         <div class="swiper-slide ctnBox my-4">
                             <div class="boxItem p-4 border border-dark">
-                                <div class="slideImg"></div>
+                                <div>
+                                    <img class="slideImg" src="" width="100%">
+                                </div>
                                 <div class="title-box">
                                     <h3 class="my-5 slideTitle">Customer Name</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua.</p>
@@ -70,7 +78,9 @@
                         </div>
                         <div class="swiper-slide ctnBox my-4">
                             <div class="boxItem p-4 border border-dark">
-                                <div class="slideImg"></div>
+                                <div>
+                                    <img class="slideImg" src="" width="100%">
+                                </div>
                                 <div class="title-box">
                                     <h3 class="my-5 slideTitle">Customer Name</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua.</p>
@@ -79,7 +89,9 @@
                         </div>
                         <div class="swiper-slide ctnBox my-4">
                             <div class="boxItem p-4 border border-dark">
-                                <div class="slideImg"></div>
+                                <div>
+                                    <img class="slideImg" src="" width="100%">
+                                </div>
                                 <div class="title-box">
                                     <h3 class="my-5 slideTitle">Customer Name</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua.</p>
@@ -88,7 +100,9 @@
                         </div>
                         <div class="swiper-slide ctnBox my-4">
                             <div class="boxItem p-4 border border-dark">
-                                <div class="slideImg"></div>
+                                <div>
+                                    <img class="slideImg" src="" width="100%">
+                                </div>
                                 <div class="title-box">
                                     <h3 class="my-5 slideTitle">Customer Name</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua.</p>
@@ -121,16 +135,16 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="ft-pr">
-            <div class="ftHeader">
-                <img class="my-5 ms-5" src="img/ft2.png" alt="">
+        <div class="ft-pr px-3 px-lg-0">
+            <div class="ftHeader d-flex ">
+                <img class="my-5" src="img/ft2.png" width="100%">
             </div>
             <div class="ftContainer d-flex justify-content-center">
                 <div class="ft-left justify-content-start w-50">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viver ra maecenas accumsan lacus vel facilisis.
                     </p>
                 </div>
-                <div class="ft-right justify-content-end">
+                <div class="ft-right justify-content-end ms-lg-5">
                     <div class="ft-item mb-3">
                         <img src="img/ft3.png" alt="">
                         <span class="ms-3">Main Road, Building Name, Country</span>
@@ -141,15 +155,19 @@
                     </div>
                 </div>
             </div>
-            <div class="ft-mxh d-flex justify-content-center ">
-                <div class="ftItem text-align-center">
-                    <span class="mxhTitle">© Company Name 2020. All rights reserved.</span>
-                </div>
-                <div class="d-flex justify-content-end ftMxh">
-                    <a class="mx-1" href="#"><img src="img/ftinsta.png" alt=""></a>
-                    <a class="mx-1" href="#"><img src="img/ftfb.png" alt=""></a>
-                    <a class="mx-1" href="#"><img src="img/fttw.png" alt=""></a>
-                    <a class="mx-1" href="#"><img src="img/ftwa.png" alt=""></a>
+            <div class="ft-mxh ">
+                <div class="container">
+                    <div class="row">
+                        <div class="ftItem col-6">
+                            <span class="mxhTitle">© Company Name 2020. All rights reserved.</span>
+                        </div>
+                        <div class="d-flex ftMxh col-6 ftItem2">
+                            <a class="mx-1" href="#"><img src="img/ftinsta.png" alt=""></a>
+                            <a class="mx-1" href="#"><img src="img/ftfb.png" alt=""></a>
+                            <a class="mx-1" href="#"><img src="img/fttw.png" alt=""></a>
+                            <a class="mx-1" href="#"><img src="img/ftwa.png" alt=""></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,30 +184,26 @@
           prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-          "@0.00": {
+          280: {
             slidesPerView: 1,
             spaceBetween: 10,
-          },
-          "@0.50": {
+          }, 
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },  
+          640: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          "@0.75": {
+          768: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          "@1.00": {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          "@1.50": {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          "@2.00": {
+          1024: {
             slidesPerView: 3,
             spaceBetween: 30,
-          }
+          },
         },
       });
     </script>

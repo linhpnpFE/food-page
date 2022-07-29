@@ -88,9 +88,13 @@ body {
 .ctnItem4 {
     margin-top: 15rem;
 }
+.ctn2-right > img {
+    object-fit: cover;
+    height: 420px;
+}
 /*footer */
 .container4 {
-    margin: 6rem 0;
+    margin: 6rem 0 2rem 0;
 }
 .ctn4Right {
     margin-top: 15rem;
@@ -98,12 +102,21 @@ body {
 .ctn4Left > img , .ctn4Right > img {
     width: 40px
 }
+.ctn4-item2{
+    width: 25%;
+    height: 4px;
+    background-color: black;
+}
+.ctn4-item:hover .ctn4-item2{
+    width: 50%;
+    transition: 3s;
+}
 .ft-box {
     text-align: center;
 }
 @media (min-width: 576px) { 
     .ctn2-left{
-        margin: 3rem 0;
+        margin: 2rem 0;
     }
 
 }
@@ -114,6 +127,9 @@ body {
     .ctnItem {
         top: 20% !important;
         width: 100% !important;
+    }
+    .item1-ch {
+        font-size: 45px;
     }
 }
 @media (max-width: 767.98px) { 
@@ -131,6 +147,11 @@ body {
         width: 70%;
     }
 
+}
+@media (max-width: 281px) {
+    .itemmid-ch {
+        font-size: 40px;
+    }
 }
 
 
