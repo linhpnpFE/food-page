@@ -47,7 +47,6 @@ body {
     --bs-gutter-x: 0 !important;
 }
 .ctn {
-    padding-top: 100px;
 }
 .ctnParent {
     position: relative;
