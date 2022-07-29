@@ -1,0 +1,1006 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;700&display=swap');
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+
+body {
+    background-image: url(/assets/img/bg.png);
+
+    ////////// Header ////////
+    .block_header {
+        background-color: #c87e6b;
+
+        .container-fluid {
+
+            .navbar-brand {
+                margin-right: 0;
+    
+                .nav_pic {
+                    width: 100%;
+                }
+            }
+            
+            .navbar-toggler {
+                line-height: unset;
+            }
+    
+    
+            .box_collapse {
+    
+                .nav-item {
+                    font-size: 16px;
+                    font-family: 'Montserrat', sans-serif;
+                    color: #e7e4db;
+                    line-height: 2.048;
+                    text-transform: uppercase;
+                    margin: auto;
+    
+                    @include tablet() {
+                        font-size: 15px;
+                    }
+    
+                    @include desktop() {
+                        font-size: 20px;
+                        margin: 0 25px;
+                    }
+    
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+    
+                #sign_in {
+                    border: 2px solid;
+                    border-radius: 25px;
+                    padding: 5px 5px;
+                    white-space: nowrap;
+                }
+    
+                .box_session {
+                
+                    a {
+                        margin-right: 10px;
+                    }
+
+                    .menu_mobi {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    // End header //
+
+
+    ///////////// Main ////////////////
+
+
+    // Banner 
+    .block_banner {
+
+        .big_box_banner {
+
+            .box_banner {
+
+                .box_small_banner {
+                    padding: 30px 45px 30px;
+                    position: relative;
+                    background-image: url("/assets/img/leaf_topbanner.png");
+                    background-position: top right;
+                    background-repeat: no-repeat;
+                    background-size: 15%;
+
+                    .box_small_text {
+                        position: relative;
+
+                        .banner_title {
+                            font-family: 'Playfair Display', serif;
+                            overflow: hidden;
+                            font-size: 40px;
+                            font-weight: bold;
+                            color :#484a4b;
+    
+                            @include tablet() {
+                                font-size: 40px;
+                                overflow: unset;
+                                
+                            }
+    
+                            @include desktop() {
+                                font-size: 100px;
+                            }
+                        }
+                        
+                        .small_title {
+                            font-family: 'Montserrat Alternates', sans-serif;
+                            font-size: 30px;
+                            overflow: hidden;
+                            font-weight: 700;
+                            color: #765a33;
+                            position: relative;
+                            padding: 0 25px;
+                            margin: auto;
+                        
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 10px;
+                                height: 10px;
+                                background-color: #765a33;
+                                border-radius: 50%;
+                                top: 50%;
+                                left: 0;
+
+                                @include tablet() {
+                                    left: 0;
+                                }
+        
+                                @include desktop() {
+                                    left: 0;
+                                }
+                            }
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                width: 10px;
+                                height: 10px;
+                                background-color: #765a33;
+                                border-radius: 50%;
+                                top: 50%;
+                                right: 0%;
+
+                                @include tablet() {
+                                    right: 0;
+                                }
+        
+                                @include desktop() {
+                                    right: 0;
+                                }
+                            }
+                        }
+                        
+                        .para_text {
+                            font-family: 'Josefin Slab', serif;
+                            font-size: 16px;
+    
+                            @include tablet() {
+                                font-size: 15px;
+                            }
+    
+                            @include desktop() {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+        
+                    .box_button {
+        
+                        .btn_shop {
+                            font-family: 'Montserrat Alternates', sans-serif;
+                            background-color: #787878;
+                            color:#ffffff;
+                            padding: 5px 20px;
+                            border-radius: 8px;
+                            border: none;
+                            font-weight: 700;
+
+                            @include desktop() {
+                                font-size: 20px;
+                            }
+                        }
+                        
+                        .btn_read {
+                            font-family: 'Montserrat Alternates', sans-serif;
+                            border: none;
+                            background: none;
+                            font-weight: 700;
+
+                            @include desktop() {
+                                font-size: 20px;
+                            }
+                        }
+                    }     
+                    
+                    @include tablet() {
+                        padding: 40px 45px 0px;
+                        margin-top: 0px;
+                    }
+
+                    @include desktop() {
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                     
+                }
+    
+                .img_banner {
+                    width: 100%;
+                    height: auto;
+                }
+
+                &:nth-child(1) {
+                    background-image: url("/assets/img/leaf_banner.png");
+                    background-position: bottom left;
+                    background-repeat: no-repeat;
+                    background-size: 15%;
+                }
+            }
+        }
+
+        .box_achievement {
+            background-color: #6b502c;
+
+            .small_box_achive {
+                margin: 50px 0px;
+
+                .achive_count {
+                    font-family: 'Playfair Display', serif;
+                    font-weight: bold;
+                    line-height: 0.67;
+                    color: #ffffff;
+                    font-size: 45px;
+
+                    @include tablet() {
+                        font-size: 50px;
+                    }
+    
+                    @include desktop() {
+                        font-size: 70px;
+                    }
+                }
+                
+                .achive_name {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    line-height: 1.256;;
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-size: 20px;
+
+                    @include tablet() {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Product // 
+    .block_product {
+        margin-top: 100px;
+
+        .box_product_title {
+            margin-bottom: 70px;
+            background-image: url("/assets/img/left_right.png"), url("/assets/img/left_left.png");
+            background-position: bottom left , bottom right;
+            background-repeat: no-repeat;
+            background-size: 5%;
+
+            .product_title {
+                font-family: 'Playfair Display', serif;
+                font-weight: bold;
+                line-height: 0.905;
+                text-align: center;
+                font-size: 35px;
+                color: #484a4b;
+
+                @include tablet() {
+                    font-size: 100px;
+                }
+
+                @include desktop() {
+                    font-size: 134px;
+                }
+                
+            }
+            
+            .product_small_title {
+                font-family: 'Montserrat Alternates', sans-serif;
+                text-align: center;
+                font-weight: 500;
+                color:#917c5d;
+                overflow: hidden;
+                font-size: 16px;
+
+                @include tablet() {
+                    font-size: 20px;
+                }
+
+                @include desktop() {
+                    font-size: 25px;
+                }
+                
+            }
+        }
+
+        .box_list_product {
+
+            .carousel-inner {
+                
+                .carousel-item {
+                    padding: 15px;
+
+                    .smallbox_product {
+                        margin-top: 50px;
+                        background-color: rgb(230, 227, 218);
+                        box-shadow: 0px 7px 18px 0px rgba(0, 0, 0, 0.19);
+                        width: 90%;
+                        margin: auto;
+        
+                        .product_img {
+        
+                            .product_pic {
+                                width: 100%;
+                            }
+        
+                            .love_icon {
+                                float: right;
+                                margin-top: 15px;
+                                padding-right: 15px;
+                                font-size: 20px;
+                            }
+    
+                        }
+        
+                        .detail_product {
+                            margin-top:  30px;
+                            padding: 0px 40px 20px;
+        
+                            .detail_product_title {
+                                font-family: 'Playfair Display', serif;
+                                color: #484a4b;
+                                font-weight: bold;
+                                line-height: 0.905;
+                                text-align: center;
+                                font-size: 30px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+    
+                                @include tablet() {
+                                    overflow: unset;
+                                }
+    
+                                @include desktop() {
+                                    overflow: unset;
+                                }
+                            }
+                            
+                            .detail_product_text {
+                                font-family: 'Montserrat Alternates', sans-serif;
+                                font-size: 12px;
+                                line-height: 1.333;
+                                color: #6b502c;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                            
+                            .read_product {
+                                font-family: 'Montserrat Alternates', sans-serif;
+                                border: none;
+                                background-color: #454545;
+                                border-radius: 8px;
+                                padding:4px 16px;
+                                color:#e6e3da;
+                                font-size: 10px;
+                                white-space: nowrap;
+    
+                                @include desktop() {
+                                    font-size: 15px;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+            .button_carousel {
+                margin-top: 30px; 
+                // background-image: url("/assets/img/left_left.png"), url("/assets/img/left_right.png");
+                // background-position: bottom left , bottom right;
+                // background-repeat: no-repeat;
+                // background-size: 7%;
+
+                .carousel-control-next, .carousel-control-prev {
+                    position: relative;
+                    display: inline-block ;
+                    background-color: #454545;
+                    border-radius: 100%;
+                    padding: 15px 10px 8px;
+
+                    @include tablet() {
+                        border-radius: 25px;
+                        padding: 5px 5px 1px;
+                        width: 5%;
+                    }
+        
+                    @include desktop() {
+                        border-radius: 25px;
+                        padding: 5px 5px 1px;
+                        width: 5%;
+                    }
+                }
+            }
+
+            @include tablet() {
+                display: none;
+            }
+
+            @include desktop() {
+                display: none;
+            }
+
+        }
+
+        .pc_second {
+            display: none;
+
+            @include tablet() {
+                display: inline-block;
+            }
+
+            @include desktop() {
+                display: inline-block;
+            }
+        }
+    }
+
+    //End Product
+
+    // About us //
+    .block_aboutus {
+        margin-top: 100px;
+        
+        .container {
+
+            .box_aboutus_title {
+
+                .aboutus_title {
+                    font-family: 'Playfair Display', serif;
+                    font-weight: bold;
+                    line-height: 0.905;
+                    color: #484a4b;
+                    font-size: 35px;
+
+                    @include tablet() {
+                        font-size: 100px;
+                    }
+    
+                    @include desktop() {
+                        font-size: 134px;
+                    }
+                }
+                
+                .aboutus_small_title {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    color:#765a33;
+                    font-size: 16px;
+
+                    @include tablet() {
+                        font-size: 20px;
+                    }
+    
+                    @include desktop() {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .box_video_aboutus {
+                margin-top: 50px;
+                position: relative;
+                z-index: 1;
+
+                .aboutus_pic {
+                    width: 100%;
+                }
+
+                // .fa-play-circle {
+                //     position: absolute;
+                //     top: 50%;
+                //     left: 50%;
+                //     transform: translate(-50%, -50%);
+                //     color: #ffffff;
+                //     font-size: 20px;
+
+                //     @include desktop() {
+                //         font-size: 80px;
+                //     }
+                // }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -25px;
+                    left: -15px;
+                    width: 100px;
+                    height: 100px;
+                    background-color: #c87e6b;
+                    z-index: -1;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -20px;
+                    right:-15px;
+                    width: 145px;
+                    height: 100px;
+                    border: 2px solid #8a6a3e;
+                    z-index: -1;
+                }
+            }
+        }
+
+        .box_offer {
+            margin-top: 50px;
+
+            .offer_detail {
+                background-color: #ddc57c;
+
+
+                .box_offer_detail {
+                    padding: 30px 45px 30px;
+                    position: relative;
+
+                    .box_offer_text {
+
+                        .offer_title {
+                            font-family: 'Playfair Display', serif;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            line-height: 0.905;
+                            background-color: #424242;
+                            color: #e7e4db;
+                            border-radius: 25px;
+                            padding: 5px 15px;
+                            font-size: 20px;
+                            border: none;
+
+                            @include tablet() {
+                                font-size: 30px;
+                            }
+
+                            @include desktop() {
+                                font-size: 40px;
+                            }
+                        }
+                        
+                        .cost_offer {
+                            line-height: 0.905;
+                            font-family: 'Montserrat Alternates', sans-serif;
+                            font-weight: bold;
+                            font-size: 40px;
+                            color:#424242;
+                            margin-top: 10px;
+
+                            @include tablet() {
+                                font-size: 50px;
+                            }
+
+                            @include desktop() {
+                                font-size: 139px;
+                            }
+                        }
+                        
+                        .offer_text {
+                            color:#424242;
+                            font-family: 'Montserrat Alternates', sans-serif;
+                            font-weight: bold;
+                            line-height: 1;
+                            margin-bottom: 0px;
+                        }
+                    }
+
+                    .box_leaf {
+
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 10%;
+                        }
+
+                        :nth-child(1) {
+                            left: 15px;
+                        }
+
+                        :nth-child(2) {
+                            right: 15px;
+                        }
+                    }
+
+                    @include tablet() {
+                        padding: 40px 45px 0px;
+                        margin-top: 0px;
+                    }
+
+                    @include desktop() {
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                }
+
+                .offer_photo {
+
+                    .offer_pic {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    // End about us
+
+    // Blog 
+    .block_blog {
+
+        .list_blog {
+            margin-top: 100px;
+
+            .box_blog {
+                margin-top: 50px;
+    
+                .container {
+    
+                    .feature_img {
+                        position: relative;
+                        z-index: 1;
+
+                        img {
+                            width: 100%;
+                            margin-top: 20px;
+                        }
+                    }
+                    
+                    .content_blog {
+                        padding-top: 15px;
+
+                        @include tablet() {
+                            margin-left: 93px;
+                        }
+     
+                        @include desktop() {
+                            margin-left: 93px;
+                        }
+                        
+                        .content_pic {
+                            width: 140px;
+                            margin-top: 10px;
+                        }
+
+                        .content_blog_title {
+                            font-family: 'Playfair Display', serif;
+                            font-weight: bold;
+                            line-height: 1.071;
+                            color : #484a4b ;
+                            font-size: 35px;
+
+                            @include tablet() {
+                                font-size: 40px;
+                            }
+         
+                            @include desktop() {
+                                font-size: 52px;
+                            }
+                        }
+                        
+                        .content_text {
+                            font-family: 'Josefin Slab', serif;
+                            color:#765a33;
+                            line-height: 1.167;
+                            margin-top: 20px;
+                            font-size: 16px;
+
+                            @include tablet() {
+                                font-size: 13px;
+                            }
+         
+                            @include desktop() {
+                                font-size: 20px;
+                            }
+                        }
+                        
+                        .read_more {
+                            font-family: 'Montserrat Alternates', sans-serif;
+                            border: none;
+                            background-color: #454545;
+                            border-radius: 8px;
+                            padding:4px 16px;
+                            color:#e6e3da;
+                            font-size: 10px;
+                            margin-top: 15px;
+
+                            @include desktop() {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+    
+                &:nth-child(odd) {
+                    background-image: url(/assets/img/big_leaf.png);
+                    background-repeat: no-repeat;
+                    background-position: bottom right;
+                    background-size: 10%;
+                    padding-bottom: 100px;
+
+                    .container {
+
+                        @include tablet() {
+                            display: flex;
+                        }
+     
+                        @include desktop() {
+                            display: flex;
+                        }
+
+                        .feature_img {
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                bottom: -20px;
+                                left:-15px;
+                                width: 145px;
+                                height: 100px;
+                                border: 2px solid #8a6a3e;
+                                z-index: -1;
+                            }
+    
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 10px;
+                                right: -10px;
+                                width: 100px;
+                                height: 100px;
+                                background-color: #c87e6b;
+                                z-index: -1;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(even) {
+                    background-image: url(/assets/img/big_leaf2.png);
+                    background-repeat: no-repeat;
+                    background-position: bottom left;
+                    background-size: 10%;
+                    padding-bottom: 130px;
+
+                    .container {
+
+
+                        .row {
+
+                            @include tablet() {
+                                display: flex;
+                                flex-direction: row-reverse;
+                            }
+         
+                            @include desktop() {
+                                display: flex;
+                                flex-direction: row-reverse;
+                            }
+    
+    
+                            .content_blog {
+                                @include tablet() {
+                                    margin-left: 0;
+                                    margin-right:93px
+                                }
+             
+                                @include desktop() {
+                                    margin-left: 0;
+                                    margin-right:93px
+                                }
+                            }
+    
+                            .feature_img {
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 10px;
+                                    left: -10px;
+                                    width: 100px;
+                                    height: 100px;
+                                    background-color: #c87e6b;
+                                    z-index: -1;
+                                }
+                                
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -20px;
+                                    right:-15px;
+                                    width: 145px;
+                                    height: 100px;
+                                    border: 2px solid #8a6a3e;
+                                    z-index: -1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End Blog 
+
+    // Subcribe // 
+    .block_subscribe {
+        padding-bottom: 40px;
+
+        .container {
+            
+            .box_sub {
+
+                .box_sup_title {
+                    font-weight: bold;
+                    line-height: 1.071;
+                    font-family: 'Playfair Display', serif;
+                    font-size: 50px;
+                    color : #484a4b ;
+                    font-size: 24px;
+
+                    @include tablet() {
+                        font-size: 50px;
+                    }
+    
+                    @include desktop() {
+                        font-size: 114px;
+                    }
+                }   
+                
+                .box_sup_small_title {
+                    font-family: 'Josefin Slab', serif;
+                    font-size: 16px;
+                    color: #5d5f5e;
+
+                    @include tablet() {
+                        font-size: 20px;
+                    }
+    
+                    @include desktop() {
+                        font-size: 26px;
+                    }
+                }
+            }
+
+            .info_sub {
+
+                .form-control {
+                    margin-top: 20px;
+
+                    @include tablet() {
+                        margin-top: 40px;
+                    }
+    
+                }
+
+                .inputfield {
+                    height: 150px;
+                }
+
+                .btn_sub {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    background-color: #c87e6b;
+                    color:#ffffff;
+                    font-weight: bold;
+                    line-height: 1.046;
+                    padding: 5px 10px;
+                    margin-top: 50px;
+
+                    @include desktop() {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    // End sub //
+
+    /////////////// End Main /////////////////
+
+    // Footer // 
+    .block_footer {
+        padding: 150px 0px 100px;
+        background-color: #424242;
+
+        .container {
+
+            .row {
+                
+                .box_footer {
+                    margin-top: 20px;
+
+                    .footer_title {
+
+                        .title_text {
+                            font-family: 'Montserrat Alternates', sans-serif;
+                            font-weight: bold;
+                            line-height: 1.2;
+                            color: #ffffff;
+                            font-size: 24px;
+
+                            @include desktop() {
+                                font-size: 40px;
+                            }
+                        }
+                    }
+
+                    .info_footer {
+
+                        a {
+                            text-decoration: none;
+
+                            .info_footer_text {
+                                font-family: 'Montserrat Alternates', sans-serif;
+                                font-size: 16px;
+                                color: #ffffff;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .follow_us {
+                display: flex; 
+                justify-content: center;
+                margin-top: 40px;
+
+                @include desktop() {
+                    justify-content: right;
+                }
+
+                .follow_us_title {
+                    margin-right: 10px;
+
+                    .follow_us_text {
+                        font-family: 'Montserrat Alternates', sans-serif;
+                        font-size: 16px;
+                        color: #ffffff;
+                    }
+                }
+
+                .social_list {
+
+                    .social_link {
+                        color: #ffffff;
+                        border: 2px solid;
+                        border-radius: 10px;
+                        padding: 1px 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    // End footer //////
+}
+
