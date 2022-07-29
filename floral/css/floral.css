@@ -2,12 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-<<<<<<< HEAD
 }body{
-=======
-}
-body{
->>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
     background-image: url(/floral/img_and_fonts/image/Texture.png);
 }
 .header{
@@ -28,18 +23,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-    height: 100%;}
-.nav-bar .nav-bar-list {
-    display: inline-block;margin-bottom: 0;padding-left: 0;
-=======
     height: 100%;
 }
 .nav-bar .nav-bar-list {
     display: inline-block;
     margin-bottom: 0;
     padding-left: 0;
->>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
 }
 .nav-bar .nav-bar-list li{
     display: inline-block;
@@ -68,20 +57,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     padding: 0 20px;
-=======
->>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
 }
 .icon-user i, .icon-shopping i{
     font-size: 20px;
     color: #fff;
 }
-<<<<<<< HEAD
 .sidebar-btn{
     display: none;
     align-items: center;
     padding-right: 20px;
+    padding-left: 20px;
 }
 .sidebar-btn i{
     color: #fff;
@@ -145,10 +131,6 @@ body{
 }
 .sidebar-close, .sidebar-close .nav_list li{
     cursor: pointer;
-=======
-.icon-shopping{
-    padding: 0 30px;
->>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
 }
 .flower-arrange-banner{
     height: auto;
@@ -161,7 +143,6 @@ body{
     background-color: #e3e0d6;
     padding-left: 0;
     padding-right: 0;
-<<<<<<< HEAD
     padding-bottom: 50px;
 }
 .flower-arr-choose{
@@ -201,8 +182,6 @@ body{
     text-transform: uppercase;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
-=======
->>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
 }
 .col-left .decor-leaf-flower{
     display: flex;
@@ -228,13 +207,7 @@ body{
     font-family: 'Josefin Slab', serif;
     color: rgb(118, 90, 51);
     margin-bottom: 0;
-<<<<<<< HEAD
     padding: 15px 150px 50px;
-=======
-    padding-top: 15px;
-    padding-left: 150px;
-    padding-right: 150px;
->>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
 }
 .flower-arrange-banner .col-left h2{
     margin-bottom: 0;
@@ -249,18 +222,12 @@ body{
 }
 .decor-leaf-flower-bottom-left > img{
     position: absolute;
-<<<<<<< HEAD
     object-fit: contain;
-=======
->>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
     bottom: 0;
     left: 0;
 }
 .flower-arrange-banner .col-right{
-<<<<<<< HEAD
     background-color: #e4e1d7;
-=======
->>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
     padding-left: 0;
     padding-right: 0;
 }
@@ -270,10 +237,7 @@ body{
     object-fit: cover;
 }
 .sales{
-<<<<<<< HEAD
     padding: 50px 0;
-=======
->>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
     background-color: #765a33;
     min-height: 270px;
 }
@@ -294,7 +258,6 @@ body{
     margin-bottom: 0;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
-<<<<<<< HEAD
     text-align: center;
 }
 .our-top-product-content{
@@ -303,7 +266,7 @@ body{
     align-items: center;
     padding-top: 104px;
     background-color: #e5e2d8;
-    min-height: 950px;
+    padding-bottom: 120px;
 }
 .header-our-top-product{
     width: 100%;
@@ -332,10 +295,17 @@ body{
     margin-bottom: 0;
     text-align: center;
 }
+.leaf-product-top-left > img{
+    width: 100%;
+    height: auto;
+}
+.leaf-product-top-right > img{
+    width: 100%;
+    height: auto;
+}
 .respon-slider{
     --bs-gutter-x: 0;
     width: 100%;
-    min-height: 700px;
 }
 .flower-slider{
     display: flex;
@@ -397,7 +367,7 @@ body{
     color: #fff;
 }
 .slick-prev.slick-arrow{
-    top: 85%;
+    top: 115%;
     left: 40%;
 }
 .slick-next.slick-arrow, .slick-prev.slick-arrow{
@@ -420,7 +390,7 @@ body{
     content: unset;
 }
 .slick-next.slick-arrow{
-    top: 85%;
+    top: 115%;
     right: 40%;
 }
 .slick-next.slick-arrow:hover{
@@ -434,12 +404,12 @@ body{
 }
 .leaf-bottom-left-product > img{
     position: absolute;
-    bottom: 80px;
+    bottom: -108px;
     left: 10px;
 }
 .leaf-bottom-right-product > img{
     position: absolute;
-    bottom: 80px;
+    bottom: -108px;
     right: 10px;
 }
 .how-we-do-it-content{
@@ -627,7 +597,7 @@ body{
     font-family: 'Josefin Slab', serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 22px;
     color: rgb(118, 90, 51);
 }
 .leaf-decor-best-flower-bottom{
@@ -656,6 +626,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 .container-text-takecare-detail{
     display: flex;
@@ -668,66 +639,213 @@ body{
     font-size: 50px;
     text-align: start;
 }
+.container-text-takecare-detail p{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+    color: rgb(118, 90, 51);
+    font-size: 20px;
+    line-height: 22px;
+}
 .text-take-care-detail .more-btn{
     width: 70%;
     padding-left: 0;
 }
+.leaf-right-bottom-take-care-detail > img{
+    width: 10%;
+    height: auto;
+    object-fit: contain;
+}
 .image-take-care-detail{
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    padding-right: 133px;
+} 
+.container-image-take-care-detail > img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.container-image-take-care-detail{
+    height: fit-content;
+    position: relative;
+}
+.container-image-take-care-detail:before{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 15vw;
+    height: 12vw;
+    background-color: #c87e6b;
+    top: -2vw;
+    left: -2vw;
+    z-index: -1;
+}
+.container-image-take-care-detail:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 25vw;
+    height: 25vw;
+    border: 5px solid rgb(118, 90, 51);
+    right: -5vw;
+    bottom: -3vw;
+    z-index: -1;
+}
+.intro-love-what-we-do{
+    --bs-gutter-x: 0;
+    background-color: #e7e4db;
+    padding-top: 50px;
+}
+.image-love-what-we-do{
     position: relative;
     display: flex;
-    min-height: 600px;
+    justify-content: center;
     z-index: 1;
-} 
-.image-take-care-detail .box-pink-take-care-detail{
-    background-color: #c87e6b;
-    width: 20%;
-    height: 15%;
-    position: absolute;
-    top: 5%;
-    left: -5%;
-    z-index: -1;
+    padding-bottom: 30px;
 }
-.image-take-care-detail .box-brown-take-care-detail{
-    position: absolute;
-    width: 40%;
-    height: 40%;
-    bottom: 5%;
-    right: 5%;
-    border: 5px solid #765a33;
-    z-index: -1;
-}
-.image-take-care-detail > img{
+.image-love-what-we-do > img{
     width: 85%;
     height: 100%;
     object-fit: contain;
-=======
 }
-.our-top-product-content{
-    background-color: #e5e2d8;
-    min-height: 1045px;
+.heading-love-what-we-do{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
-.how-we-do-it-content{
-
+.leaf-image-love-what-we-do{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
 }
-.special-sale-off{
-
+.container-text-love-what-we-do{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.intro-product-best-flower{
-
+.text-contain-love-what-we-do{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
 }
-.intro-take-care-details{
-
->>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
+.text-contain-love-what-we-do h2{
+    color: rgb(72, 74, 75);
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 50px;
 }
-.intro-love-what-we-do{
-
+.text-contain-love-what-we-do p{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+    color: rgb(118, 90, 51);
+    font-size: 20px;
+    line-height: 22px;
+}
+.container-text-love-what-we-do .more-btn{
+    padding-left: 0;
+    display: flex;
+    width: 60%;
+}
+.intro-love-what-we-do .box-pink-love-what-we-do-top{
+    background-color: #c87e6b;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: -2vw;
+    right: 1vw;
+    z-index: -1;
+}
+.intro-love-what-we-do .box-brown-love-what-we-do-bottom{
+    position: absolute;
+    width: 30vw;
+    height: 25vw;
+    bottom: 0;
+    left: 2vw;
+    border: 5px solid #765a33;
+    z-index: -1;
+}
+.leaf-decor-bottom-love-what-we-do{
+    display: flex;
+    justify-content: flex-end;
+}
+.leaf-decor-bottom-love-what-we-do > img{
+    width: 12%;
+    height: auto;
+    object-fit: contain;
 }
 .form-subcribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e7e4da;
+    padding-bottom: 50px;
+}
+.container-heading-form-subcribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading-subcribe-form{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.heading-subcribe-form h2{
+    font-size: 50px;
+    color: rgb(72, 74, 75);
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.paragraph-subscribe-form{
+    width: 70%;
+}
+.paragraph-subscribe-form p{
+    text-align: center;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+    color: rgb(72, 74, 75);
+}
+.fill-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.fill-form input{
+    width: 80%;
+    padding: 25px 0;
+    padding-left: 30px;
+}
+.fill-form .name-form, .fill-form .mail-form, .fill-form .message-form{
+    margin-bottom: 30px;
+}
+.fill-form .message-form{
+    padding-bottom: 150px;
+}
+.send-message-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    background-color: #c87e6b;
+    border-radius: 25px;
 
+}
+.send-message-btn a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
 .footer{
 
-<<<<<<< HEAD
 }
 /* @media (max-width: 1440px) and (min-width: 768px){
     .how-we-do-it-content{
@@ -736,20 +854,6 @@ body{
 } */
 /* @media (max-width: ) */
 @media (max-width: 1200px){
-    .image-take-care-detail .box-pink-take-care-detail{
-        position: absolute;
-        width: 20%;
-        height: 15%;
-        top: 10%;
-        left: -5%;
-    }
-    .image-take-care-detail .box-brown-take-care-detail{
-        position: absolute;
-        width: 40%;
-        height: 40%;
-        bottom: 10%;
-        right: 10%;
-    }
 }
 @media (max-width: 1100px){
     .box-brown-decor-top-how-we-do-it {
@@ -759,20 +863,8 @@ body{
         right: 5%;
         top: 15%;
     }
-    .image-take-care-detail .box-pink-take-care-detail{
-        position: absolute;
-        width: 20%;
-        height: 15%;
-        top: 12%;
-        left: -5%;
-    }
-    .image-take-care-detail .box-brown-take-care-detail{
-        position: absolute;
-        width: 40%;
-        height: 40%;
-        bottom: 15%;
-        right: 7%;
-    }
+}
+@media (max-width: 1050px){
 }
 @media (max-width: 992px) and (min-width: 360px){
     .header .user-icon .sidebar-btn{
@@ -804,19 +896,8 @@ body{
         right: 5%;
         top: 15%;
     }
-    .image-take-care-detail .box-pink-take-care-detail{
-        position: absolute;
-        width: 20%;
-        height: 15%;
-        top: 15%;
-        left: -5%;
-    }
-    .image-take-care-detail .box-brown-take-care-detail{
-        position: absolute;
-        width: 40%;
-        height: 40%;
-        bottom: 15%;
-        right: 7%;
+    .text-contain-love-what-we-do h2{
+        text-align: center;
     }
 }
 @media(max-width: 900px){
@@ -827,31 +908,17 @@ body{
         right: 5%;
         top: 15%;
     }
-    .image-take-care-detail .box-pink-take-care-detail{
-        position: absolute;
-        width: 20%;
-        height: 10%;
-        top: 20%;
-        left: -5%;
-    }
-    .image-take-care-detail .box-brown-take-care-detail{
-        position: absolute;
-        width: 40%;
-        height: 30%;
-        bottom: 20%;
-        right: 7%;
-    }
 }
 @media(max-width: 820px){
-    .box-brown-decor-top-how-we-do-it{
+.box-brown-decor-top-how-we-do-it{
     position: absolute;
     width: 50%;
     height: 50%;
     right: 5%;
     top: 15%;
-    }
 }
-@media (max-width: 768px){
+}
+@media (max-width: 767.9px){
     .slick-prev.slick-arrow{
         position: absolute;
         left: 35%;
@@ -878,25 +945,13 @@ body{
     .image-take-care-detail{
         display: flex;
         justify-content: center;
+        padding: 0 75px;
     }
     .container-text-takecare-detail h2{
         text-align: center;
     }
     .image-take-care-detail > img{
         width: 70%;
-    }
-    .image-take-care-detail .box-pink-take-care-detail{
-        width: 20%;
-        height: 15%;
-        position: absolute;
-        top: 7%;
-        left: 9%;
-    }
-    .image-take-care-detail .box-brown-take-care-detail{
-        width: 40%;
-        height: 40%;
-        bottom: 5%;
-        right: 8%;
     }
 }
 @media (max-width: 700px){
@@ -907,19 +962,8 @@ body{
         right: 7%;
         top: 20%;
     }
-    .image-take-care-detail .box-pink-take-care-detail{
-        width: 20%;
-        height: 15%;
-        position: absolute;
-        top: 12%;
-        left: 8%;
-    }
-    .image-take-care-detail .box-brown-take-care-detail{
-        width: 40%;
-        height: 30%;
-        bottom: 10%;
-        right: 8%;
-    }
+}
+@media (max-width: 650px){
 }
 @media (max-width: 576px){
     .box-brown-decor-top-how-we-do-it {
@@ -928,19 +972,6 @@ body{
         height: 50%;
         right: 4%;
         top: 25%;
-    }
-    .image-take-care-detail .box-pink-take-care-detail {
-        width: 20%;
-        height: 15%;
-        position: absolute;
-        top: 18%;
-        left: 8%;
-    }
-    .image-take-care-detail .box-brown-take-care-detail {
-        width: 40%;
-        height: 30%;
-        bottom: 18%;
-        right: 8%;
     }
     .text-best-flower h2{
         font-size: 40px;
@@ -963,6 +994,54 @@ body{
         line-height: 25px;
     }
 }
-=======
+
+@media(max-width: 375px){
+
 }
->>>>>>> 3b0ba2629c3175e1b4ae06380f1aefd6ddd19de5
+
+@media(max-width: 280px){
+    .icon-user, .icon-shopping{
+        display: none;
+    }
+    .sidebar-btn{
+        display: flex;
+    }
+    .col-left .decor-leaf-flower{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+    }
+    .flower-arrange-banner .col-left h2{
+        font-size: 35px;
+    }
+    .text-contain li{
+        font-size: 17px;
+    }
+    .text-contain p {
+        font-size: 17px;
+        line-height: 21px;
+        padding: 20px 30px;
+    }
+    .slick-next.slick-arrow, .slick-prev.slick-arrow{
+        width: 35px;
+        height: 35px;
+    }
+    .how-we-do-it-content h2{
+        font-size: 35px;
+    }
+    .how-we-do-it-content h4{
+        font-size: 15px;
+    }
+    .our-top-product-content{
+        padding-top: 50px;
+    }
+    .heading-our-top-product{
+        padding-bottom: 30px;
+    }
+    .our-top-product-content h2{
+        font-size:40px;
+    }
+    .our-top-product-content h3{
+        font-size: 20px;
+    }
+}
