@@ -245,6 +245,13 @@ body {
                 .img_banner {
                     width: 100%;
                     height: auto;
+
+                    @include tablet() {
+                        height: 412px;
+                    }
+                    @include desktop() {
+                        height: 824px;
+                    }
                 }
 
                 &:nth-child(1) {
@@ -354,25 +361,38 @@ body {
                         box-shadow: 0px 7px 18px 0px rgba(0, 0, 0, 0.19);
                         width: 90%;
                         margin: auto;
-        
-                        .product_img {
-        
-                            .product_pic {
-                                width: 100%;
-                            }
-        
+
+
+                        .like_product {
+                            
                             .love_icon {
                                 float: right;
+                                font-size: 20px;
                                 margin-top: 15px;
                                 padding-right: 15px;
-                                font-size: 20px;
+                                margin-bottom: 10px;
                             }
     
                         }
         
+                        .product_img {
+                            width: 100%;
+                            height: 291px;
+                            overflow: hidden;
+
+                            .product_pic {
+                                width: 100%;
+                                height: 100%;
+                            }
+        
+                            
+                        }
+
                         .detail_product {
                             margin-top:  30px;
                             padding: 0px 40px 20px;
+
+                           
         
                             .detail_product_title {
                                 font-family: 'Playfair Display', serif;
@@ -530,7 +550,7 @@ body {
                     left: 50%;
                     transform: translate(-50%, -50%);
                     color: #ffffff;
-                    font-size: 20px;
+                    font-size: 50px;
 
                     @include desktop() {
                         font-size: 80px;
@@ -565,7 +585,7 @@ body {
             margin-top: 50px;
 
             .offer_detail {
-                background-color: #ddc57c;
+                
 
 
                 .box_offer_detail {
@@ -628,15 +648,16 @@ body {
                             top: 50%;
                             transform: translateY(-50%);
                             width: 10%;
-                        }
 
-                        :nth-child(1) {
-                            left: 15px;
+                            &:nth-child(1) {
+                                left: 15px;
+                            }
+    
+                            &:nth-child(2) {
+                                right: 15px;
+                            }
                         }
-
-                        :nth-child(2) {
-                            right: 15px;
-                        }
+                        
                     }
 
                     @include tablet() {
@@ -657,6 +678,10 @@ body {
                     .offer_pic {
                         width: 100%;
                     }
+                }
+
+                &:nth-child(1) {
+                    background-color: #ddc57c;
                 }
             }
         }
@@ -680,7 +705,15 @@ body {
 
                         img {
                             width: 100%;
-                            margin-top: 20px;
+                            margin-top: 20px; 
+
+                            @include tablet() {
+                                height: 332px;
+                            }
+
+                            @include desktop() {
+                                height: 524px;
+                            }
                         }
                     }
                     
