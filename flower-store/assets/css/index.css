@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;0,900;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;700&display=swap");
 body {
   background-image: url("../img/bg.png");
@@ -211,6 +211,7 @@ body {
 .img_banner {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .img_banner {
@@ -322,34 +323,41 @@ body {
 .carousel-item {
   padding: 15px;
 }
-.carousel-item .smallbox_product {
+
+.smallbox_product {
   margin-top: 50px;
   background-color: rgb(230, 227, 218);
   box-shadow: 0px 7px 18px 0px rgba(0, 0, 0, 0.19);
   width: 90%;
   margin: auto;
 }
-.carousel-item .smallbox_product .like_product .love_icon {
+.smallbox_product .like_product .love_icon {
   float: right;
   font-size: 20px;
   margin-top: 15px;
   padding-right: 15px;
   margin-bottom: 10px;
 }
-.carousel-item .smallbox_product .product_img {
+.smallbox_product .product_img {
   width: 100%;
-  height: 291px;
+  height: 310px;
   overflow: hidden;
 }
-.carousel-item .smallbox_product .product_img .product_pic {
+.smallbox_product .product_img .product_pic {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-.carousel-item .smallbox_product .detail_product {
+@media (min-width: 1024px) {
+  .smallbox_product .product_img {
+    height: 350px;
+  }
+}
+.smallbox_product .detail_product {
   margin-top: 30px;
   padding: 0px 40px 20px;
 }
-.carousel-item .smallbox_product .detail_product .detail_product_title {
+.smallbox_product .detail_product .detail_product_title {
   font-family: "Playfair Display", serif;
   color: #484a4b;
   font-weight: bold;
@@ -360,16 +368,16 @@ body {
   text-overflow: ellipsis;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .carousel-item .smallbox_product .detail_product .detail_product_title {
+  .smallbox_product .detail_product .detail_product_title {
     overflow: unset;
   }
 }
 @media (min-width: 1024px) {
-  .carousel-item .smallbox_product .detail_product .detail_product_title {
+  .smallbox_product .detail_product .detail_product_title {
     overflow: unset;
   }
 }
-.carousel-item .smallbox_product .detail_product .detail_product_text {
+.smallbox_product .detail_product .detail_product_text {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 12px;
   line-height: 1.333;
@@ -377,7 +385,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.carousel-item .smallbox_product .detail_product .read_product {
+.smallbox_product .detail_product .read_product {
   font-family: "Montserrat Alternates", sans-serif;
   border: none;
   background-color: #454545;
@@ -388,34 +396,45 @@ body {
   white-space: nowrap;
 }
 @media (min-width: 1024px) {
-  .carousel-item .smallbox_product .detail_product .read_product {
+  .smallbox_product .detail_product .read_product {
     font-size: 15px;
   }
 }
 
 .button_carousel {
   margin-top: 30px;
+  position: relative;
+}
+.button_carousel::before {
+  content: "";
+  background-image: url("../img/leaf_blog.png");
+  position: absolute;
+  background-size: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 67px;
+  right: 10%;
+}
+.button_carousel::after {
+  content: "";
+  background-image: url("../img/leaf_blog.png");
+  position: absolute;
+  background-size: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 67px;
+  left: 10%;
+  transform: scaleX(-1);
 }
 .button_carousel .carousel-control-next, .button_carousel .carousel-control-prev {
   position: relative;
   display: inline-block;
   background-color: #454545;
-  border-radius: 100%;
-  padding: 15px 10px 8px;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .button_carousel .carousel-control-next, .button_carousel .carousel-control-prev {
-    border-radius: 25px;
-    padding: 5px 5px 1px;
-    width: 5%;
-  }
-}
-@media (min-width: 1024px) {
-  .button_carousel .carousel-control-next, .button_carousel .carousel-control-prev {
-    border-radius: 25px;
-    padding: 5px 5px 1px;
-    width: 5%;
-  }
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
 }
 
 .pc_second {
@@ -436,7 +455,36 @@ body {
   margin-top: 100px;
 }
 
-.box_aboutus_title .aboutus_title {
+.box_about_us {
+  position: relative;
+}
+.box_about_us::before {
+  content: "";
+  background-image: url("../img/leaf_aboutus2.png");
+  position: absolute;
+  background-size: 7%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.box_about_us::after {
+  content: "";
+  background-image: url("../img/leaf_aboutus.png");
+  position: absolute;
+  background-size: 7%;
+  background-position: center right;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 200px;
+}
+@media (min-width: 1024px) {
+  .box_about_us::after {
+    top: 400px;
+  }
+}
+.box_about_us .box_aboutus_title .aboutus_title {
   font-family: "Playfair Display", serif;
   font-weight: bold;
   line-height: 0.905;
@@ -444,40 +492,39 @@ body {
   font-size: 35px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .box_aboutus_title .aboutus_title {
+  .box_about_us .box_aboutus_title .aboutus_title {
     font-size: 100px;
   }
 }
 @media (min-width: 1024px) {
-  .box_aboutus_title .aboutus_title {
+  .box_about_us .box_aboutus_title .aboutus_title {
     font-size: 134px;
   }
 }
-.box_aboutus_title .aboutus_small_title {
+.box_about_us .box_aboutus_title .aboutus_small_title {
   font-family: "Montserrat Alternates", sans-serif;
   color: #765a33;
   font-size: 16px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .box_aboutus_title .aboutus_small_title {
+  .box_about_us .box_aboutus_title .aboutus_small_title {
     font-size: 20px;
   }
 }
 @media (min-width: 1024px) {
-  .box_aboutus_title .aboutus_small_title {
+  .box_about_us .box_aboutus_title .aboutus_small_title {
     font-size: 25px;
   }
 }
-
-.box_video_aboutus {
+.box_about_us .box_video_aboutus {
   margin-top: 50px;
   position: relative;
   z-index: 1;
 }
-.box_video_aboutus .aboutus_pic {
+.box_about_us .box_video_aboutus .aboutus_pic {
   width: 100%;
 }
-.box_video_aboutus .fa-play-circle {
+.box_about_us .box_video_aboutus .fa-play-circle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -486,11 +533,11 @@ body {
   font-size: 50px;
 }
 @media (min-width: 1024px) {
-  .box_video_aboutus .fa-play-circle {
+  .box_about_us .box_video_aboutus .fa-play-circle {
     font-size: 80px;
   }
 }
-.box_video_aboutus::after {
+.box_about_us .box_video_aboutus::after {
   content: "";
   position: absolute;
   bottom: -25px;
@@ -500,7 +547,7 @@ body {
   background-color: #c87e6b;
   z-index: -1;
 }
-.box_video_aboutus::before {
+.box_about_us .box_video_aboutus::before {
   content: "";
   position: absolute;
   top: -20px;
@@ -512,7 +559,17 @@ body {
 }
 
 .box_offer {
-  margin-top: 50px;
+  margin-top: 90px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .box_offer {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 1024px) {
+  .box_offer {
+    margin-top: 170px;
+  }
 }
 .box_offer .offer_detail:nth-child(1) {
   background-color: #ddc57c;
@@ -566,7 +623,13 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: bold;
   line-height: 1;
+  font-size: 16px;
   margin-bottom: 0px;
+}
+@media (min-width: 1024px) {
+  .box_offer .box_offer_detail .box_offer_text .offer_text {
+    font-size: 29px;
+  }
 }
 .box_offer .box_offer_detail .box_leaf img {
   position: absolute;
@@ -595,6 +658,8 @@ body {
 }
 .box_offer .offer_photo .offer_pic {
   width: 100%;
+  object-fit: cover;
+  height: auto;
 }
 
 .list_blog {
@@ -720,6 +785,8 @@ body {
 .feature_img img {
   width: 100%;
   margin-top: 20px;
+  height: 100%;
+  object-fit: cover;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .feature_img img {
@@ -876,7 +943,7 @@ body {
 }
 .box_footer .footer_title .title_text {
   font-family: "Montserrat Alternates", sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.2;
   color: #ffffff;
   font-size: 24px;
