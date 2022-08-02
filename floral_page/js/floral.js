@@ -12,7 +12,7 @@ $('.respon-slider').slick({
       breakpoint: 992,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         dots: false
       }
@@ -64,24 +64,24 @@ function animateNumber(finalNumber, delay, startNumber = 0, callback) {
       if (currentNumber >= finalNumber) {
         clearInterval(interval)
       } else {
-        currentNumber++
+        currentNumber += 10;
         callback(currentNumber)
       }
     }
   }
   
   document.addEventListener('DOMContentLoaded', function () {
-    animateNumber(3000, 10, 0, function (number) {
+    animateNumber(3000, 0.00001, 0, function (number) {
       const formattedNumber = number.toLocaleString()
       document.getElementById('package-sold-number').innerText = formattedNumber
     })
     
-    animateNumber(5000, 5, 0, function (number) {
+    animateNumber(5000, 0.00001, 0, function (number) {
       const formattedNumber = number.toLocaleString()
       document.getElementById('bouquet-sold-number').innerText = formattedNumber
     })
     
-    animateNumber(7000, 3, 0, function (number) {
+    animateNumber(7000, 0.00001, 0, function (number) {
       const formattedNumber = number.toLocaleString()
       document.getElementById('happy-clients-number').innerText = formattedNumber
     })
