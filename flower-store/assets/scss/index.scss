@@ -20,7 +20,7 @@ $desktop-width: 1024px;
 
 
 body {
-    background-image: url("/assets/img/bg.png");
+    background-image: url("../img/bg.png");
 }
 
     ////////// Header ////////
@@ -100,7 +100,7 @@ body {
     .box_banner {
 
         &:nth-child(1) {
-            background-image: url("/assets/img/leaf_banner.png");
+            background-image: url("../img/leaf_banner.png");
             background-position: bottom left;
             background-repeat: no-repeat;
             background-size: 15%;
@@ -111,7 +111,7 @@ body {
     .box_small_banner {
         padding: 30px 45px 30px;
         position: relative;
-        background-image: url("/assets/img/leaf_topbanner.png");
+        background-image: url("../img/leaf_topbanner.png");
         background-position: top right;
         background-repeat: no-repeat;
         background-size: 15%;
@@ -301,7 +301,7 @@ body {
 
     .box_product_title {
         margin-bottom: 70px;
-        background-image: url("/assets/img/left_right.png"), url("/assets/img/left_left.png");
+        background-image: url("../img/left_right.png"), url("../img/left_left.png");
         background-position: bottom left , bottom right;
         background-repeat: no-repeat;
         background-size: 5%;
@@ -440,7 +440,7 @@ body {
 
     .button_carousel {
         margin-top: 30px; 
-        // background-image: url("/assets/img/left_left.png"), url("/assets/img/left_right.png");
+        // background-image: url("../img/left_left.png"), url("../img/left_right.png");
         // background-position: bottom left , bottom right;
         // background-repeat: no-repeat;
         // background-size: 7%;
@@ -684,7 +684,7 @@ body {
 
 
         &:nth-child(odd) {
-            background-image: url("/assets/img/big_leaf.png");
+            background-image: url("../img/big_leaf.png");
             background-repeat: no-repeat;
             background-position: bottom right;
             background-size: 10%;
@@ -709,6 +709,7 @@ body {
                 }
 
                 .feature_img {
+
                     &::before {
                         content: "";
                         position: absolute;
@@ -735,7 +736,7 @@ body {
         }
 
         &:nth-child(even) {
-            background-image: url("/assets/img/big_leaf2.png");
+            background-image: url("../img/big_leaf2.png");
             background-repeat: no-repeat;
             background-position: bottom left;
             background-size: 10%;
@@ -777,6 +778,7 @@ body {
                     }
 
                     .feature_img {
+                        
                         &::before {
                             content: "";
                             position: absolute;
@@ -1014,25 +1016,25 @@ body {
         @include desktop() {
             justify-content: right;
         }
+    }
 
-        .follow_us_title {
-            margin-right: 10px;
+    .follow_us_title {
+        margin-right: 10px;
 
-            .follow_us_text {
-                font-family: 'Montserrat Alternates', sans-serif;
-                font-size: 16px;
-                color: #ffffff;
-            }
+        .follow_us_text {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 16px;
+            color: #ffffff;
         }
+    }
 
-        .social_list {
+    .social_list {
 
-            .social_link {
-                color: #ffffff;
-                border: 2px solid;
-                border-radius: 10px;
-                padding: 1px 5px;
-            }
+        .social_link {
+            color: #ffffff;
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 1px 5px;
         }
     }
 
