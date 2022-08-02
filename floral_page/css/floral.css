@@ -703,7 +703,6 @@
     display: flex;
     justify-content: center;
     z-index: 1;
-    padding-bottom: 30px;
 }
 .container-image-love-what-we-do > img{
     width: 80%;
@@ -756,7 +755,6 @@
 .text-contain-love-what-we-do{
     display: flex;
     flex-direction: column;
-    width: 60%;
     align-items: center;
 }
 .text-contain-love-what-we-do h2{
@@ -775,7 +773,6 @@
 .container-text-love-what-we-do .more-btn{
     padding-left: 0;
     display: flex;
-    width: 60%;
 }
 .leaf-decor-bottom-love-what-we-do{
     display: flex;
@@ -854,191 +851,6 @@
 }
 .footer{
 
-}
-@media (min-width: 1024px){
-    .intro-product-best-flower {
-        position: relative;
-        padding-top: 50px;
-        background-color: #e7e4db;
-        --bs-gutter-x: 0;
-        padding-bottom: 160px;
-        height: auto;
-    }
-    .intro-take-care-details{
-        padding-top: 100px;
-    }
-}
-@media (min-width: 992px){
-    .nav-bar{
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-    .flower-arrange-banner .col-left{
-        padding-bottom: 350px;
-    }
-    .decor-leaf-flower-bottom-left > img{
-        width: 20%;
-        height: auto;
-        object-fit: contain;
-    }
-}
-@media (max-width: 992px) and (min-width: 360px){
-    .header .user-icon .sidebar-btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
-}
-@media (min-width: 768px){
-    .header{
-        justify-content: space-between;
-    }
-    .user-icon{
-        display: flex;
-        justify-content: center;
-        padding: 0 0;
-    }
-    .user-icon .icon-shopping{
-        padding: 0 18px;
-    }
-    .decor-leaf-flower-bottom-left > img{
-        width: 12%;
-        height: auto;
-        object-fit: contain;
-    }
-    .text-contain-love-what-we-do h2{
-        text-align: center;
-    }
-    .col-left .decor-leaf-flower{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 50px;
-    }
-    .heading-best-flower-col-right p{
-        text-align: unset !important;
-        padding: 15px 0 !important;
-        padding-right: 50px !important;
-    }
-    .container-text-takecare-detail h2{
-        text-align: unset !important;
-    }
-    .text-contain-love-what-we-do h2{
-        text-align: unset !important;
-    }
-    .text-take-care-detail{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-}
-@media (min-width: 576px){
-    .text-best-flower{
-        padding-top: 100px;
-    }
-    .col-left .decor-leaf-flower{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 50px;
-    }
-    .decor-leaf-flower-bottom-left > img{
-        width: 15%;
-        height: auto;
-        object-fit: contain;
-    }
-    .text-best-flower .more-btn{
-        display: flex;
-        justify-content: center;
-    }
-    .text-take-care-detail .more-btn{
-        display: flex;
-        justify-content: center;
-    }
-    .container-text-love-what-we-do .more-btn{
-        display: flex;
-        justify-content: center;   
-    }
-    .slick-prev.slick-arrow{
-        position: absolute;
-        left: 35%;
-    }
-    .slick-next.slick-arrow{
-        position: absolute;
-        right: 35%;
-    }
-    .text-best-flower{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .text-best-flower h2{
-        font-size: 45px;
-        align-items: center;
-    }
-    .heading-best-flower-col-right p{
-        text-align: center;
-        font-size: 20px;
-        padding: 15px 50px;
-    }
-    .image-take-care-detail{
-        display: flex;
-        justify-content: center;
-    }
-    .container-text-takecare-detail h2{
-        text-align: center;
-    }
-    .image-take-care-detail > img{
-        width: 70%;
-    }
-}
-@media (min-width: 480px){
-    .decor-leaf-flower-bottom-left > img{
-        width: 12%;
-        height: auto;
-        object-fit: contain;
-    }
-}
-@media(min-width: 375px){
-    .col-left .decor-leaf-flower{
-        padding-bottom: 0;
-    }
-    .slick-next.slick-arrow{
-        right: 34%;
-    }
-    .slick-prev.slick-arrow{
-        left: 34%;
-    }
-    .heading-best-flower-col-right{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 50px;
-    }
-    .leaf-right-bottom-take-care-detail > img{
-        width: 10%;
-    }
-    .more-btn{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    .leaf-decor-best-flower-bottom{
-        width: 10vw;
-    }
-    .image-take-care-detail{
-        padding-right: 0;
-    }
-    .heading-best-flower-col-right p, .container-text-takecare-detail p, .text-contain-love-what-we-do p,
-    .text-take-care-detail h2, .text-contain-love-what-we-do h2, .text-best-flower h2, .heading-best-flower-col-right p{
-        text-align: center;
-    }
-    .text-contain p{
-        padding: 20px 50px 50px;
-    }
 }
 @media (min-width: 280px){
     .nav-bar{
@@ -1149,21 +961,257 @@
         padding-top: 10px;
     }
 }
-@media (max-width: 480px){
-    .flower-arrange-banner .col-left h2{
-        font-size: 50px;
+@media(min-width: 375px){
+    .col-left .decor-leaf-flower{
+        padding-bottom: 0;
     }
-    .text-contain li{
-        font-size: 22px;
+    .slick-next.slick-arrow{
+        right: 34%;
+    }
+    .slick-prev.slick-arrow{
+        left: 34%;
+    }
+    .heading-best-flower-col-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .leaf-right-bottom-take-care-detail > img{
+        width: 10%;
+    }
+    .more-btn{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .leaf-decor-best-flower-bottom{
+        width: 10vw;
+    }
+    .image-take-care-detail{
+        padding-right: 0;
+    }
+    .heading-best-flower-col-right p, .container-text-takecare-detail p, .text-contain-love-what-we-do p,
+    .text-take-care-detail h2, .text-contain-love-what-we-do h2, .text-best-flower h2, .heading-best-flower-col-right p{
+        text-align: center;
     }
     .text-contain p{
-        font-size: 18px;
-        line-height: 25px;
+        padding: 20px 50px 50px;
     }
-    .how-we-do-it-content h2{
+}
+@media (min-width: 412px){
+    .text-best-flower h2{
+        padding: 0 3px;
+    }
+    .heading-best-flower-col-right p{
+        padding: 0 30px;
+    }
+    .decor-leaf-flower-bottom-left{
+        width: 14%;
+    }
+    .text-contain p{
+        width: 80%;
+        padding: 20px 0 40px;
+    }
+}
+@media (min-width: 576px){
+    .text-best-flower{
+        padding-top: 100px;
+    }
+    .col-left .decor-leaf-flower{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 50px;
+    }
+    .decor-leaf-flower-bottom-left > img{
+        width: 15%;
+        height: auto;
+        object-fit: contain;
+    }
+    .text-best-flower .more-btn{
+        display: flex;
+        justify-content: center;
+    }
+    .text-take-care-detail .more-btn{
+        display: flex;
+        justify-content: center;
+    }
+    .container-text-love-what-we-do .more-btn{
+        display: flex;
+        justify-content: center;   
+    }
+    .slick-prev.slick-arrow{
+        position: absolute;
+        left: 35%;
+    }
+    .slick-next.slick-arrow{
+        position: absolute;
+        right: 35%;
+    }
+    .text-best-flower{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-best-flower h2{
         font-size: 45px;
+        align-items: center;
     }
-    .how-we-do-it-content h4{
-        font-size: 15px;
+    .heading-best-flower-col-right p{
+        text-align: center;
+        font-size: 20px;
+        padding: 15px 50px;
+    }
+    .image-take-care-detail{
+        display: flex;
+        justify-content: center;
+    }
+    .container-text-takecare-detail h2{
+        text-align: center;
+    }
+    .image-take-care-detail > img{
+        width: 70%;
+    }
+}
+@media (min-width: 660px){
+    .heading-best-flower-col-right p{
+        padding: 0 80px;
+    }
+}
+@media (min-width: 768px){
+    .header{
+        justify-content: space-between;
+    }
+    .sidebar-btn{
+        padding-right: 20px;
+    }
+    .user-icon{
+        display: flex;
+        justify-content: center;
+        padding: 0 0;
+    }
+    .user-icon .icon-shopping{
+        padding: 0 18px;
+    }
+    .text-contain p{
+        width: 53%;
+    }
+    .decor-leaf-flower-bottom-left > img{
+        width: 12%;
+        height: auto;
+        object-fit: contain;
+    }
+    .col-left .decor-leaf-flower{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 50px;
+    }
+    .text-best-flower{
+        padding-top: unset;
+    }
+    .heading-best-flower-col-right p{
+        padding: unset;
+    }
+    .container-text-takecare-detail h2{
+        text-align: unset;
+    }
+    .text-contain-love-what-we-do{
+        width: 80%;
+    }
+    .text-contain-love-what-we-do h2{
+        text-align: unset;
+        font-size: 40px;
+    }
+    .text-contain-love-what-we-do p{
+        text-align: unset;
+    }
+    .text-take-care-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading-best-flower-col-right{
+        padding-top: unset;
+    }
+    .text-best-flower h2{
+        font-size: 40px;
+    }
+    .image-leaf-best-flower > img{
+        width: 70%;
+    }
+    .leaf-decor-best-flower-bottom{
+        bottom: -10vw;
+    }
+    .heading-contain-best-flower, .paragraph-contain-best-flower{
+        width: 80%;
+    }
+    .heading-best-flower-col-right p, .heading-best-flower-col-right h2{
+        text-align: unset;
+    }
+    .text-best-flower .more-btn{
+        width: 80%;
+        justify-content: flex-start;
+    }
+    .intro-take-care-details{
+        flex-direction: unset;
+    }
+    .intro-take-care-details{
+        padding-top: 80px;
+    }
+    .container-text-takecare-detail p{
+        text-align: unset;
+        padding: unset;
+    }
+    .text-take-care-detail .more-btn{
+        justify-content: flex-start;
+    }
+    .leaf-image-love-what-we-do{
+        padding-top: unset;
+    }
+    .leaf-image-love-what-we-do > img{
+        width: 30%;
+    }
+    .container-text-love-what-we-do .more-btn{
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@media (min-width: 992px){
+    .nav-bar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .flower-arrange-banner .col-left{
+        padding-bottom: 350px;
+    }
+    .decor-leaf-flower-bottom-left > img{
+        width: 20%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+@media (min-width: 1024px){
+    .intro-product-best-flower {
+        position: relative;
+        padding-top: 50px;
+        background-color: #e7e4db;
+        --bs-gutter-x: 0;
+        padding-bottom: 160px;
+        height: auto;
+    }
+    .intro-take-care-details{
+        padding-top: 100px;
+    }
+}
+@media (max-width: 992px) and (min-width: 360px){
+    .header .user-icon .sidebar-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
 }
