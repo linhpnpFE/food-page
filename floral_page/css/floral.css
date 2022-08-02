@@ -627,7 +627,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 .container-text-takecare-detail{
     display: flex;
@@ -1017,13 +1017,17 @@
         flex-direction: column;
         align-items: center;
         padding-top: 50px;
-        padding-bottom: 50px;
+    }
+    .leaf-right-bottom-take-care-detail > img{
+        width: 10%;
     }
     .more-btn{
         display: flex;
         justify-content: center;
-        margin-right: 0 !important;
         width: 100%;
+    }
+    .leaf-decor-best-flower-bottom{
+        width: 10vw;
     }
     .image-take-care-detail{
         padding-right: 0;
@@ -1039,6 +1043,9 @@
 @media (min-width: 280px){
     .nav-bar{
         display: none;
+    }
+    .flower-logo{
+        justify-content: flex-start;
     }
     .nav_sidebar{
         width: 50vw;
@@ -1081,15 +1088,15 @@
         padding-bottom: 100px;
     }
     .heading-best-flower-col-right{
-        padding-top: 50px;
+        padding-top: 30px;
         align-items: center;
-    }
-    .our-top-product-content h2, .text-best-flower h2{
-        font-size: 35px;
     }
     .heading-best-flower-col-right p{
         font-size: 18px;
         padding: 0 12px;
+    }
+    .our-top-product-content h2, .text-best-flower h2{
+        font-size: 35px;
     }
     .text-take-care-detail h2{
         font-size: 35px;
@@ -1108,7 +1115,7 @@
         flex-direction: column;
         align-items: center;
     }
-    .text-best-flower .more-btn, .flower-slider .more-btn, .text-take-care-detail .more-btn, .heading-love-what-we-do .more-btn{
+    .more-btn{
         display: flex;
         justify-content: center;
     }
@@ -1133,10 +1140,13 @@
         align-items: center;
     }
     .heading-take-care-detail{
-        padding-top: 50px;
+        padding-top: 30px;
     }
     .intro-love-what-we-do{
-        padding-top: unset;
+        padding-top: 50px;
+    }
+    .leaf-image-love-what-we-do{
+        padding-top: 10px;
     }
 }
 @media (max-width: 480px){
@@ -1155,54 +1165,5 @@
     }
     .how-we-do-it-content h4{
         font-size: 15px;
-    }
-}
-@media(max-width: 280px){
-    .icon-user, .icon-shopping{
-        display: none;
-    }
-    .sidebar-btn{
-        display: flex;
-    }
-    .col-left .decor-leaf-flower{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 20px;
-    }
-    .flower-arrange-banner .col-left h2{
-        font-size: 35px;
-    }
-    .text-contain li{
-        font-size: 17px;
-    }
-    .text-contain p {
-        font-size: 17px;
-        line-height: 21px;
-        padding: 20px 30px;
-    }
-    .slick-next.slick-arrow, .slick-prev.slick-arrow{
-        width: 35px;
-        height: 35px;
-    }
-    .how-we-do-it-content h2{
-        font-size: 35px;
-    }
-    .how-we-do-it-content h4{
-        font-size: 15px;
-    }
-    .our-top-product-content{
-        padding-top: 50px;
-    }
-    .heading-our-top-product{
-        padding-bottom: 30px;
-    }
-    .our-top-product-content h3{
-        font-size: 20px;
-    }
-    .slick-next.slick-arrow{
-        right: 34%;
-    }
-    .slick-prev.slick-arrow{
-        left: 34%;
     }
 }
