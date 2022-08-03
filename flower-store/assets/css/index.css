@@ -42574,8 +42574,13 @@ textarea {
 }
 @media (min-width: 992px) {
   .banner .box-image-position .image-1 {
-    top: -8rem;
+    top: -2rem;
     right: -6rem;
+  }
+}
+@media (min-width: 992px) {
+  .banner .box-image-position .image-1 {
+    top: -8rem;
   }
 }
 .banner .box-image-position .image-2 {
