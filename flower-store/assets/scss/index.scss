@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;700&display=swap');
 
 $tablet-width: 768px;
@@ -82,10 +82,6 @@ body {
     
         a {
             margin-right: 10px;
-        }
-
-        .menu_mobi {
-            display: none;
         }
     }
 
@@ -208,9 +204,10 @@ body {
                 background-color: #787878;
                 color:#ffffff;
                 padding: 5px 20px;
-                border-radius: 8px;
+                border-radius: 25px;
                 border: none;
                 font-weight: 700;
+                text-transform: uppercase;
 
                 @include desktop() {
                     font-size: 20px;
@@ -222,6 +219,7 @@ body {
                 border: none;
                 background: none;
                 font-weight: 700;
+                text-transform: uppercase;
 
                 @include desktop() {
                     font-size: 20px;
@@ -285,7 +283,7 @@ body {
             font-family: 'Montserrat Alternates', sans-serif;
             line-height: 1.256;;
             color: #ffffff;
-            font-weight: bold;
+            font-weight: 600;
             font-size: 20px;
 
             @include tablet() {
@@ -356,7 +354,7 @@ body {
     }
 
     .carousel-item {
-        padding: 15px;
+        padding: 25px 5px;
     }
 
     .smallbox_product {
@@ -430,11 +428,12 @@ body {
                 font-family: 'Montserrat Alternates', sans-serif;
                 border: none;
                 background-color: #454545;
-                border-radius: 8px;
+                border-radius: 25px;
                 padding:4px 16px;
                 color:#e6e3da;
                 font-size: 10px;
                 white-space: nowrap;
+                text-transform: uppercase;
 
                 @include desktop() {
                     font-size: 15px;
@@ -451,27 +450,26 @@ body {
 
         &::before {
             content: "";
-            background-image: url("../img/leaf_blog.png");
+            background-image: url("../img/leaf_product1.png");
             position: absolute;
             background-size: 100%;
-            background-position: right;
+            background-position: left;
             background-repeat: no-repeat;
             width: 67px;
             height: 67px;
-            right: 10%;
+            left: 5%;
         }
 
         &::after {
             content: "";
-            background-image: url("../img/leaf_blog.png");
+            background-image: url("../img/leaf_product.png");
             position: absolute;
             background-size: 100%;
             background-position: right;
             background-repeat: no-repeat;
             width: 67px;
             height: 67px;
-            left: 10%;
-            transform: scaleX(-1);
+            right: 5%;
         }
 
         .carousel-control-next, .carousel-control-prev {
@@ -560,6 +558,7 @@ body {
                 font-family: 'Montserrat Alternates', sans-serif;
                 color:#765a33;
                 font-size: 16px;
+                margin-top: 24px;
     
                 @include tablet() {
                     font-size: 20px;
@@ -572,7 +571,7 @@ body {
         }
     
         .box_video_aboutus {
-            margin-top: 50px;
+            margin-top: 80px;
             position: relative;
             z-index: 1;
     
@@ -664,7 +663,7 @@ body {
                     .cost_offer {
                         line-height: 0.905;
                         font-family: 'Montserrat Alternates', sans-serif;
-                        font-weight: bold;
+                        font-weight: 800;
                         font-size: 40px;
                         color:#424242;
                         margin-top: 10px;
@@ -838,7 +837,7 @@ body {
         
                         @include desktop() {
                             margin-left: 0;
-                            margin-right:93px
+                            margin-right:100px
                         }
                     }
 
@@ -947,11 +946,12 @@ body {
             font-family: 'Montserrat Alternates', sans-serif;
             border: none;
             background-color: #454545;
-            border-radius: 8px;
+            border-radius: 25px;
             padding:4px 16px;
             color:#e6e3da;
             font-size: 10px;
             margin-top: 15px;
+            text-transform: uppercase;
 
             @include desktop() {
                 font-size: 20px;
@@ -1023,8 +1023,10 @@ body {
             color:#ffffff;
             font-weight: bold;
             line-height: 1.046;
-            padding: 5px 10px;
+            padding: 10px 15px;
             margin-top: 50px;
+            border-radius: 25px;
+            text-transform: uppercase;
 
             @include desktop() {
                 font-size: 30px;
@@ -1090,17 +1092,19 @@ body {
 
         .follow_us_text {
             font-family: 'Montserrat Alternates', sans-serif;
-            font-size: 16px;
+            font-size: 25px;
             color: #ffffff;
+            font-weight: bold;
         }
     }
 
     .social_list {
+        margin-top: 5px;
 
         .social_link {
             color: #ffffff;
             border: 2px solid;
-            border-radius: 10px;
+            border-radius: 25px;
             padding: 1px 5px;
         }
     }
