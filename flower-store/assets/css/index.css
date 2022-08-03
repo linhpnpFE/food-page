@@ -42110,11 +42110,15 @@ textarea {
   margin-right: -2.5rem;
 }
 .header-page .menu-header li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 .header-page .menu-header a {
   font-size: 0.75rem;
+  line-height: 1;
   font-weight: 800;
 }
 .header-page .logo {
