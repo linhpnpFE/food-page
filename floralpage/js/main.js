@@ -15,21 +15,21 @@ function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) 
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  animateNumber(3000, 2000, 0, function (number) {
+  animateNumber(3000, 7000, 0, function (number) {
     const formattedNumber = number.toLocaleString()
     document.getElementById('packages').innerText = formattedNumber
   })
   
-  animateNumber(5000, 2000, 0, function (number) {
+  animateNumber(5000, 7000, 0, function (number) {
     const formattedNumber = number.toLocaleString()
     document.getElementById('bouquet').innerText = formattedNumber
   })
   
-  animateNumber(7000, 2000, 0, function (number) {
+  animateNumber(7000, 7000, 0, function (number) {
     const formattedNumber = number.toLocaleString()
     document.getElementById('happy-clien').innerText = formattedNumber
   })
-  animateNumber(10, 2000, 0, function (number) {
+  animateNumber(10, 7000, 0, function (number) {
     const formattedNumber = number.toLocaleString()
     document.getElementById('years').innerText = formattedNumber
   })
@@ -50,7 +50,14 @@ const showclick = document.querySelector('.click-hd2')
   hideclick.classList.add('active')
   showclick.classList.remove('active')
 })
-
+const heartclick = document.querySelectorAll('.item-heart')
+  for (let i = 0; i < heartclick.length; ++i) {
+    heartclick[i].addEventListener('click', () => {
+      if (true) {
+        heartclick[i].classList.add('active2')
+      }
+    })
+  }
 
 
 
