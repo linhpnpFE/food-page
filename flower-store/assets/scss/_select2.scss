@@ -1,0 +1,40 @@
+.select2-selection,
+.select2-selection__rendered,
+.select2-selection__arrow {
+  height: 52px !important;
+  line-height: 52px !important;
+}
+
+.select2-container {
+  width: 100px !important;
+  @include media-breakpoint-up(xxl) {
+    width: 120px !important;
+  }
+  margin-right: 8px;
+}
+
+.select2-selection {
+  border: 1px solid #ced4da !important;
+  border-radius: 8px !important;
+}
+
+.sl2-option {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: $dark;
+}
+
+.sl2-img-flag {
+  max-width: 24px;
+  margin-right: 8px;
+  transform: translateY(-2px);
+
+  & + span {
+    font-size: 14px;
+  }
+}
+
+.select2-search__field {
+  outline: none !important;
+}

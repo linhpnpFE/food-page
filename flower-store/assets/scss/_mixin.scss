@@ -1,0 +1,58 @@
+@mixin trans {
+  transition: all 0.3s ease;
+}
+
+@mixin trans-fast {
+  transition: all 0.15s ease;
+}
+
+@mixin trans-slow {
+  transition: all 0.45s ease;
+}
+
+@mixin minWidth($value) {
+  @media (min-width: $value) {
+    @content;
+  }
+}
+@mixin maxWidth($value) {
+  @media (max-width: $value) {
+    @content;
+  }
+}
+
+@mixin minmaxWidth($value1, $value2) {
+  @media (min-width: $value1) and (max-width: $value2) {
+    @content;
+  }
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin radius-border($value-radius) {
+  -webkit-border-radius: $value-radius;
+  -khtml-border-radius: $value-radius;
+  -moz-border-radius: $value-radius;
+  border-radius: $value-radius;
+  overflow: hidden;
+}
+
+@mixin absoluteItem($direction: "left") {
+  position: absolute;
+  @if $direction == "left" {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @if $direction == "top" {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @if $direction == "both" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,69 @@
+.footer-page {
+  background: $primary-grey;
+  padding: 8rem 0;
+  @include minWidth(992px) {
+    padding: 10.625rem 0;
+  }
+
+  h4 {
+    color: $light;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    @include minWidth(992px) {
+      font-size: 2.375rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  a {
+    color: $light;
+    word-break: break-all;
+    @include trans;
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+  }
+
+  li {
+    margin-bottom: 1.25rem;
+  }
+
+  .text {
+    color: $light;
+  }
+
+  .list-icon {
+    li {
+      margin-bottom: 0;
+      margin-left: 1rem;
+      @include minWidth(992px) {
+        margin-left: 2.188rem;
+      }
+    }
+
+    a {
+      width: 3.125rem;
+      height: 3.125rem;
+      border-radius: 50%;
+      border: 3px solid $light;
+      padding: 5px;
+      &:hover,
+      &:focus {
+        border-color: $primary;
+      }
+    }
+  }
+}
+.menu-footer {
+  a {
+    display: inline-block;
+    @include minWidth(992px) {
+      margin: 10px 0;
+    }
+
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}
