@@ -82,6 +82,9 @@
       @include minWidth(992px) {
         bottom: -9rem;
         left: -3.5rem;
+        width: 8.875rem;
+      }
+      @include minWidth(1440px) {
         width: 11.875rem;
       }
     }
