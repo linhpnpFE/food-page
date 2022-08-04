@@ -15,21 +15,21 @@ function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) 
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  animateNumber(3000, 7000, 0, function (number) {
+  animateNumber(3000, 3000, 0, function (number) {
     const formattedNumber = number.toLocaleString()
     document.getElementById('packages').innerText = formattedNumber
   })
   
-  animateNumber(5000, 7000, 0, function (number) {
+  animateNumber(5000, 3000, 0, function (number) {
     const formattedNumber = number.toLocaleString()
     document.getElementById('bouquet').innerText = formattedNumber
   })
   
-  animateNumber(7000, 7000, 0, function (number) {
+  animateNumber(7000, 3000, 0, function (number) {
     const formattedNumber = number.toLocaleString()
     document.getElementById('happy-clien').innerText = formattedNumber
   })
-  animateNumber(10, 7000, 0, function (number) {
+  animateNumber(10, 3000, 0, function (number) {
     const formattedNumber = number.toLocaleString()
     document.getElementById('years').innerText = formattedNumber
   })
