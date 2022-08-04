@@ -193,10 +193,33 @@
     flex-direction: column;
     align-items: center;
 }
-.text-contain li{
+.text-contain h3{
+    position: relative;
     font-family: 'Montserrat Alternates', sans-serif;
     color: rgb(118, 90, 51);
-    font-size: 25.3px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+.text-contain h3::before{
+    position: absolute;
+    left: -5%;
+    top: 39%;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #765a33;
+}
+.text-contain h3::after{
+    position: absolute;
+    content: '';
+    right: -5%;
+    top: 39%;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #765a33;
 }
 .text-contain p{
     text-align: justify;
@@ -282,7 +305,6 @@
     font-weight: 600;
     color: rgb(118, 90, 51);
     margin-bottom: 0;
-    text-align: center;
 }
 .leaf-product-top-left > img{
     width: 100%;
@@ -312,8 +334,14 @@
     width: 90%;
     object-fit: contain;
 }
+.love-icon-click{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-top: 15px;
+}
 .intro-text-product{
-    padding-top: 30px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,7 +353,6 @@
     font-size: 30px;
 }
 .intro-text-product p{
-    padding: 15px 35px;
     font-size: 15px;
     line-height: 20px;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -349,26 +376,21 @@
     display: flex;
     justify-content: space-around;
 }
-.slick-slider .slick-arrow:focus, .slick-slider .slick-arrow:hover{
-    background-color: rgb(69, 69, 69);
-    color: #fff;
-}
 .slick-prev.slick-arrow{
     top: 115%;
     left: 40%;
 }
-.slick-next.slick-arrow, .slick-prev.slick-arrow{
-    font-size: 20px;
-    color: white;
+.slick-next.slick-arrow{
+    background: url(/floral_page/img_and_fonts/image/button_next.png);
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background-color: rgb(69, 69, 69);
-    border: none;
-    position: absolute;
+    background-repeat:no-repeat;
 }
-.slick-prev.slick-arrow:hover{
-    background-color: rgb(69, 69, 69);
+.slick-prev.slick-arrow{
+    background: url(/floral_page/img_and_fonts/image/button_previous.png);
+    width: 50px;
+    height: 50px;
+    background-repeat:no-repeat;
 }
 .slick-prev.slick-arrow::before{
     content: unset;
@@ -379,9 +401,6 @@
 .slick-next.slick-arrow{
     top: 115%;
     right: 40%;
-}
-.slick-next.slick-arrow:hover{
-    background-color: rgb(69, 69, 69);
 }
 .nav_list{
     padding-left: 0;
@@ -407,6 +426,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.container-video-how-we-do-it{
+    position: relative;
+    z-index: 2;
+}
+.container-video-how-we-do-it > i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    z-index: 1;
 }
 .leaf-left-how-we-do-it{
     position: absolute;
@@ -589,8 +621,8 @@
 .text-best-flower{
     width: 80%;
 }
-.text-best-flower .more-btn{
-    padding-left: 0;
+.heading-container-take-care-detail h2, .heading-contain-best-flower h2{
+    color: rgb(72, 74, 75);
 }
 .text-best-flower h2{
     font-family: 'Playfair Display', serif;
@@ -822,10 +854,23 @@
     align-items: center;
     width: 100%;
 }
-.fill-form input{
-    width: 80%;
-    padding: 25px 0;
-    padding-left: 30px;
+.fill-form .container-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container-form .name-form, .container-form .mail-form{
+    width: 75%;
+    height: 62px;
+    padding: 20px 20px 20px;
+}
+.container-form .main_txt_area{
+    width: 75%;
+    height: 146px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 .fill-form .name-form, .fill-form .mail-form, .fill-form .message-form{
     margin-bottom: 30px;
@@ -850,8 +895,36 @@
     font-size: 15px;
 }
 .footer{
-
+    padding-top: 130px;
+    padding-bottom: 70px;
+    background-color: #424242;
+    height: auto;
 }
+.container-footer{
+    padding-bottom: 50px;
+}
+.heading-follow-us{
+    display: flex;
+    align-items: center;
+}
+.what-we-do{
+    display: flex;
+    justify-content: center;
+}
+/* .instagram-icon{
+    display: flex;
+    color: #fff;
+    width: 30px;
+    height: 36.8px;
+    align-items: center;
+}
+.youtube-icon{
+    display: flex;
+    color: #fff;
+    width: 30px;
+    height: 36.8px;
+    align-items: center;
+} */
 @media (min-width: 280px){
     .nav-bar{
         display: none;
@@ -862,7 +935,11 @@
     .nav_sidebar{
         width: 50vw;
     }
+    .user-icon .icon-user, .user-icon .icon-shopping{
+        display: none;
+    }
     .sidebar-btn{
+        display: flex;
         padding-right: unset;
     }
     .col-left .decor-leaf-flower{
@@ -871,6 +948,10 @@
     .flower-arrange-banner .col-left{
         position: relative;
         padding-bottom: 120px;
+    }
+    .text-contain p{
+        font-size: 21px;
+        padding: 15px 25px 20px;
     }
     .decor-leaf-flower-bottom-left{
         position: absolute;
@@ -889,9 +970,18 @@
     .heading-our-top-product{
         padding-bottom: 40px;
     }
-    .intro-text-product p, .text-best-flower h2, .heading-best-flower-col-right p, 
+    .heading-our-top-product h3{
+        text-align: center;
+    }
+    .container-paragraph-product p, .text-best-flower h2, .heading-best-flower-col-right p, 
     .text-take-care-detail h2, .text-contain-love-what-we-do h2, .text-contain-love-what-we-do p{
         text-align: center;
+    }
+    .how-we-do-it-content h2{
+        font-size: 40px;
+    }
+    .how-we-do-it-content h4{
+        font-size: 15px;
     }
     .video-how-we-do-it{
         padding-top: 50px;
@@ -934,6 +1024,9 @@
     .leaf-image-love-what-we-do{
         width: 100%;
     }
+    .flower-arrange-banner .col-left h2{
+        font-size: 40px;
+    }
     .text-contain-love-what-we-do h2{
         font-size: 35px;
     }
@@ -962,6 +1055,9 @@
     }
 }
 @media(min-width: 375px){
+    .user-icon .icon-user, .user-icon .icon-shopping{
+        display: flex;
+    }
     .col-left .decor-leaf-flower{
         padding-bottom: 0;
     }
@@ -1023,9 +1119,12 @@
         padding-bottom: 20px;
         padding-right: 50px;
     }
+    .decor-leaf-flower-bottom-left{
+        width: 16%;
+    }
     .decor-leaf-flower-bottom-left > img{
-        width: 15%;
-        height: auto;
+        width: 100%;
+        height: fit-content;
         object-fit: contain;
     }
     .text-best-flower .more-btn{
@@ -1075,6 +1174,20 @@
     }
 }
 @media (min-width: 660px){
+    .flower-arrange-banner .col-left h2{
+        font-size: 55px;
+    }
+    .text-contain h3{
+        font-size: 28px;
+    }
+    .decor-leaf-flower-bottom-left{
+        width: 15%;
+    }
+    .decor-leaf-flower-bottom-left > img{
+        width: 100%;
+        height: fit-content;
+        object-fit: contain;
+    }
     .heading-best-flower-col-right p{
         padding: 0 80px;
     }
@@ -1086,8 +1199,10 @@
     .sidebar-btn{
         padding-right: 20px;
     }
-    .user-icon{
+    .user-icon, .container-text-love-what-we-do .more-btn{
         display: flex;
+    }
+    .user-icon{
         justify-content: center;
         padding: 0 0;
     }
@@ -1098,8 +1213,8 @@
         width: 53%;
     }
     .decor-leaf-flower-bottom-left > img{
-        width: 12%;
-        height: auto;
+        width: 100%;
+        height: fit-content;
         object-fit: contain;
     }
     .col-left .decor-leaf-flower{
@@ -1107,27 +1222,37 @@
         padding-bottom: 20px;
         padding-right: 50px;
     }
-    .text-best-flower{
-        padding-top: unset;
+    .heading-container-text-product{
+        display: flex;
+        justify-content: center;
     }
-    .heading-best-flower-col-right p{
+    .heading-container-text-product h2{
+        text-align: unset;
+    }
+    .container-paragraph-product{
+        width: 80%;
+    }
+    .container-paragraph-product p{
+        text-align: unset;
         padding: unset;
     }
-    .container-text-takecare-detail h2{
-        text-align: unset;
+    .flower-slider .more-btn{
+        padding: 0 10%;
+        justify-content: flex-start;
+    }
+    .text-best-flower, .heading-best-flower-col-right p, .container-text-takecare-detail h2, .text-contain-love-what-we-do h2{
+        padding: unset;
     }
     .text-contain-love-what-we-do{
         width: 80%;
     }
     .text-contain-love-what-we-do h2{
-        text-align: unset;
         font-size: 40px;
     }
     .text-contain-love-what-we-do p{
         text-align: unset;
     }
     .text-take-care-detail{
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -1159,9 +1284,30 @@
     .intro-take-care-details{
         padding-top: 80px;
     }
+    .container-text-take-care-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading-container-take-care-detail{
+        width: 80%;
+    }
+    .heading-container-take-care-detail h2{
+        text-align: unset;
+        font-size: 40px;
+    }
+    .container-paragraph-take-care-detail{
+        width: 80%;
+    }
+    .text-take-care-detail .more-btn{
+        width: 80%;
+    }
     .container-text-takecare-detail p{
         text-align: unset;
         padding: unset;
+    }
+    .heading-container-love-what-we-do h2{
+        text-align: unset;
     }
     .text-take-care-detail .more-btn{
         justify-content: flex-start;
@@ -1174,8 +1320,60 @@
     }
     .container-text-love-what-we-do .more-btn{
         width: 80%;
-        display: flex;
         justify-content: flex-start;
+    }
+
+    .about{
+        display: flex;
+        justify-content: center;
+    }
+    .about h3, .about h4, .what-we-do h3, .what-we-do h4, 
+    .your-company h3, .your-company h4, .follow-us h4, 
+    .facebook-icon a, .instagram-icon a, .youtube-icon a{
+        color: #fff;
+    }
+    .follow-us a{
+        text-decoration: none;
+    }
+    .follow-us h4{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .about h3, .what-we-do h3, .your-company h3, .follow-us h4{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 900;
+    }
+    .about h3, .what-we-do h3, .your-company h3{
+        font-size: 25px;
+    }
+    .follow-us h4{
+        font-size: 20px;
+    }
+    .about h4, .what-we-do h4, .your-company h4{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 15px;
+    }
+    .about-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .your-company{
+        display: flex;
+        justify-content: center;
+    }
+    .follow-us{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 100px;
+    }
+    
+    .facebook-icon, .instagram-icon, .youtube-icon{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .facebook-icon i, .instagram-icon i, .youtube-icon i{
+        font-size: 30px;
     }
 }
 @media (min-width: 992px){
@@ -1185,13 +1383,70 @@
         align-items: center;
         height: 100%;
     }
+    .decor-leaf-flower-bottom-left > img{
+        width: 100%;
+        height: fit-content;
+        object-fit: contain;
+    }
     .flower-arrange-banner .col-left{
         padding-bottom: 350px;
     }
-    .decor-leaf-flower-bottom-left > img{
-        width: 20%;
-        height: auto;
-        object-fit: contain;
+    .heading-container-take-care-detail h2, .heading-contain-best-flower h2, .heading-container-love-what-we-do h2{
+        font-size: 50px;
+    }
+    .heading-subcribe-form h2{
+        font-size: 50px;
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+    }
+    .about h3, .about h4, .what-we-do h3, .what-we-do h4, 
+    .your-company h3, .your-company h4, .follow-us h4, 
+    .facebook-icon a, .instagram-icon a, .youtube-icon a{
+        color: #fff;
+    }
+    .follow-us a{
+        text-decoration: none;
+    }
+    .follow-us h4{
+        margin-bottom: 0;
+    }
+    .about h3, .what-we-do h3, .your-company h3, .follow-us h4{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 900;
+    }
+    .about h3, .what-we-do h3, .your-company h3{
+        font-size: 30px;
+    }
+    .about h4, .what-we-do h4, .your-company h4{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 22px;
+    }
+    .follow-us h4{
+        font-size: 22px;
+    }
+    .about-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .your-company{
+        display: flex;
+        justify-content: center;
+    }
+    .follow-us{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 100px;
+    }
+    
+    .facebook-icon, .instagram-icon, .youtube-icon{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .facebook-icon i, .instagram-icon i, .youtube-icon i{
+        font-size: 30px;
     }
 }
 @media (min-width: 1024px){
@@ -1200,11 +1455,29 @@
         padding-top: 50px;
         background-color: #e7e4db;
         --bs-gutter-x: 0;
-        padding-bottom: 160px;
+        padding-bottom: 20px;
         height: auto;
     }
     .intro-take-care-details{
-        padding-top: 100px;
+        padding-top: 190px;
+    }
+}
+@media (min-width: 1200px){
+    .flower-slider .more-btn{
+        padding: 0 17%;
+    }
+    .container-paragraph-product{
+        width: 67%;
+    }
+    .about h3, .what-we-do h3, .your-company h3{
+        font-size: 35px;
+    }
+    .about h4, .what-we-do h4, .your-company h4{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 25px;
+    }
+    .follow-us h4{
+        font-size: 25px;
     }
 }
 @media (max-width: 992px) and (min-width: 360px){

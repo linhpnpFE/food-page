@@ -91,3 +91,33 @@ function animateNumber(finalNumber, delay, startNumber = 0, callback) {
       document.getElementById('year-of-exp-number').innerText = formattedNumber
     })
   })
+
+$(document).ready(function(){
+  $(".love_icon").click(function() {
+      if ($(this).hasClass("fa-regular")) {
+          $(this).removeClass("fa-regular");
+          $(this).addClass("fa-solid").css("color","red");
+      } else {
+          $(this).removeClass("fa-solid");
+          $(this).addClass("fa-regular").css("color","black");
+      }
+  });
+
+  $(".fa-circle-play").click(function() {
+    $(".fa-circle-play").hide();
+    $(".video-how-to").trigger('play');
+    $('.video-how-to').attr('controls',true);
+  })
+});
+var setTotalNumberOfWordCounter = 200;
+function displayWordCounter(){
+var getTextValue = document.frm.dd_fc_comment.value;  // Get input textarea value
+var getTextLength = getTextValue.length;   // Get length of input textarea value
+if(getTextLength > setTotalNumberOfWordCounter){     //compare this length with total count
+        getTextValue = getTextValue.substring(0,setTotalNumberOfWordCounter);
+        document.frm.dd_fc_comment.value =getTextValue;
+        return false;
+}
+document.frm.totalWordLimit.value = (setTotalNumberOfWordCounter-getTextLength);
+  
+}
