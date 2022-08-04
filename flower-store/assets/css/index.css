@@ -11,12 +11,12 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .block_header {
-    padding: 15px 0px 10px;
+    padding: 10px 0px 10px;
   }
 }
 @media (min-width: 1024px) {
   .block_header {
-    padding: 30px 0px 25px;
+    padding: 10px 0px 10px;
   }
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .nav-item {
-  font-size: 16px;
+  font-size: 11.34 px;
   font-family: "Montserrat", sans-serif;
   color: #e7e4db;
   line-height: 2.048;
@@ -40,14 +40,8 @@ body {
   margin: auto;
   font-weight: bold;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .nav-item {
-    font-size: 15px;
-  }
-}
 @media (min-width: 1024px) {
   .nav-item {
-    font-size: 20px;
     margin: 0 25px;
   }
 }
@@ -66,6 +60,10 @@ body {
   margin-right: 10px;
 }
 
+.block_banner {
+  margin-top: 85px;
+}
+
 .box_banner:nth-child(1) {
   background-image: url("../img/leaf_banner.png");
   background-position: bottom left;
@@ -74,12 +72,12 @@ body {
 }
 
 .box_small_banner {
-  padding: 30px 45px 30px;
   position: relative;
   background-image: url("../img/leaf_topbanner.png");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 15%;
+  padding: 20px;
 }
 .box_small_banner .box_small_text {
   position: relative;
@@ -87,24 +85,24 @@ body {
 .box_small_banner .box_small_text .banner_title {
   font-family: "Playfair Display", serif;
   overflow: hidden;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
   color: #484a4b;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .box_small_banner .box_small_text .banner_title {
-    font-size: 40px;
+    font-size: 50px;
     overflow: unset;
   }
 }
 @media (min-width: 1024px) {
   .box_small_banner .box_small_text .banner_title {
-    font-size: 100px;
+    font-size: 58.33px;
   }
 }
 .box_small_banner .box_small_text .small_title {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 30px;
+  font-size: 18px;
   overflow: hidden;
   font-weight: 700;
   color: #765a33;
@@ -154,7 +152,7 @@ body {
 }
 .box_small_banner .box_small_text .para_text {
   font-family: "Josefin Slab", serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .box_small_banner .box_small_text .para_text {
@@ -175,10 +173,11 @@ body {
   border: none;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 8px;
 }
 @media (min-width: 1024px) {
   .box_small_banner .box_button .btn_shop {
-    font-size: 20px;
+    font-size: 12.5px;
   }
 }
 .box_small_banner .box_button .btn_read {
@@ -186,11 +185,12 @@ body {
   border: none;
   background: none;
   font-weight: 700;
+  font-size: 8px;
   text-transform: uppercase;
 }
 @media (min-width: 1024px) {
   .box_small_banner .box_button .btn_read {
-    font-size: 20px;
+    font-size: 12.5px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -204,6 +204,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 60%;
   }
 }
 
@@ -235,16 +236,16 @@ body {
   font-weight: bold;
   line-height: 0.67;
   color: #ffffff;
-  font-size: 45px;
+  font-size: 35px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .small_box_achive .achive_count {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 @media (min-width: 1024px) {
   .small_box_achive .achive_count {
-    font-size: 70px;
+    font-size: 48.21 px;
   }
 }
 .small_box_achive .achive_name {
@@ -252,12 +253,7 @@ body {
   line-height: 1.256;
   color: #ffffff;
   font-weight: 600;
-  font-size: 20px;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .small_box_achive .achive_name {
-    font-size: 16px;
-  }
+  font-size: 16.67 px;
 }
 
 .block_product {
@@ -281,12 +277,12 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .box_product_title .product_title {
-    font-size: 100px;
+    font-size: 50px;
   }
 }
 @media (min-width: 1024px) {
   .box_product_title .product_title {
-    font-size: 134px;
+    font-size: 58.33px;
   }
 }
 .box_product_title .product_small_title {
@@ -361,7 +357,6 @@ body {
   color: #484a4b;
   font-weight: bold;
   line-height: 0.905;
-  text-align: center;
   font-size: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -378,7 +373,7 @@ body {
 }
 .smallbox_product .detail_product .detail_product_text {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 12px;
+  font-size: 12.5px;
   line-height: 1.333;
   color: #6b502c;
   overflow: hidden;
@@ -391,49 +386,33 @@ body {
   border-radius: 25px;
   padding: 4px 16px;
   color: #e6e3da;
-  font-size: 10px;
+  font-size: 10.1px;
   white-space: nowrap;
   text-transform: uppercase;
-}
-@media (min-width: 1024px) {
-  .smallbox_product .detail_product .read_product {
-    font-size: 15px;
-  }
 }
 
 .button_carousel {
   margin-top: 30px;
-  position: relative;
+  display: flex;
+  justify-content: space-evenly;
 }
-.button_carousel::before {
-  content: "";
-  background-image: url("../img/leaf_product1.png");
-  position: absolute;
-  background-size: 100%;
-  background-position: left;
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 67px;
-  left: 5%;
+.button_carousel .pic_cover_btn_product img {
+  max-width: 100%;
+  max-height: 100%;
 }
-.button_carousel::after {
-  content: "";
-  background-image: url("../img/leaf_product.png");
-  position: absolute;
-  background-size: 100%;
-  background-position: right;
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 67px;
-  right: 5%;
+.button_carousel .box_button {
+  display: flex;
+  flex-direction: row-reverse;
 }
-.button_carousel .carousel-control-next, .button_carousel .carousel-control-prev {
+.button_carousel .box_button .carousel-control-next, .button_carousel .box_button .carousel-control-prev {
   position: relative;
   display: inline-block;
-  background-color: #454545;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+}
+.button_carousel .box_button .carousel-control-next img, .button_carousel .box_button .carousel-control-prev img {
+  width: 46px;
+  height: 47px;
 }
 
 .pc_second {
@@ -488,16 +467,16 @@ body {
   font-weight: bold;
   line-height: 0.905;
   color: #484a4b;
-  font-size: 35px;
+  font-size: 20px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .box_about_us .box_aboutus_title .aboutus_title {
-    font-size: 100px;
+    font-size: 24px;
   }
 }
 @media (min-width: 1024px) {
   .box_about_us .box_aboutus_title .aboutus_title {
-    font-size: 134px;
+    font-size: 58.33px;
   }
 }
 .box_about_us .box_aboutus_title .aboutus_small_title {
@@ -508,7 +487,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .box_about_us .box_aboutus_title .aboutus_small_title {
-    font-size: 20px;
+    font-size: 20x;
   }
 }
 @media (min-width: 1024px) {
@@ -592,12 +571,12 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .box_offer .box_offer_detail .box_offer_text .offer_title {
-    font-size: 30px;
+    font-size: 23px;
   }
 }
 @media (min-width: 1024px) {
   .box_offer .box_offer_detail .box_offer_text .offer_title {
-    font-size: 40px;
+    font-size: 26.69px;
   }
 }
 .box_offer .box_offer_detail .box_offer_text .cost_offer {
@@ -610,12 +589,12 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .box_offer .box_offer_detail .box_offer_text .cost_offer {
-    font-size: 50px;
+    font-size: 80px;
   }
 }
 @media (min-width: 1024px) {
   .box_offer .box_offer_detail .box_offer_text .cost_offer {
-    font-size: 139px;
+    font-size: 163.67px;
   }
 }
 .box_offer .box_offer_detail .box_offer_text .offer_text {
@@ -666,9 +645,6 @@ body {
   margin-top: 100px;
 }
 
-.box_blog {
-  margin-top: 50px;
-}
 .box_blog:nth-child(odd) {
   background-image: url("../img/big_leaf.png");
   background-repeat: no-repeat;
@@ -678,12 +654,12 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .box_blog:nth-child(odd) {
-    padding-bottom: 130px;
+    padding-bottom: 250px;
   }
 }
 @media (min-width: 1024px) {
   .box_blog:nth-child(odd) {
-    padding-bottom: 130px;
+    padding-bottom: 370px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -721,16 +697,16 @@ body {
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 10%;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .box_blog:nth-child(even) {
-    padding-bottom: 130px;
+    padding-bottom: 250px;
   }
 }
 @media (min-width: 1024px) {
   .box_blog:nth-child(even) {
-    padding-bottom: 130px;
+    padding-bottom: 370px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -819,6 +795,7 @@ body {
   margin-top: 10px;
 }
 .content_blog .content_blog_title {
+  margin-top: 40px;
   font-family: "Playfair Display", serif;
   font-weight: bold;
   line-height: 1.071;
@@ -832,7 +809,7 @@ body {
 }
 @media (min-width: 1024px) {
   .content_blog .content_blog_title {
-    font-size: 52px;
+    font-size: 58.33px;
   }
 }
 .content_blog .content_text {
@@ -844,12 +821,12 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .content_blog .content_text {
-    font-size: 13px;
+    font-size: 18px;
   }
 }
 @media (min-width: 1024px) {
   .content_blog .content_text {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 .content_blog .read_more {
@@ -865,13 +842,12 @@ body {
 }
 @media (min-width: 1024px) {
   .content_blog .read_more {
-    font-size: 20px;
+    font-size: 10px;
   }
 }
 
 .block_subscribe {
   padding-bottom: 40px;
-  margin-top: 46px;
 }
 
 .box_sub .box_sup_title {
@@ -880,7 +856,7 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 50px;
   color: #484a4b;
-  font-size: 24px;
+  font-size: 26px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .box_sub .box_sup_title {
@@ -889,7 +865,7 @@ body {
 }
 @media (min-width: 1024px) {
   .box_sub .box_sup_title {
-    font-size: 114px;
+    font-size: 58.33px;
   }
 }
 .box_sub .box_sup_small_title {
@@ -932,7 +908,7 @@ body {
 }
 @media (min-width: 1024px) {
   .info_sub .btn_sub {
-    font-size: 30px;
+    font-size: 18.25px;
   }
 }
 
@@ -944,6 +920,9 @@ body {
 .box_footer {
   margin-top: 20px;
 }
+.box_footer .footer_title {
+  margin-bottom: 30px;
+}
 .box_footer .footer_title .title_text {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -953,11 +932,12 @@ body {
 }
 @media (min-width: 1024px) {
   .box_footer .footer_title .title_text {
-    font-size: 40px;
+    font-size: 37.5px;
   }
 }
 .box_footer .info_footer a {
   text-decoration: none;
+  margin-bottom: 24px;
 }
 .box_footer .info_footer a .info_footer_text {
   font-family: "Montserrat Alternates", sans-serif;
@@ -965,6 +945,11 @@ body {
   color: #ffffff;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (min-width: 1024px) {
+  .box_footer .info_footer a .info_footer_text {
+    font-size: 25px;
+  }
 }
 
 .follow_us {
