@@ -19,7 +19,6 @@
     width: 150px;
     height: 45px;
 }
-
 .nav-bar .nav-bar-list {
     display: inline-block;
     margin-bottom: 0;
@@ -68,7 +67,6 @@
     color: #fff;
     font-size: 20px;
 }
-
 .nav_overlay{
     position: fixed;
     top: 0;
@@ -88,7 +86,6 @@
     height: 100vh;
     position: relative;
 }
-
 .nav_sidebar .nav_list > li{
     display: block;
     width: 100%;
@@ -911,20 +908,9 @@
     display: flex;
     justify-content: center;
 }
-/* .instagram-icon{
-    display: flex;
-    color: #fff;
-    width: 30px;
-    height: 36.8px;
-    align-items: center;
+.container-footer{
+    --bs-gutter-x: 0;
 }
-.youtube-icon{
-    display: flex;
-    color: #fff;
-    width: 30px;
-    height: 36.8px;
-    align-items: center;
-} */
 @media (min-width: 280px){
     .nav-bar{
         display: none;
@@ -1053,6 +1039,77 @@
     .leaf-image-love-what-we-do{
         padding-top: 10px;
     }
+    .footer{
+        padding-top: 50px;
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+    }
+    .about, .what-we-do{
+        padding-bottom: 30px;
+    }
+    .about h3, .about h4, .what-we-do h3, .what-we-do h4, 
+    .your-company h3, .your-company h4, .follow-us h4, 
+    .facebook-icon a, .instagram-icon a, .youtube-icon a{
+        color: #fff;
+    }
+    .follow-us a{
+        text-decoration: none;
+    }
+    .follow-us h4{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .about h3, .what-we-do h3, .your-company h3, .follow-us h4{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 900;
+    }
+    .about h3, .what-we-do h3, .your-company h3{
+        font-size: 25px;
+    }
+    .follow-us h4{
+        font-size: 20px;
+    }
+    .about h4, .what-we-do h4, .your-company h4{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 15px;
+    }
+    .about-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .your-company{
+        display: flex;
+        justify-content: center;
+        padding: unset;
+    }
+    .follow-us{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 20px;
+    }
+    .contain-follow-us{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .facebook-icon, .instagram-icon, .youtube-icon{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .facebook-icon i, .instagram-icon i, .youtube-icon i{
+        font-size: 20px;
+    }
+    .container-heading-text-about, .container-heading-text-what-we-do, .your-company-address{
+        width: 80%;
+    }
+    .heading-follow-us{
+        padding-right: 20px;
+    }
+    .icon-footer{
+        display: flex;
+    }
 }
 @media(min-width: 375px){
     .user-icon .icon-user, .user-icon .icon-shopping{
@@ -1094,6 +1151,9 @@
     .text-contain p{
         padding: 20px 50px 50px;
     }
+    .icon-footer{
+        display: flex;
+    }
 }
 @media (min-width: 412px){
     .text-best-flower h2{
@@ -1108,6 +1168,19 @@
     .text-contain p{
         width: 80%;
         padding: 20px 0 40px;
+    }
+    .follow-us, .icon-footer{
+        display: flex;
+    }
+    .facebook-icon, .instagram-icon, .youtube-icon{
+        width: 36px;
+    }
+    .heading-follow-us{
+        display: flex;
+        justify-content: center;
+    }
+    .contain-follow-us, .contain-media-icon{
+        width: 80%;
     }
 }
 @media (min-width: 576px){
@@ -1172,6 +1245,50 @@
     .image-take-care-detail > img{
         width: 70%;
     }
+    .about{
+        display: flex;
+        justify-content: center;
+    }
+    .container-heading-text-about{
+        width: 80%;
+    }
+    .your-company{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .your-company-address{
+        width: 80%;
+    }
+    .about h3, .about h4, .what-we-do h3, .what-we-do h4, 
+    .your-company h3, .your-company h4, .follow-us h4, 
+    .facebook-icon a, .instagram-icon a, .youtube-icon a{
+        color: #fff;
+    }
+    .follow-us a{
+        text-decoration: none;
+    }
+    .follow-us h4{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .about h3, .what-we-do h3, .your-company h3, .follow-us h4{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 900;
+    }
+    .about h3, .what-we-do h3, .your-company h3{
+        font-size: 25px;
+    }
+    .follow-us h4{
+        font-size: 20px;
+    }
+    .about h4, .what-we-do h4, .your-company h4{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 15px;
+    }
+    .facebook-icon i, .instagram-icon i, .youtube-icon i{
+        font-size: 25px;
+    }
 }
 @media (min-width: 660px){
     .flower-arrange-banner .col-left h2{
@@ -1195,29 +1312,22 @@
 @media (min-width: 768px){
     .header{
         justify-content: space-between;
-    }
-    .sidebar-btn{
+    } .sidebar-btn{
         padding-right: 20px;
-    }
-    .user-icon, .container-text-love-what-we-do .more-btn{
+    } .user-icon, .container-text-love-what-we-do .more-btn{
         display: flex;
-    }
-    .user-icon{
+    } .user-icon{
         justify-content: center;
         padding: 0 0;
-    }
-    .user-icon .icon-shopping{
+    } .user-icon .icon-shopping{
         padding: 0 18px;
-    }
-    .text-contain p{
+    } .text-contain p{
         width: 53%;
-    }
-    .decor-leaf-flower-bottom-left > img{
+    } .decor-leaf-flower-bottom-left > img{
         width: 100%;
         height: fit-content;
         object-fit: contain;
-    }
-    .col-left .decor-leaf-flower{
+    } .col-left .decor-leaf-flower{
         padding-top: 20px;
         padding-bottom: 20px;
         padding-right: 50px;
@@ -1322,7 +1432,6 @@
         width: 80%;
         justify-content: flex-start;
     }
-
     .about{
         display: flex;
         justify-content: center;
@@ -1360,13 +1469,17 @@
     .your-company{
         display: flex;
         justify-content: center;
+        padding: unset;
     }
     .follow-us{
         display: flex;
         justify-content: flex-end;
         padding-right: 100px;
     }
-    
+    .contain-follow-us{
+        display: flex;
+        justify-content: flex-end;
+    }
     .facebook-icon, .instagram-icon, .youtube-icon{
         display: flex;
         align-items: center;
@@ -1390,6 +1503,17 @@
     }
     .flower-arrange-banner .col-left{
         padding-bottom: 350px;
+    }
+    .intro-product-best-flower {
+        position: relative;
+        padding-top: 50px;
+        background-color: #e7e4db;
+        --bs-gutter-x: 0;
+        padding-bottom: 20px;
+        height: auto;
+    }
+    .intro-take-care-details{
+        padding-top: 190px;
     }
     .heading-container-take-care-detail h2, .heading-contain-best-flower h2, .heading-container-love-what-we-do h2{
         font-size: 50px;
@@ -1439,7 +1563,6 @@
         justify-content: flex-end;
         padding-right: 100px;
     }
-    
     .facebook-icon, .instagram-icon, .youtube-icon{
         display: flex;
         align-items: center;
@@ -1447,19 +1570,6 @@
     }
     .facebook-icon i, .instagram-icon i, .youtube-icon i{
         font-size: 30px;
-    }
-}
-@media (min-width: 1024px){
-    .intro-product-best-flower {
-        position: relative;
-        padding-top: 50px;
-        background-color: #e7e4db;
-        --bs-gutter-x: 0;
-        padding-bottom: 20px;
-        height: auto;
-    }
-    .intro-take-care-details{
-        padding-top: 190px;
     }
 }
 @media (min-width: 1200px){
