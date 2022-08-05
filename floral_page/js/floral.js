@@ -5,8 +5,8 @@ $('.respon-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: true,
-        prevArrow:`<button type='button' class='slick-prev pull-left'><i class="fa-solid fa-arrow-left"></i></button>`,
-        nextArrow:`<button type='button' class='slick-next pull-right'><i class="fa-solid fa-arrow-right"></i></button>`,
+        prevArrow:`<button type='button' class='slick-prev pull-left'><i class="fa-solid fa-chevron-left"></i></button>`,
+        nextArrow:`<button type='button' class='slick-next pull-right'><i class="fa-solid fa-chevron-right"></i></button>`,
   responsive: [
     {
       breakpoint: 992,
