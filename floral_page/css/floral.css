@@ -662,7 +662,6 @@
     display: flex;
     flex-direction: column;
     width: 70%;
-    /* padding: 0 70px; */
 }
 .text-take-care-detail h2{
     font-family: 'Playfair Display', serif;
@@ -911,6 +910,13 @@
 .container-footer{
     --bs-gutter-x: 0;
 }
+.heading-follow-us{
+    display: flex;
+    justify-content: center;
+}
+.contain-follow-us{
+    width: 80%;
+}
 @media (min-width: 280px){
     .nav-bar{
         display: none;
@@ -1087,25 +1093,31 @@
     .follow-us{
         display: flex;
         justify-content: space-around;
-        padding: 0 20px;
+        padding: 0 12px;
     }
     .contain-follow-us{
         display: flex;
         justify-content: flex-end;
+        width: 100%;
     }
     .facebook-icon, .instagram-icon, .youtube-icon{
+        width: 30px;
+        height: 30px;
         display: flex;
         align-items: center;
+        justify-content: center;
         margin-left: 10px;
+        border: 3px solid white;
+        border-radius: 20px;
     }
     .facebook-icon i, .instagram-icon i, .youtube-icon i{
-        font-size: 20px;
+        font-size: 15px;
     }
     .container-heading-text-about, .container-heading-text-what-we-do, .your-company-address{
         width: 80%;
     }
     .heading-follow-us{
-        padding-right: 20px;
+        padding-right: 0;
     }
     .icon-footer{
         display: flex;
@@ -1141,8 +1153,17 @@
     .leaf-decor-best-flower-bottom{
         width: 10vw;
     }
+    .container-paragraph-take-care-detail p{
+        font-family: 'Josefin Slab', serif;
+        color: rgb(118, 90, 51);
+        text-align: center;
+        padding: 0 20px;
+    }
     .image-take-care-detail{
         padding-right: 0;
+    }
+    .paragraph-container-love-what-we-do{
+        padding: 0 20px;
     }
     .heading-best-flower-col-right p, .container-text-takecare-detail p, .text-contain-love-what-we-do p,
     .text-take-care-detail h2, .text-contain-love-what-we-do h2, .text-best-flower h2, .heading-best-flower-col-right p{
@@ -1151,8 +1172,31 @@
     .text-contain p{
         padding: 20px 50px 50px;
     }
+    .follow-us{
+        padding: 0;
+    }
     .icon-footer{
         display: flex;
+    }
+    .heading-follow-us, .icon-footer{
+        width: 50%;
+    }
+    .contain-follow-us, .icon-footer{
+        display: flex;
+        justify-content: center;
+    }  
+    .facebook-icon, .instagram-icon, .youtube-icon{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        border: 3px solid white;
+        border-radius: 25px;
+    }
+    .facebook-icon i, .instagram-icon i, .youtube-icon i{
+        font-size: 20px;
     }
 }
 @media (min-width: 412px){
@@ -1173,15 +1217,39 @@
         display: flex;
     }
     .facebook-icon, .instagram-icon, .youtube-icon{
-        width: 36px;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        border: 3px solid white;
+        border-radius: 25px;
+    }
+    .facebook-icon i, .instagram-icon i, .youtube-icon i{
+        font-size: 20px;
     }
     .heading-follow-us{
         display: flex;
         justify-content: center;
     }
-    .contain-follow-us, .contain-media-icon{
+    .contain-follow-us {
+        display: flex;
+        justify-content: center;
+    }
+    .contain-media-icon{
         width: 80%;
     }
+    .heading-follow-us{
+        display: flex;
+        justify-content: flex-start;
+        width: 45%;
+        padding: unset;
+    }
+    .contain-follow-us{
+        justify-content: flex-end;
+    }
+    .icon-footer{
+        justify-content: flex-start;
+    }
+
 }
 @media (min-width: 576px){
     .text-best-flower{
@@ -1245,46 +1313,14 @@
     .image-take-care-detail > img{
         width: 70%;
     }
-    .about{
-        display: flex;
-        justify-content: center;
-    }
     .container-heading-text-about{
         width: 80%;
     }
     .your-company{
         padding-top: 50px;
-        display: flex;
-        justify-content: center;
     }
     .your-company-address{
         width: 80%;
-    }
-    .about h3, .about h4, .what-we-do h3, .what-we-do h4, 
-    .your-company h3, .your-company h4, .follow-us h4, 
-    .facebook-icon a, .instagram-icon a, .youtube-icon a{
-        color: #fff;
-    }
-    .follow-us a{
-        text-decoration: none;
-    }
-    .follow-us h4{
-        font-size: 20px;
-        margin-bottom: 0;
-    }
-    .about h3, .what-we-do h3, .your-company h3, .follow-us h4{
-        font-family: 'Montserrat Alternates', sans-serif;
-        font-weight: 900;
-    }
-    .about h3, .what-we-do h3, .your-company h3{
-        font-size: 25px;
-    }
-    .follow-us h4{
-        font-size: 20px;
-    }
-    .about h4, .what-we-do h4, .your-company h4{
-        font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 15px;
     }
     .facebook-icon i, .instagram-icon i, .youtube-icon i{
         font-size: 25px;
@@ -1474,11 +1510,14 @@
     .follow-us{
         display: flex;
         justify-content: flex-end;
-        padding-right: 100px;
     }
     .contain-follow-us{
         display: flex;
         justify-content: flex-end;
+    }
+    .icon-footer{
+        width: 30%;
+        justify-content: center;
     }
     .facebook-icon, .instagram-icon, .youtube-icon{
         display: flex;
@@ -1558,11 +1597,7 @@
         display: flex;
         justify-content: center;
     }
-    .follow-us{
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 100px;
-    }
+
     .facebook-icon, .instagram-icon, .youtube-icon{
         display: flex;
         align-items: center;
