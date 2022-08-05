@@ -11,7 +11,7 @@
 }
 .flower-logo{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
 }
@@ -60,7 +60,6 @@
 .sidebar-btn{
     display: none;
     align-items: center;
-    padding-right: 20px;
     padding-left: 20px;
 }
 .sidebar-btn i{
@@ -136,9 +135,9 @@
     flex-direction: column;
     position: relative;
     background-color: #e3e0d6;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 120px;
 }
 .flower-arr-choose{
     display: flex;
@@ -181,8 +180,8 @@
 .col-left .decor-leaf-flower{
     display: flex;
     justify-content: end;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 25px;
     padding-right: 50px;
 }
 .text-contain{
@@ -194,43 +193,48 @@
     position: relative;
     font-family: 'Montserrat Alternates', sans-serif;
     color: rgb(118, 90, 51);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 20px;
 }
 .text-contain h3::before{
     position: absolute;
-    left: 0;
-    top: 39%;
+    left: -14px;
+    top: 18%;
     content: '';
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 5px;
     background-color: #765a33;
 }
 .text-contain h3::after{
     position: absolute;
     content: '';
-    right: 0;
-    top: 39%;
-    width: 10px;
-    height: 10px;
+    right: -14px;
+    top: 18%;
+    width: 8px;
+    height: 8px;
     border-radius: 5px;
     background-color: #765a33;
 }
 .text-contain p{
     text-align: justify;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 30px;
     font-family: 'Josefin Slab', serif;
     color: rgb(118, 90, 51);
+    padding-bottom: 30px;
     margin-bottom: 0;
-    padding: 15px 150px 50px;
+}
+.container-heading-flower-arr h2{
+    text-align: center;
 }
 .flower-arrange-banner .col-left h2{
     margin-bottom: 0;
     font-family: 'Playfair Display', serif;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     color: rgb(72, 74, 75);
     padding-bottom: 20px;
@@ -246,7 +250,7 @@
     object-fit: cover;
 }
 .sales{
-    padding: 50px 0;
+    padding: 40px 0;
     background-color: #765a33;
     min-height: 270px;
 }
@@ -255,6 +259,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .sales .number-run h3{
     font-family: 'Playfair Display', serif;
@@ -273,7 +278,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 104px;
+    padding-top: 50px;
     background-color: #e5e2d8;
     padding-bottom: 120px;
 }
@@ -287,7 +292,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 90px;
+    padding-bottom: 40px;
 }
 .our-top-product-content h2{
     font-family: 'Playfair Display', serif;
@@ -319,6 +324,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    box-shadow: ;
 }
 .swiper.mySwiper{
     padding-top: 134px;
@@ -922,11 +928,8 @@
     .nav-bar{
         display: none;
     }
-    .flower-logo{
-        justify-content: flex-start;
-    }
     .nav_sidebar{
-        width: 50vw;
+        width: 40vw;
     }
     .user-icon .icon-user, .user-icon .icon-shopping{
         display: none;
@@ -934,17 +937,6 @@
     .sidebar-btn{
         display: flex;
         padding-right: unset;
-    }
-    .col-left .decor-leaf-flower{
-        padding-top: 15px;
-    }
-    .flower-arrange-banner .col-left{
-        position: relative;
-        padding-bottom: 120px;
-    }
-    .text-contain p{
-        font-size: 21px;
-        padding: 15px 25px 20px;
     }
     .decor-leaf-flower-bottom-left{
         position: absolute;
@@ -956,12 +948,6 @@
         width: 100%;
         height: fit-content;
         object-fit: contain;
-    }
-    .our-top-product-content{
-        padding-top: 50px;
-    }
-    .heading-our-top-product{
-        padding-bottom: 40px;
     }
     .heading-our-top-product h3{
         text-align: center;
@@ -1039,9 +1025,6 @@
     }
     .leaf-image-love-what-we-do{
         width: 100%;
-    }
-    .flower-arrange-banner .col-left h2{
-        font-size: 40px;
     }
     .text-contain-love-what-we-do h2{
         font-size: 35px;
@@ -1282,11 +1265,6 @@
     .decor-leaf-flower-bottom-left{
         width: 16%;
     }
-    .decor-leaf-flower-bottom-left > img{
-        width: 100%;
-        height: fit-content;
-        object-fit: contain;
-    }
     .text-best-flower .more-btn{
         display: flex;
         justify-content: center;
@@ -1355,11 +1333,6 @@
     .decor-leaf-flower-bottom-left{
         width: 15%;
     }
-    .decor-leaf-flower-bottom-left > img{
-        width: 100%;
-        height: fit-content;
-        object-fit: contain;
-    }
     .heading-best-flower-col-right p{
         padding: 0 80px;
     }
@@ -1378,11 +1351,11 @@
         padding: 0 18px;
     } .text-contain p{
         width: 53%;
-    } .decor-leaf-flower-bottom-left > img{
-        width: 100%;
-        height: fit-content;
-        object-fit: contain;
-    } .col-left .decor-leaf-flower{
+    }
+    .container-heading-flower-arr{
+        width: 70%;
+    } 
+    .col-left .decor-leaf-flower{
         padding-top: 20px;
         padding-bottom: 20px;
         padding-right: 50px;
@@ -1554,11 +1527,6 @@
         align-items: center;
         height: 100%;
     }
-    .decor-leaf-flower-bottom-left > img{
-        width: 100%;
-        height: fit-content;
-        object-fit: contain;
-    }
     .flower-arrange-banner .col-left{
         padding-bottom: 350px;
     }
@@ -1644,7 +1612,7 @@
         font-size: 25px;
     }
 }
-@media (max-width: 992px) and (min-width: 360px){
+@media (min-width: 360px) and (max-width: 991px){
     .header .user-icon .sidebar-btn{
         display: flex;
         justify-content: center;
