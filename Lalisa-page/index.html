@@ -5,58 +5,428 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Lalasia</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/index.css">
+
 </head>
 
 <body>
     <header>
-        <div class="block_header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img src="/assets/img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="list_menu">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Product</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Article</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="options_navbar">
-                        <img src="/assets/img/cart.png" alt="">
-                        <img src="/assets/img/user.png" alt="">
-                    </div>
-                    
-                </div>
-            </nav>
-        </div>
+        <div class="block_header"></div>
     </header>
 
-    <main></main>
+    <main>
+        <!-- This is main -->
 
-    <footer></footer>
+        <!-- Start Banner  -->
+        <section class="block_banner">
+            <div class="container">
+                <div class="box_banner_text">
+                    <div class="banner_title">
+                        <h1 class="banner_title_text title_text">Discover Furniture With High Quality Wood</h1>
+                    </div>
+                    <div class="banner_des">
+                        <p class="description_text">Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
+                            dignissim placerat nisi, adipiscing mauris non. Purus parturient viverra nunc, tortor sit
+                            laoreet. Quam tincidunt aliquam adipiscing tempor.</p>
+                    </div>
+                    <div class="banner_search">
+                        <div class="search_icon">
+                            <img src="./assets/img/search_icon.png" alt="">
+                        </div>
+                        <div class="input-group">
+                            <input type="search" class="form-control rounded" placeholder="Search property"
+                                aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" class="btn title_text btn_group">Search</button>
+                        </div>
+                    </div>
+                </div>
 
-    <script src="/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/all.min.js"></script>
+                <div class="box_banner_photo">
+                    <img src="./assets/img/banner_picture.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- End Banner  -->
+
+        <!-- Start Benefits -->
+        <section class="block_benefits">
+            <div class="container">
+                <div class="box_infor_benefits">
+                    <div class="block_benefits_title">
+                        <p class="block_title">Benefits</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box_benefits_title">
+                                <p class="title_text">Benefits when using our services</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box_benefits_des">
+                                <p class="description_text">Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
+                                    dignissim placerat nisi, adipiscing mauris non purus parturient.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail_benefit">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box_benefit">
+                                <div class="icon_benefit">
+                                    <img src="./assets/img/manychoices.png" alt="Choices Pic">
+                                </div>
+                                <div class="title_benefit">
+                                    <p class="title_text title_list_benefit">Many Choices</p>
+                                </div>
+                                <div class="small_detail_benefit">
+                                    <p class="description_text">Pellentesque etiam blandit in tincidunt at donec. Eget
+                                        ipsum dignissim placerat nisi, adipiscing mauris non. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box_benefit">
+                                <div class="icon_benefit">
+                                    <img src="./assets/img/fot.png" alt="Fast and On Time">
+                                </div>
+                                <div class="title_benefit">
+                                    <p class="title_text title_list_benefit">Fast and On Time</p>
+                                </div>
+                                <div class="small_detail_benefit">
+                                    <p class="description_text">Pellentesque etiam blandit in tincidunt at donec. Eget
+                                        ipsum dignissim placerat nisi, adipiscing mauris non. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box_benefit">
+                                <div class="icon_benefit">
+                                    <img src="./assets/img/affor_price.png" alt="Affordable Price">
+                                </div>
+                                <div class="title_benefit">
+                                    <p class="title_text title_list_benefit">Affordable Price</p>
+                                </div>
+                                <div class="small_detail_benefit">
+                                    <p class="description_text">Pellentesque etiam blandit in tincidunt at donec. Eget
+                                        ipsum dignissim placerat nisi, adipiscing mauris non. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Benefits  -->
+
+        <!-- Start Product  -->
+        <section class="block_product">
+            <div class="box_title_product">
+                <div class="container text-center">
+                    <div class="block_product_title">
+                        <p class="block_title">Product</p>
+                    </div>
+                    <div class="title_product">
+                        <p class="title_text">Our popular product</p>
+                    </div>
+                    <div class="des_product">
+                        <p class="description_text">Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
+                            dignissim placerat nisi, adipiscing mauris non purus parturient.</p>
+                    </div>
+                </div>
+
+                <div class="list_product">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="box_product">
+                                    <div class="product_picture">
+                                        <img src="./assets/img/product_demo3.png" alt="Product">
+                                    </div>
+                                    <div class="cate_product">
+                                        <p class="description_text">Cupboard </p>
+                                    </div>
+                                    <div class="name_product">
+                                        <p class="title_text">Wooden Bookshelf</p>
+                                    </div>
+                                    <div class="detail_product">
+                                        <p class="description_text">Combination of wood and wool</p>
+                                    </div>
+                                    <div class="product_cost">
+                                        <p class="title_text">$79.88</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box_product">
+                                    <div class="product_picture">
+                                        <img src="./assets/img/product_demo1.png" alt="Product">
+                                    </div>
+                                    <div class="cate_product">
+                                        <p class="description_text">Chair</p>
+                                    </div>
+                                    <div class="name_product">
+                                        <p class="title_text">White Aesthetic Chair</p>
+                                    </div>
+                                    <div class="detail_product">
+                                        <p class="description_text">Combination of wood and wool</p>
+                                    </div>
+                                    <div class="product_cost">
+                                        <p class="title_text">$63.47</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box_product">
+                                    <div class="product_picture">
+                                        <img src="./assets/img/product_demo2.png" alt="Product">
+                                    </div>
+                                    <div class="cate_product">
+                                        <p class="description_text">Lamp</p>
+                                    </div>
+                                    <div class="name_product">
+                                        <p class="title_text">Bardono Smart Lamp</p>
+                                    </div>
+                                    <div class="detail_product">
+                                        <p class="description_text">Easy to use with bluetooth connection</p>
+                                    </div>
+                                    <div class="product_cost">
+                                        <p class="title_text">$62.23</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box_product">
+                                    <div class="product_picture">
+                                        <img src="./assets/img/product_demo4.png" alt="Product">
+                                    </div>
+                                    <div class="cate_product">
+                                        <p class="description_text">Sofa</p>
+                                    </div>
+                                    <div class="name_product">
+                                        <p class="title_text">Sofa Empuk Banget</p>
+                                    </div>
+                                    <div class="detail_product">
+                                        <p class="description_text">Using kapuk randu material</p>
+                                    </div>
+                                    <div class="product_cost">
+                                        <p class="title_text">$58.39</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End Product  -->
+
+        <!-- Start Our Product  -->
+        <section class="block_our_product">
+            <div class="container">
+                <div class="block_our_product_title">
+                    <p class="block_title">Our Product</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="title_our_product">
+                            <p class="title_text">Crafted by talented and high quality material</p>
+                        </div>
+                        <div class="des_our_product">
+                            <p class="description_text">Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
+                                dignissim placerat nisi, adipiscing mauris non purus parturient. morbi fermentum,
+                                vivamus et accumsan dui tincidunt pulvinar</p>
+                        </div>
+                        <div class="button_read">
+                            <button type="button" class="btn title_text btn_group">Learn More</button>
+                        </div>
+                        <div class="feature_img">
+                            <img src="./assets/img/feauture_img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box_archivement">
+                            <div class="small_box_archivement">
+                                <div class="num_archivement">
+                                    <p class="title_text">20+</p>
+                                </div>
+                                <div class="detail_archivement">
+                                    <p class="description_text">Years Experience</p>
+                                </div>
+                            </div>
+                            <div class="small_box_archivement">
+                                <div class="num_archivement">
+                                    <p class="title_text">20+</p>
+                                </div>
+                                <div class="detail_archivement">
+                                    <p class="description_text">Happy Client</p>
+                                </div>
+                            </div>
+                            <div class="small_box_archivement">
+                                <div class="num_archivement">
+                                    <p class="title_text">150+</p>
+                                </div>
+                                <div class="detail_archivement">
+                                    <p class="description_text">Project Finished</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature_img">
+                            <img src="./assets/img/feauture_img2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Our Product  -->
+
+        <!-- Start Testimonials  -->
+        <section class="block_testimonials">
+            <div class="box_title_testi text-center">
+                <div class="container">
+                    <div class="block_testi_title">
+                        <p class="block_title">Testimonials</p>
+                    </div>
+                    <div class="title_testi">
+                        <p class="title_text">What our customer say</p>
+                    </div>
+                    <div class="des_testi">
+                        <p class="description_text">Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
+                            dignissim placerat nisi, adipiscing mauris non purus parturient.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail_testi">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box_detail_testi">
+                            <div class="icon_testi">
+                                <img src="./assets/img/icon_testi.png" alt="">
+                            </div>
+                            <div class="content_testi">
+                                <p class="description_text">Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. </p>
+                            </div>
+                            <div class="info_valuer">
+                                <div class="avatar">
+                                    <img src="./assets/img/avatar_valuer.png" alt="">
+                                </div>
+                                <div class="name">
+                                    <p class="title_text">Janne Cooper</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box_detail_testi">
+                            <div class="icon_testi">
+                                <img src="./assets/img/icon_testi.png" alt="">
+                            </div>
+                            <div class="content_testi">
+                                <p class="description_text">Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. </p>
+                            </div>
+                            <div class="info_valuer">
+                                <div class="avatar">
+                                    <img src="./assets/img/avatar_valuer.png" alt="">
+                                </div>
+                                <div class="name">
+                                    <p class="title_text">Janne Cooper</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box_detail_testi">
+                            <div class="icon_testi">
+                                <img src="./assets/img/icon_testi.png" alt="">
+                            </div>
+                            <div class="content_testi">
+                                <p class="description_text">Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. </p>
+                            </div>
+                            <div class="info_valuer">
+                                <div class="avatar">
+                                    <img src="./assets/img/avatar_valuer.png" alt="">
+                                </div>
+                                <div class="name">
+                                    <p class="title_text">Janne Cooper</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonials  -->
+
+        <!-- Start Artickes  -->
+        <section class="block_artickes">
+            <div class="container">
+                <div class="block_artickes_title">
+                    <p class="block_title">Articles</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="title_artickes">
+                            <p class="title_text">The best furniture comes from Lalasia</p>
+                        </div>
+                        <div class="des_artickes">
+                            <p class="description_text">Pellentesque etiam blandit in tincidunt at donec. </p>
+                        </div>
+                        <div class="box_feature_img">
+                            <div class="feature_photo">
+                                <img src="./assets/img/article.png" alt="">
+                            </div>
+                            <div class="box_title_articles">
+                                <div class="cate_articles">
+                                    <p class="description_text">Tips and Trick</p>
+                                </div>
+                                <div class="name_articles">
+                                    <p class="title_text">Create Cozy Dinning Room Vibes</p>
+                                </div>
+                                <div class="detail_articles">
+                                    <p class="description_text">Using kapuk randu material</p>
+                                </div>
+                                <div class="article_link">
+                                    <p class="title_text">Read More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Artickes  -->
+
+        <!-- End Main  -->
+    </main>
+
+    <footer>
+        <!-- This is footer  -->
+    </footer>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script>
+        $(function () {
+            $('.block_header').load("header.html");
+            $('.block_footer').load("footer.html");
+        });
+    </script>
 </body>
 
 </html>

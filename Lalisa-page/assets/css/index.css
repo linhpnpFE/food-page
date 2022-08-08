@@ -1,0 +1,334 @@
+@font-face {
+  font-family: "Eudoxus Sans";
+  src: url("/assets/fonts/EudoxusSans-Medium.ttf");
+}
+.block_header {
+  padding: 30px 0px;
+  border-bottom: 2px solid #F3F3F3;
+  position: sticky;
+  top: 0;
+}
+
+li.nav-item {
+  margin-right: 60px;
+}
+
+li.nav-item .nav-link {
+  font-family: "Eudoxus Sans";
+  font-weight: 500;
+  font-size: 18px;
+  color: #151411;
+}
+
+.icon_option:nth-child(1) {
+  margin-right: 28px;
+}
+
+/*==================Start Banner=============*/
+.block_title {
+  font-family: "Eudoxus Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFB23F;
+}
+
+.title_text {
+  font-family: "Eudoxus Sans";
+  font-weight: 700;
+  line-height: 130%;
+  font-size: 44px;
+  color: #151411;
+}
+
+.description_text {
+  font-family: "Eudoxus Sans";
+  color: #AFADB5;
+  font-weight: 500;
+  line-height: 180%;
+  font-size: 18px;
+}
+
+.btn_group {
+  font-family: "Eudoxus Sans";
+  background-color: #518581;
+  padding: 15px 46px;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.block_banner {
+  margin-top: 100px;
+}
+
+.banner_title {
+  margin-bottom: 30px;
+  background-image: url("../img/vector_title_banner.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.banner_des {
+  margin-bottom: 50px;
+}
+
+.box_banner_text {
+  max-width: 724px;
+  text-align: center;
+  margin: auto;
+}
+.box_banner_text .banner_title_text {
+  font-size: 64px;
+}
+
+.banner_search {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 80px rgba(175, 173, 181, 0.2);
+  position: relative;
+}
+
+.input-group {
+  align-items: center !important;
+}
+.input-group input {
+  border: 0;
+}
+.input-group ::placeholder {
+  font-family: "Eudoxus Sans";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: #AFADB5;
+}
+
+.box_banner_photo {
+  margin-top: -40px;
+}
+.box_banner_photo img {
+  width: 100%;
+}
+
+/*===============End Banner==============*/
+/*===============Start Benefits==============*/
+.block_benefits {
+  margin-top: 180px;
+}
+
+.box_benefits_title {
+  max-width: 427px;
+}
+
+.box_benefit {
+  padding: 26px 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+}
+.box_benefit .title_benefit {
+  margin-top: 24px;
+}
+.box_benefit .title_benefit .title_list_benefit {
+  font-size: 24px;
+}
+.box_benefit .small_detail_benefit {
+  margin-top: 24px;
+}
+
+/*===============End Benefits==============*/
+/*===============Start Products==============*/
+.block_product {
+  margin-top: 180px;
+}
+
+.des_product {
+  max-width: 656px;
+  margin: auto;
+}
+
+.list_product {
+  margin-top: 50px;
+}
+
+.swiper-slide {
+  margin-right: 29px;
+}
+.swiper-slide .box_product .product_picture {
+  margin: auto;
+}
+.swiper-slide .box_product .product_picture img {
+  width: 100%;
+  text-align: center;
+}
+.swiper-slide .box_product .cate_product {
+  margin-top: 26px;
+}
+.swiper-slide .box_product .name_product {
+  margin-top: 14px;
+}
+.swiper-slide .box_product .name_product .title_text {
+  font-size: 26px;
+}
+.swiper-slide .box_product .detail_product {
+  margin-top: 6px;
+}
+.swiper-slide .box_product .product_cost {
+  margin-top: 18px;
+}
+.swiper-slide .box_product .product_cost .title_text {
+  font-size: 24px;
+}
+
+/*===============End Products==============*/
+/*===============Start Our Product ============*/
+.block_our_product {
+  margin-top: 180px;
+}
+
+.title_our_product {
+  margin-top: 14px;
+}
+
+.des_our_product {
+  margin-top: 50px;
+}
+
+.button_read {
+  margin-top: 50px;
+}
+
+.col-md-6:nth-child(1) .feature_img {
+  width: 595px;
+  height: 260px;
+  margin-top: 50px;
+}
+.col-md-6:nth-child(1) .feature_img img {
+  width: 100%;
+}
+.col-md-6:nth-child(2) .feature_img {
+  width: 595px;
+  height: 260px;
+  margin-top: 57px;
+}
+.col-md-6:nth-child(2) .feature_img img {
+  width: 100%;
+}
+
+.box_archivement {
+  display: flex;
+  justify-content: flex-end;
+}
+.box_archivement .small_box_archivement {
+  margin-left: 50px;
+}
+
+/*===============End: Our Products==============*/
+/*===============Start: Testimonials  =============*/
+.block_testimonials {
+  margin-top: 180px;
+}
+.block_testimonials .title_testi {
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+.block_testimonials .des_testi {
+  margin: auto;
+  max-width: 656px;
+}
+
+.box_detail_testi {
+  padding: 31px 38px 24px 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+}
+.box_detail_testi .content_testi {
+  margin-top: 31px;
+}
+
+.detail_testi {
+  margin-top: 50px;
+}
+
+.info_valuer {
+  display: flex;
+  align-items: center;
+  margin-top: 26px;
+}
+.info_valuer .avatar {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin-right: 14px;
+}
+.info_valuer .avatar img {
+  width: 100%;
+}
+.info_valuer .name .title_text {
+  font-size: 20px;
+}
+
+/*===============End: Testimonials  =============*/
+/*===============Start: Articles=============*/
+.block_artickes {
+  margin-top: 180px;
+}
+
+.title_artickes {
+  margin-top: 14px;
+}
+
+.des_artickes {
+  margin-top: 30px;
+}
+
+.box_feature_img {
+  margin-top: 50px;
+  position: relative;
+}
+.box_feature_img .feature_photo {
+  width: 582px;
+  height: 565px;
+  overflow: hidden;
+}
+.box_feature_img .feature_photo img {
+  width: 100%;
+}
+.box_feature_img .box_title_articles {
+  position: absolute;
+  bottom: 26px;
+  left: 26px;
+}
+.box_feature_img .box_title_articles .cate_articles .description_text {
+  color: #FFFFFF;
+}
+.box_feature_img .box_title_articles .name_articles {
+  margin-top: 10px;
+}
+.box_feature_img .box_title_articles .name_articles .title_text {
+  font-size: 26px;
+  color: #FFFFFF;
+}
+.box_feature_img .box_title_articles .detail_articles {
+  margin-top: 6px;
+}
+.box_feature_img .box_title_articles .article_link {
+  margin-top: 14px;
+}
+.box_feature_img .box_title_articles .article_link .title_text {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*===============End: Articles=============*/
+p {
+  margin-bottom: 0 !important;
+}
+
+/* custom bootstrap */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
