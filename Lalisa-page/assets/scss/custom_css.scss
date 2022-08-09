@@ -1,0 +1,18 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+a {
+    text-decoration-line: none;
+    color: #151411;
+
+    &:hover {
+        text-decoration-line: none;
+        color: #151411;
+    }
+}

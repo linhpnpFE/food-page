@@ -1,0 +1,47 @@
+.block_footer {
+    margin-top: 86px;
+   
+    .container {
+        border-top: 1.5px solid #ECE4DE;
+        padding: 80px 0px 88px
+    }
+}
+
+.box_aboutus {
+    justify-content: space-between;
+
+    .detail_aboutus {
+
+        .description_text {
+            color: #151411;
+            max-width: 505px;
+
+            margin-top: 36px;
+        }
+    }
+}
+
+.box_services {
+    display: flex;
+
+    .detial_service {
+        margin-left: 104px;
+    }
+
+    .title_services {
+        margin-bottom: 20px;
+
+        .title_text {
+            font-size: 20px;
+        }
+    }
+
+    .list_services {
+
+        .description_text {
+            color: #151411;
+            margin-bottom: 12px !important;
+            line-height: 180%;
+        }
+    }
+}

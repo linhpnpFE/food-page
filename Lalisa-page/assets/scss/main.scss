@@ -32,6 +32,8 @@
     padding: 15px 46px;
     color: #FFFFFF;
     font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
 }
 
 // End css for title and description ///
@@ -88,6 +90,8 @@
 
 .box_banner_photo {
     margin-top: -40px;
+    max-width: 1240px;
+    max-height: 480px;
 
     img {
         width: 100%;
@@ -137,6 +141,11 @@
     margin-top: 180px ;
 }
 
+.title_product {
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
 .des_product {
     max-width: 656px;
     margin: auto;
@@ -146,47 +155,49 @@
     margin-top: 50px;
 }
 
-.swiper-slide {
-    margin-right: 29px;
+.box_product {
 
-    .box_product {
+    .product_picture {
+        margin: auto;
+        width: 394px;
+        height: 360px;
 
-        .product_picture {
-            margin: auto;
-    
-            img {
-                width: 100%;
-                text-align: center;
-            }
+        img {
+            width: 100%;
+            text-align: center;
         }
+    }
 
-        .cate_product {
-            margin-top: 26px;
-        }
-        
-        .name_product {
-            margin-top: 14px;
-        
-            .title_text {
-                font-size: 26px;
-            }
-        }
-        
-        .detail_product {
-            margin-top: 6px;
-        }
-        
-        .product_cost {
-            margin-top: 18px;
-        
-            .title_text {
-                font-size: 24px;
-            }
-        }
-        
+    .cate_product {
+        margin-top: 26px;
     }
     
+    .name_product {
+        margin-top: 14px;
+    
+        .title_text {
+            font-size: 26px;
+        }
+    }
+    
+    .detail_product {
+        margin-top: 6px;
+    }
+    
+    .product_cost {
+        margin-top: 18px;
+    
+        .title_text {
+            font-size: 24px;
+        }
+    } 
 }
+
+.box_product.slick-slide {
+    width: 394px !important;
+    margin-right: 29px;
+}
+    
 
 
 /*===============End Products==============*/
@@ -195,58 +206,75 @@
 
 .block_our_product {
     margin-top: 180px;
+
+    .block_our_product_title {
+        margin-bottom: 14px;
+    }
 }
 
-.title_our_product {
+.box_about_product {
     margin-top: 14px;
+    justify-content: space-between;
 }
 
-.des_our_product {
-    margin-top: 50px;
-}
+.content_product {
 
-.button_read {
-    margin-top: 50px;
-}
-
-.col-md-6 {
-
-    &:nth-child(1) {
-
-        .feature_img {
-            width: 595px;
-            height: 260px;
-            margin-top: 50px;
-
-            img {
-                width: 100%;
-            }
-        }
+    .title_our_product {
+        max-width: 511px;
     }
 
-    &:nth-child(2) {
+    .des_our_product {
+        margin-top: 50px;
+        max-width: 580px;
 
-        .feature_img {
-            width: 595px;
-            height: 260px;
-            margin-top: 57px;
-
-            img {
-                width: 100%;
-            }
-        }
     }
 
+    .button_read {
+        margin-top: 50px;
+    }
+    
+    .feature_img {
+        margin-top: 50px;
+        max-width: 595px;
+        max-height: 260px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.box_archivement_mobile {
+    display: none;
 }
 
 .box_archivement {
     display: flex;
     justify-content: flex-end;
+    
 
-    .small_box_archivement {
-        margin-left: 50px;
+    .detail_archivement {
+        margin-top: 10px;
     }
 }
+
+.small_box_archivement {
+    margin-left: 50px;
+    float: right;
+}
+
+.archive_img {
+    max-width: 595px;
+    max-height: 510px;
+    margin-top: 57px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+
 
 
 /*===============End: Our Products==============*/
@@ -277,7 +305,7 @@
     }
 }
 
-.detail_testi {
+.list_detail_testi {
     margin-top: 50px;
 }
 
@@ -313,10 +341,10 @@
 /*===============Start: Articles=============*/
 .block_artickes {
     margin-top: 180px;
-}
 
-.title_artickes {
-    margin-top: 14px;
+    .list_blog {
+        margin-top: 14px;
+    }
 }
 
 .des_artickes {
@@ -329,8 +357,8 @@
 
 
     .feature_photo {
-        width: 582px;
-        height: 565px;
+        max-width: 582px;
+        max-height: 565px;
         overflow: hidden;
 
         img {
@@ -362,6 +390,14 @@
 
         .detail_articles {
             margin-top: 6px;
+            padding: 0px 72px 0px 0px;
+
+            .description_text {
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
         }
 
         .article_link {
@@ -375,11 +411,101 @@
         }
         
     }
+
+    .box_button {
+        box-shadow: 0px 4px 90px rgba(175, 173, 181, 0.2);
+        position: absolute;
+        right: 23px;
+
+        .btn_group {
+            
+
+            &:nth-child(1) {
+                background: #FFFFFF;
+            }
+        }
+    }
+}
+
+.box_blog {
+    display: flex;
+    align-items: center;
+
+    .blog_picture{
+        width: 260px;
+        height: 260px;
+        margin-right: 50px;
+
+        img {
+            max-width: 260px;
+            max-height: 260px;
+        }
+    }
+
+}
+
+.small_blog {
+    margin-bottom: 30px;
+}
+
+.detail_blog {
+
+    .cate_blog {
+
+    }
+
+    .name_blog {
+        margin-top: 21px;
+
+        .title_text {
+            font-size: 24px;
+        }
+    }
+
+    .content_blog {
+        margin-top: 14px;
+
+        .description_text {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    .author_blog {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+
+        .author_avatar {
+            width: 28px;
+            height: 28px;
+            overflow: hidden;
+            margin-right: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .title_text {
+            font-size: 14px;
+            margin-right: 24px;
+        }
+
+        .description_text {
+            font-size: 14px;
+        }
+    }
+}
+
+.discount{
+    margin-top: 181px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /*===============End: Articles=============*/
 
-p {
-    margin-bottom: 0 !important;
-}
 

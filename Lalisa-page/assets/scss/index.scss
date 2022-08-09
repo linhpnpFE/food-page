@@ -3,7 +3,13 @@
     src: url("/assets/fonts/EudoxusSans-Medium.ttf");
 }
 
+@font-face {
+    font-family: 'Slick';
+    src: url("/assets/fonts/slick.ttf");
+}
+
 @import "header";
+@import "custom_css";
 @import "main";
 @import "footer";
 @import "responsive";
