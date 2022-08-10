@@ -1,30 +1,44 @@
 $(document).ready(function () {
 
-    $('.list_product').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    responsive: [
-        {
-        breakpoint: 768,
-        settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-        }
+    // $('.small_box_product').slick({
+    // centerMode: true,
+    // centerPadding: '60px',
+    // slidesToShow: 3.3,
+    // responsive: [
+    //     {
+    //     breakpoint: 768,
+    //     settings: {
+    //         arrows: false,
+    //         centerMode: true,
+    //         centerPadding: '40px',
+    //         slidesToShow: 3
+    //     }
+    //     },
+    //     {
+    //     breakpoint: 480,
+    //     settings: {
+    //         arrows: false,
+    //         centerMode: true,
+    //         centerPadding: '40px',
+    //         slidesToShow: 1
+    //     }
+    //     }
+    // ]
+    // });  
+
+    var swiper = new Swiper(".list_product", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
-        {
-        breakpoint: 480,
-        settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-        }
-        }
-    ]
-    });  
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+      });
 
     $('.detail_testi').slick({
         centerMode: true,

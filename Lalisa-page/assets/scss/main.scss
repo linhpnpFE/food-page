@@ -90,8 +90,8 @@
 
 .box_banner_photo {
     margin-top: -40px;
-    max-width: 1240px;
-    max-height: 480px;
+    width: 100%;
+    height: auto;
 
     img {
         width: 100%;
@@ -153,14 +153,22 @@
 
 .list_product {
     margin-top: 50px;
+    width: 100%;
+    height: auto;
+
+    .swiper-slide {
+        text-align: center;
+        width: 394px !important;
+    }
+
+    
 }
 
 .box_product {
 
     .product_picture {
-        margin: auto;
         width: 394px;
-        height: 360px;
+        height: auto;
 
         img {
             width: 100%;
@@ -193,9 +201,20 @@
     } 
 }
 
-.box_product.slick-slide {
-    width: 394px !important;
-    margin-right: 29px;
+.swiper-button-next::after {
+    content: "";
+    background-image: url("/assets/img/next_btn.png");
+    background-repeat: no-repeat;
+    padding: 18px 18px;
+    background-size: 100% 100%;
+}
+
+.swiper-button-prev::after {
+    content: "";
+    background-image: url("/assets/img/prev_btn.png");
+    background-repeat: no-repeat;
+    padding: 18px 18px;
+    background-size: 100% 100%;
 }
     
 
@@ -214,7 +233,6 @@
 
 .box_about_product {
     margin-top: 14px;
-    justify-content: space-between;
 }
 
 .content_product {
@@ -235,8 +253,8 @@
     
     .feature_img {
         margin-top: 50px;
-        max-width: 595px;
-        max-height: 260px;
+        width: 100%;
+        height: auto;
 
         img {
             width: 100%;
@@ -264,8 +282,8 @@
 }
 
 .archive_img {
-    max-width: 595px;
-    max-height: 510px;
+    width: 100%;
+    height: auto;
     margin-top: 57px;
     overflow: hidden;
 
@@ -353,69 +371,22 @@
 
 .box_feature_img {
     margin-top: 50px;
-    position: relative;
 
 
     .feature_photo {
-        max-width: 582px;
-        max-height: 565px;
+        width: 100%;
         overflow: hidden;
+        position: relative;
 
         img {
             width: 100%;
         }
     }
 
-    .box_title_articles {
-        position: absolute;
-        bottom: 26px;
-        left: 26px;
-        
-        .cate_articles {
-
-            .description_text {
-                color: #FFFFFF;
-
-            }
-        }
-        
-        .name_articles {
-            margin-top: 10px;
-
-            .title_text {
-                font-size: 26px;
-                color: #FFFFFF;
-            }
-        }
-
-        .detail_articles {
-            margin-top: 6px;
-            padding: 0px 72px 0px 0px;
-
-            .description_text {
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                -webkit-box-orient: vertical;
-            }
-        }
-
-        .article_link {
-            margin-top: 14px;
-
-            .title_text {
-                color: #FFFFFF;
-                font-size: 18px;
-                font-weight: 500;
-            }
-        }
-        
-    }
-
     .box_button {
         box-shadow: 0px 4px 90px rgba(175, 173, 181, 0.2);
         position: absolute;
-        right: 23px;
+        right: 48px;
 
         .btn_group {
             
@@ -427,18 +398,62 @@
     }
 }
 
+.box_title_articles {
+    position: absolute;
+    bottom: 200px;
+    left: 40px;
+    
+    .cate_articles {
+
+        .description_text {
+            color: #FFFFFF;
+
+        }
+    }
+    
+    .name_articles {
+        margin-top: 10px;
+
+        .title_text {
+            font-size: 26px;
+            color: #FFFFFF;
+        }
+    }
+
+    .detail_articles {
+        margin-top: 6px;
+        padding: 0px 72px 0px 0px;
+
+        .description_text {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    .article_link {
+        margin-top: 14px;
+
+        .title_text {
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+    
+}
+
 .box_blog {
     display: flex;
     align-items: center;
 
     .blog_picture{
-        width: 260px;
-        height: 260px;
+        width: 100%;
         margin-right: 50px;
 
         img {
-            max-width: 260px;
-            max-height: 260px;
+           width: 100%;
         }
     }
 
