@@ -524,3 +524,297 @@
 /*===============End: Articles=============*/
 
 
+/* custom bootstrap */
+
+//////////////responsive///////////////
+
+@media screen and (max-width:1199px) {
+
+    .box_archivement_mobile {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    
+    .product_numb {
+        margin-top: 100px;
+
+        .box_archivement {
+            display: none;
+        }
+    }
+
+    .box_feature_img {
+
+        .feature_photo {
+            overflow: hidden;
+        }
+    }
+
+    .small_list_blog {
+        margin-top: 50px;
+    }
+}   
+ 
+
+@media screen and (max-width: 1023px) {
+    
+   //////Css for title and description ///
+    .title_text {
+        font-size: 40px;
+    }
+
+    .description_text {
+        font-size: 16px;
+    }
+    
+    .btn_group {
+        padding: 15px 46px;
+        font-size: 16px;
+    }
+
+    //////Css for title and description ///
+
+    //////////////////Start: Banner ///////
+    
+    .box_banner_text {
+
+        .banner_title_text {
+            font-size: 60px;
+        }
+    }
+
+
+    ///////End: Banner//////////
+    
+    ///////Start: Archivement//////////////
+    
+    
+
+    .box_about_product  {
+
+        .content_product {
+            
+            .title_our_product {
+                max-width: unset;
+            }
+
+            .des_our_product {
+                margin-top: 50px;
+                max-width: unset;
+            }
+
+            .button_read {
+                margin-top: 50px;
+
+                .btn_group {
+                    width: 100%;
+                }
+            }
+            
+            .feature_img {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .product_numb {
+
+        .archive_img {
+            max-width: unset;
+        }
+    }
+
+    ///////End: Archivement//////////////
+
+    
+    ////////////Start: Article/////////////
+
+    .box_feature_img {
+
+        .box_button {
+            display: none;
+        }
+    }
+
+    ////////////End: Article/////////////////
+    
+
+    ///////////STart: Footer//////////////
+    .box_aboutus {
+
+        .box_services {
+            margin-top: 30px;
+
+            .detial_service {
+                margin-left: 50px;
+            }
+        }
+    }
+
+
+    ////////////End: Footer/////////////
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    //////////////Blog///////////
+    .author_blog{
+
+        .date_create {
+            display: none;
+        }
+    }
+
+    //////////Articles/////////////
+    .discount {
+        flex-direction: column;
+
+        .button_discount {
+            margin-top: 16px;
+        }
+    }
+
+
+    ///////////Footer//////////
+    
+
+    
+}
+
+@media screen and (max-width:599px) {
+
+    .block_title {
+        font-size: 14px;
+    }
+    .title_text {
+        font-size: 26px;
+    }
+
+    .description_text {
+        font-size: 14px;
+    }
+    
+    .btn_group {
+        padding: 15px 26px;
+        font-size: 14px;
+    }
+
+    
+    .block_header {
+        padding: 20px 0;
+    }
+
+    .block_banner, 
+    .block_benefits, 
+    .block_product, 
+    .block_our_product, 
+    .block_testimonials, 
+    .block_artickes {
+        margin-top: 50px;
+    }
+
+
+    .box_banner_text {
+
+        .banner_title_text {
+            font-size: 26px;
+        }
+    }
+
+    .box_banner_photo {
+        margin-top: 30px;
+    }
+
+    .small_box_archivement {
+        margin: auto;
+    }
+
+
+    .num_archivement {
+
+        .title_text {
+            font-size: 22px;
+        }
+    }
+
+    .detail_archivement {
+        
+        .description_text {
+            font-size: 14px;
+        }
+    }
+
+    .product_numb {
+        margin-top: 0px;
+
+    }
+
+    ////////////////////Article ////////////
+    .box_title_articles {
+        
+        .cate_articles {
+
+            .description_text {
+                font-size: 12px;
+            }
+        }
+
+        .name_articles {
+            
+            .title_text {
+                font-size: 16px;
+            }
+        }
+
+        .detail_articles {
+            
+            .description_text {
+                font-size: 14px;
+            }
+        }
+
+        .article_link {
+            
+            .title_text {
+                font-size: 12px;
+            }
+        }
+    }
+
+
+
+    ///////////Blog///////////////
+    .detail_blog {
+
+        .cate_blog {
+
+            .description_text {
+                font-size: 12px;
+            }
+        }
+
+        .content_blog {
+            display: none;
+        }
+        
+        .name_blog {
+            margin-top: 4px;
+
+            .title_text {
+                font-size: 16px;
+            }
+        }
+
+        .author_blog {
+            margin-top:18px;
+            
+            .title_text {
+                font-size: 12px;
+            }
+        }
+    }
+
+
+} 

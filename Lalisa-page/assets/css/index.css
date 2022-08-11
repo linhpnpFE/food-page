@@ -28,6 +28,14 @@ li.nav-item .nav-link {
   margin-right: 28px;
 }
 
+@media (max-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    align-items: center;
+  }
+  .navbar-expand-lg .navbar-nav li.nav-item {
+    margin-right: 0px;
+  }
+}
 body {
   overflow-x: hidden;
   margin: 0;
@@ -46,6 +54,11 @@ a:hover {
   color: #151411;
 }
 
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
 /*==================Start Banner=============*/
 .block_title {
   font-family: "Eudoxus Sans";
@@ -462,57 +475,7 @@ a:hover {
 }
 
 /*===============End: Articles=============*/
-.block_footer {
-  margin-top: 86px;
-}
-.block_footer .container {
-  border-top: 1.5px solid #ECE4DE;
-  padding: 80px 0px 88px;
-}
-
-.box_aboutus {
-  justify-content: space-between;
-}
-.box_aboutus .detail_aboutus .description_text {
-  color: #151411;
-  max-width: 505px;
-  margin-top: 36px;
-}
-
-.box_services {
-  display: flex;
-}
-.box_services .detial_service {
-  margin-left: 104px;
-}
-.box_services .title_services {
-  margin-bottom: 20px;
-}
-.box_services .title_services .title_text {
-  font-size: 20px;
-  white-space: nowrap;
-}
-.box_services .list_services .description_text {
-  color: #151411;
-  margin-bottom: 12px !important;
-  line-height: 180%;
-  white-space: nowrap;
-}
-
 /* custom bootstrap */
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1320px;
-  }
-}
-@media (max-width: 992px) {
-  .navbar-expand-lg .navbar-nav {
-    align-items: center;
-  }
-  .navbar-expand-lg .navbar-nav li.nav-item {
-    margin-right: 0px;
-  }
-}
 @media screen and (max-width: 1199px) {
   .box_archivement_mobile {
     display: flex;
@@ -576,26 +539,14 @@ a:hover {
   }
 }
 @media screen and (max-width: 767px) {
+  .author_blog .date_create {
+    display: none;
+  }
   .discount {
     flex-direction: column;
   }
   .discount .button_discount {
     margin-top: 16px;
-  }
-  .author_blog .date_create {
-    display: none;
-  }
-  .box_aboutus {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .box_aboutus .description_text {
-    color: #AFADB5 !important;
-    font-size: 14px;
-  }
-  .box_services .detial_service {
-    margin-right: 50px;
-    margin-left: 0px;
   }
 }
 @media screen and (max-width: 599px) {
@@ -622,6 +573,9 @@ a:hover {
 .block_testimonials,
 .block_artickes {
     margin-top: 50px;
+  }
+  .box_banner_text .banner_title_text {
+    font-size: 26px;
   }
   .box_banner_photo {
     margin-top: 30px;
@@ -668,6 +622,67 @@ a:hover {
   .detail_blog .author_blog .title_text {
     font-size: 12px;
   }
+}
+.block_footer {
+  margin-top: 86px;
+}
+.block_footer .container {
+  border-top: 1.5px solid #ECE4DE;
+  padding: 80px 0px 88px;
+}
+
+.box_aboutus {
+  justify-content: space-between;
+}
+.box_aboutus .detail_aboutus .description_text {
+  color: #151411;
+  max-width: 505px;
+  margin-top: 36px;
+}
+
+.box_services {
+  display: flex;
+}
+.box_services .detial_service {
+  margin-left: 104px;
+}
+.box_services .title_services {
+  margin-bottom: 20px;
+}
+.box_services .title_services .title_text {
+  font-size: 20px;
+  white-space: nowrap;
+}
+.box_services .list_services .description_text {
+  color: #151411;
+  margin-bottom: 12px !important;
+  line-height: 180%;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1023px) {
+  .box_aboutus .box_services {
+    margin-top: 30px;
+  }
+  .box_aboutus .box_services .detial_service {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .box_aboutus {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .box_aboutus .description_text {
+    color: #AFADB5 !important;
+    font-size: 14px;
+  }
+  .box_services .detial_service {
+    margin-right: 50px;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 599px) {
   .block_footer .container {
     padding-right: 15px;
     padding-left: 15px;

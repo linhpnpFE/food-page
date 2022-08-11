@@ -19,3 +19,17 @@ li.nav-item .nav-link {
 .icon_option:nth-child(1) {
     margin-right: 28px;
 }
+
+
+@media (max-width: 992px) {
+    .navbar-expand-lg {
+        
+        .navbar-nav {
+            align-items: center;
+
+            li.nav-item {
+                margin-right: 0px;
+            }
+        }
+    }
+}

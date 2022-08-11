@@ -1,0 +1,386 @@
+@font-face {
+  font-family: "Eudoxus Sans";
+  src: url("/assets/fonts/EudoxusSans-Medium.ttf");
+}
+@font-face {
+  font-family: "Slick";
+  src: url("/assets/fonts/slick.ttf");
+}
+.block_header {
+  padding: 30px 0px;
+  border-bottom: 2px solid #F3F3F3;
+  position: sticky;
+  top: 0;
+}
+
+li.nav-item {
+  margin-right: 60px;
+}
+
+li.nav-item .nav-link {
+  font-family: "Eudoxus Sans";
+  font-weight: 500;
+  font-size: 18px;
+  color: #151411;
+}
+
+.icon_option:nth-child(1) {
+  margin-right: 28px;
+}
+
+@media (max-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    align-items: center;
+  }
+  .navbar-expand-lg .navbar-nav li.nav-item {
+    margin-right: 0px;
+  }
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+a {
+  text-decoration-line: none;
+  color: #151411;
+}
+a:hover {
+  text-decoration-line: none;
+  color: #151411;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+.block_footer {
+  margin-top: 86px;
+}
+.block_footer .container {
+  border-top: 1.5px solid #ECE4DE;
+  padding: 80px 0px 88px;
+}
+
+.box_aboutus {
+  justify-content: space-between;
+}
+.box_aboutus .detail_aboutus .description_text {
+  color: #151411;
+  max-width: 505px;
+  margin-top: 36px;
+}
+
+.box_services {
+  display: flex;
+}
+.box_services .detial_service {
+  margin-left: 104px;
+}
+.box_services .title_services {
+  margin-bottom: 20px;
+}
+.box_services .title_services .title_text {
+  font-size: 20px;
+  white-space: nowrap;
+}
+.box_services .list_services .description_text {
+  color: #151411;
+  margin-bottom: 12px !important;
+  line-height: 180%;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1023px) {
+  .box_aboutus .box_services {
+    margin-top: 30px;
+  }
+  .box_aboutus .box_services .detial_service {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .box_aboutus {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .box_aboutus .description_text {
+    color: #AFADB5 !important;
+    font-size: 14px;
+  }
+  .box_services .detial_service {
+    margin-right: 50px;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .block_footer .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .box_services .detial_service {
+    margin-right: 10%;
+    margin-left: 0px !important;
+  }
+  .box_services .detial_service .title_text {
+    font-size: 16px;
+  }
+  .box_services .detial_service .description_text {
+    font-size: 14px;
+  }
+}
+.title_text {
+  font-family: "Eudoxus Sans";
+  font-weight: 700;
+  line-height: 130%;
+  font-size: 44px;
+  color: #151411;
+}
+
+.description_text {
+  font-family: "Eudoxus Sans";
+  color: #AFADB5;
+  font-weight: 500;
+  line-height: 180%;
+  font-size: 18px;
+}
+
+.btn_group {
+  font-family: "Eudoxus Sans";
+  background-color: #518581;
+  padding: 15px 46px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.block_banner {
+  margin-top: 100px;
+}
+
+.banner_title {
+  margin-bottom: 30px;
+}
+
+.banner_des {
+  margin-bottom: 50px;
+}
+
+.box_banner_text {
+  max-width: 724px;
+  text-align: center;
+  margin: auto;
+}
+.box_banner_text .banner_title_text {
+  font-size: 64px;
+}
+
+.banner_list_product .small_banner {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.banner_list_product .small_banner .banner_pic {
+  width: 100%;
+  height: auto;
+}
+.banner_list_product .small_banner .banner_pic img {
+  width: 100%;
+}
+.banner_list_product .swiper-button-next::after {
+  content: "";
+  background-image: url("/assets/img/next_btn.png");
+  background-repeat: no-repeat;
+  padding: 18px 18px;
+  background-size: 100% 100%;
+}
+.banner_list_product .swiper-button-prev::after {
+  content: "";
+  background-image: url("/assets/img/prev_btn.png");
+  background-repeat: no-repeat;
+  padding: 18px 18px;
+  background-size: 100% 100%;
+}
+
+.detail_banner {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  text-align: start !important;
+  right: 0;
+  left: 15px;
+  padding: 0;
+}
+.detail_banner .button_group .btn_group {
+  font-size: 14px;
+  border-radius: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+}
+.detail_banner .title_banner {
+  margin-top: 15px;
+}
+.detail_banner .title_banner .title_text {
+  color: #FFFFFF;
+}
+.detail_banner .title_banner .description_text {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.banner_search {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 120px rgba(175, 173, 181, 0.15);
+  position: relative;
+}
+
+.input-group {
+  align-items: center !important;
+}
+.input-group input {
+  border: 0;
+}
+.input-group ::placeholder {
+  font-family: "Eudoxus Sans";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: #AFADB5;
+}
+
+.filter {
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 120px rgba(175, 173, 181, 0.15);
+  padding: 27px 52px;
+}
+.filter .filter_pic {
+  width: 30px;
+  height: 30px;
+}
+.filter .filter_pic img {
+  width: 100%;
+}
+.filter .fiter_text .description_text {
+  color: #151411;
+}
+
+.block_total_product {
+  margin-top: 50px;
+}
+
+.box_title_product {
+  display: flex;
+  justify-content: space-between;
+}
+.box_title_product .title_product {
+  display: flex;
+  align-items: center;
+}
+.box_title_product .title_product .count_product {
+  color: #518581;
+  font-size: 16px;
+  background: #F9F9F9;
+  border-radius: 20px;
+  padding: 10px 16px;
+  margin-left: 10px;
+}
+.box_title_product .sort_by {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #F9F9F9;
+  padding: 13px 20px;
+}
+
+.list_product {
+  margin-top: 20px;
+}
+
+.box_product {
+  margin-top: 30px;
+}
+.box_product .product_picture {
+  width: 100%;
+  height: auto;
+}
+.box_product .product_picture img {
+  width: 100%;
+  text-align: center;
+}
+.box_product .cate_product {
+  margin-top: 26px;
+}
+.box_product .name_product {
+  margin-top: 14px;
+}
+.box_product .name_product .title_text {
+  font-size: 26px;
+}
+.box_product .detail_product {
+  margin-top: 6px;
+}
+.box_product .product_cost {
+  margin-top: 18px;
+}
+.box_product .product_cost .title_text {
+  font-size: 24px;
+}
+
+.box_panigation {
+  margin-top: 80px;
+}
+
+.pagination .active .page-link {
+  background-color: #518581;
+  border: 1.5px solid #AFADB5;
+  color: #FFFFFF;
+}
+.pagination .page-link {
+  color: #151411;
+}
+
+@media screen and (max-width: 767px) {
+  .title_text {
+    font-size: 40px;
+  }
+  .description_text {
+    font-size: 16px;
+  }
+  .btn_group {
+    padding: 15px 46px;
+    font-size: 16px;
+  }
+  .filter {
+    display: none;
+  }
+  .sort_by {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 599px) {
+  .block_title {
+    font-size: 14px;
+  }
+  .title_text {
+    font-size: 26px;
+  }
+  .description_text {
+    font-size: 14px;
+  }
+  .btn_group {
+    padding: 15px 26px;
+    font-size: 14px;
+  }
+  .banner_title_text {
+    font-size: 26px !important;
+  }
+}

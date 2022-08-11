@@ -47,3 +47,67 @@
         }
     }
 }
+
+@media screen and (max-width: 1023px) {
+
+    .box_aboutus {
+
+        .box_services {
+            margin-top: 30px;
+
+            .detial_service {
+                margin-left: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box_aboutus {
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+
+    .box_aboutus  {
+
+        .description_text {
+            color: #AFADB5 !important;
+            font-size: 14px;
+        }
+    }
+
+    .box_services {
+
+        .detial_service {
+            margin-right: 50px;
+            margin-left: 0px;
+        }
+    }
+}
+
+@media screen and (max-width:599px) {
+
+    .block_footer {
+
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+
+    .box_services {
+
+        .detial_service {
+            margin-right: 10%;
+            margin-left: 0px !important;
+
+            .title_text {
+                font-size: 16px;
+            }
+
+            .description_text {
+                font-size: 14px;
+            }
+        }
+    }
+}
