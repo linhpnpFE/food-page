@@ -27,9 +27,10 @@ $(document).ready(function () {
     // });  
 
     var swiper = new Swiper(".list_product", {
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 30,
         centeredSlides: true,
+        loop:true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

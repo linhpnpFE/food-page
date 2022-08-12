@@ -189,11 +189,11 @@ a:hover {
 .banner_list_product .small_banner .banner_pic {
   width: 100%;
   height: 500px;
-  object-fit: fill;
 }
 .banner_list_product .small_banner .banner_pic img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .banner_list_product .swiper-button-next::after {
   content: "";
@@ -313,12 +313,12 @@ a:hover {
 .box_product .product_picture {
   width: 100%;
   height: 360px;
-  object-fit: fill;
 }
 .box_product .product_picture img {
   height: 100%;
   width: 100%;
   text-align: center;
+  object-fit: cover;
 }
 .box_product .cate_product {
   margin-top: 26px;

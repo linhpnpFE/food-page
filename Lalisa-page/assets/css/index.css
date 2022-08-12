@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Eudoxus Sans";
-  src: url("/assets/fonts/EudoxusSans-Medium.ttf");
+  src: url("../fonts/EudoxusSans-Medium.ttf");
 }
 @font-face {
   font-family: "Slick";
-  src: url("/assets/fonts/slick.ttf");
+  src: url("../fonts/slick.ttf");
 }
 .block_header {
   padding: 30px 0px;
@@ -145,12 +145,12 @@ a:hover {
   margin-top: -40px;
   width: 100%;
   height: 480px;
-  object-fit: fill;
   overflow: hidden;
 }
 .box_banner_photo img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 /*===============End Banner==============*/
@@ -160,7 +160,12 @@ a:hover {
 }
 
 .box_benefits_title {
+  margin-top: 14px;
   max-width: 427px;
+}
+
+.detail_benefit {
+  margin-top: 50px;
 }
 
 .box_benefit {
@@ -205,12 +210,12 @@ a:hover {
 .box_product .product_picture {
   width: 394px;
   height: 360px;
-  object-fit: fill;
 }
 .box_product .product_picture img {
   width: 100%;
   height: 100%;
   text-align: center;
+  object-fit: contain;
 }
 .box_product .cate_product {
   margin-top: 26px;
@@ -274,11 +279,11 @@ a:hover {
   margin-top: 50px;
   width: 100%;
   height: 260px;
-  object-fit: fill;
 }
 .content_product .feature_img img {
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 
 .box_archivement_mobile {
@@ -303,11 +308,11 @@ a:hover {
   height: 510px;
   margin-top: 57px;
   overflow: hidden;
-  object-fit: fill;
 }
 .archive_img img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 /*===============End: Our Products==============*/
@@ -374,13 +379,13 @@ a:hover {
 .box_feature_img .feature_photo {
   width: 100%;
   height: 565px;
-  object-fit: fill;
   overflow: hidden;
   position: relative;
 }
 .box_feature_img .feature_photo img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 .box_feature_img .box_button {
   box-shadow: 0px 4px 90px rgba(175, 173, 181, 0.2);
