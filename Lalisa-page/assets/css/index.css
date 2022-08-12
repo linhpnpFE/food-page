@@ -144,10 +144,13 @@ a:hover {
 .box_banner_photo {
   margin-top: -40px;
   width: 100%;
-  height: auto;
+  height: 480px;
+  object-fit: fill;
+  overflow: hidden;
 }
 .box_banner_photo img {
   width: 100%;
+  height: 100%;
 }
 
 /*===============End Banner==============*/
@@ -193,8 +196,6 @@ a:hover {
 
 .list_product {
   margin-top: 50px;
-  width: 100%;
-  height: auto;
 }
 .list_product .swiper-slide {
   text-align: center;
@@ -203,10 +204,12 @@ a:hover {
 
 .box_product .product_picture {
   width: 394px;
-  height: auto;
+  height: 360px;
+  object-fit: fill;
 }
 .box_product .product_picture img {
   width: 100%;
+  height: 100%;
   text-align: center;
 }
 .box_product .cate_product {
@@ -270,9 +273,11 @@ a:hover {
 .content_product .feature_img {
   margin-top: 50px;
   width: 100%;
-  height: auto;
+  height: 260px;
+  object-fit: fill;
 }
 .content_product .feature_img img {
+  height: 100%;
   width: 100%;
 }
 
@@ -295,12 +300,14 @@ a:hover {
 
 .archive_img {
   width: 100%;
-  height: auto;
+  height: 510px;
   margin-top: 57px;
   overflow: hidden;
+  object-fit: fill;
 }
 .archive_img img {
   width: 100%;
+  height: 100%;
 }
 
 /*===============End: Our Products==============*/
@@ -366,11 +373,14 @@ a:hover {
 }
 .box_feature_img .feature_photo {
   width: 100%;
+  height: 565px;
+  object-fit: fill;
   overflow: hidden;
   position: relative;
 }
 .box_feature_img .feature_photo img {
   width: 100%;
+  height: 100%;
 }
 .box_feature_img .box_button {
   box-shadow: 0px 4px 90px rgba(175, 173, 181, 0.2);
@@ -383,7 +393,7 @@ a:hover {
 
 .box_title_articles {
   position: absolute;
-  bottom: 200px;
+  bottom: 250px;
   left: 40px;
 }
 .box_title_articles .cate_articles .description_text {
@@ -490,6 +500,10 @@ a:hover {
   }
   .box_feature_img .feature_photo {
     overflow: hidden;
+    height: 400px;
+  }
+  .box_title_articles {
+    bottom: 20px;
   }
   .small_list_blog {
     margin-top: 50px;
@@ -509,12 +523,8 @@ a:hover {
   .box_banner_text .banner_title_text {
     font-size: 60px;
   }
-  .box_about_product .content_product .title_our_product {
-    max-width: unset;
-  }
   .box_about_product .content_product .des_our_product {
     margin-top: 50px;
-    max-width: unset;
   }
   .box_about_product .content_product .button_read {
     margin-top: 50px;
@@ -524,9 +534,6 @@ a:hover {
   }
   .box_about_product .content_product .feature_img {
     margin-top: 50px;
-  }
-  .product_numb .archive_img {
-    max-width: unset;
   }
   .box_feature_img .box_button {
     display: none;
@@ -591,6 +598,10 @@ a:hover {
   }
   .product_numb {
     margin-top: 0px;
+  }
+  .box_feature_img .feature_photo {
+    overflow: hidden;
+    height: 200px;
   }
   .box_title_articles .cate_articles .description_text {
     font-size: 12px;

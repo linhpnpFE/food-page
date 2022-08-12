@@ -91,10 +91,13 @@
 .box_banner_photo {
     margin-top: -40px;
     width: 100%;
-    height: auto;
+    height: 480px;
+    object-fit: fill;
+    overflow: hidden;
 
     img {
         width: 100%;
+        height: 100%;
     }
 }
 
@@ -153,8 +156,8 @@
 
 .list_product {
     margin-top: 50px;
-    width: 100%;
-    height: auto;
+    // width: 100%;
+    // height: auto;
 
     .swiper-slide {
         text-align: center;
@@ -168,10 +171,12 @@
 
     .product_picture {
         width: 394px;
-        height: auto;
+        height: 360px;
+        object-fit: fill;
 
         img {
             width: 100%;
+            height: 100%;
             text-align: center;
         }
     }
@@ -254,9 +259,11 @@
     .feature_img {
         margin-top: 50px;
         width: 100%;
-        height: auto;
+        height: 260px;
+        object-fit: fill;
 
         img {
+            height: 100%;
             width: 100%;
         }
     }
@@ -283,12 +290,14 @@
 
 .archive_img {
     width: 100%;
-    height: auto;
+    height: 510px;
     margin-top: 57px;
     overflow: hidden;
+    object-fit: fill;
 
     img {
         width: 100%;
+        height: 100%;
     }
 }
 
@@ -375,11 +384,14 @@
 
     .feature_photo {
         width: 100%;
+        height: 565px;
+        object-fit: fill;
         overflow: hidden;
         position: relative;
 
         img {
             width: 100%;
+            height: 100%;
         }
     }
 
@@ -400,7 +412,7 @@
 
 .box_title_articles {
     position: absolute;
-    bottom: 200px;
+    bottom: 250px;
     left: 40px;
     
     .cate_articles {
@@ -548,9 +560,13 @@
 
         .feature_photo {
             overflow: hidden;
+            height: 400px;
         }
     }
 
+    .box_title_articles {
+        bottom: 20px;
+    }
     .small_list_blog {
         margin-top: 50px;
     }
@@ -595,13 +611,8 @@
 
         .content_product {
             
-            .title_our_product {
-                max-width: unset;
-            }
-
             .des_our_product {
                 margin-top: 50px;
-                max-width: unset;
             }
 
             .button_read {
@@ -615,13 +626,6 @@
             .feature_img {
                 margin-top: 50px;
             }
-        }
-    }
-
-    .product_numb {
-
-        .archive_img {
-            max-width: unset;
         }
     }
 
@@ -676,8 +680,8 @@
         }
     }
 
+  
 
-    ///////////Footer//////////
     
 
     
@@ -752,6 +756,15 @@
     }
 
     ////////////////////Article ////////////
+    
+    .box_feature_img {
+
+        .feature_photo {
+            overflow: hidden;
+            height: 200px;
+        }
+    }
+
     .box_title_articles {
         
         .cate_articles {

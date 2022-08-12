@@ -188,10 +188,12 @@ a:hover {
 }
 .banner_list_product .small_banner .banner_pic {
   width: 100%;
-  height: auto;
+  height: 500px;
+  object-fit: fill;
 }
 .banner_list_product .small_banner .banner_pic img {
   width: 100%;
+  height: 100%;
 }
 .banner_list_product .swiper-button-next::after {
   content: "";
@@ -310,9 +312,11 @@ a:hover {
 }
 .box_product .product_picture {
   width: 100%;
-  height: auto;
+  height: 360px;
+  object-fit: fill;
 }
 .box_product .product_picture img {
+  height: 100%;
   width: 100%;
   text-align: center;
 }
