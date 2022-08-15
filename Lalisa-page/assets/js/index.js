@@ -1,46 +1,52 @@
 $(document).ready(function () {
 
-    // $('.small_box_product').slick({
-    // centerMode: true,
-    // centerPadding: '60px',
-    // slidesToShow: 3.3,
-    // responsive: [
-    //     {
-    //     breakpoint: 768,
-    //     settings: {
-    //         arrows: false,
-    //         centerMode: true,
-    //         centerPadding: '40px',
-    //         slidesToShow: 3
-    //     }
-    //     },
-    //     {
-    //     breakpoint: 480,
-    //     settings: {
-    //         arrows: false,
-    //         centerMode: true,
-    //         centerPadding: '40px',
-    //         slidesToShow: 1
-    //     }
-    //     }
-    // ]
-    // });  
-
-    var swiper = new Swiper(".list_product", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        centeredSlides: true,
-        loop:true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+    $('.small_box_product').slick({
+    centerMode: true,
+    centerPadding: '250px',
+    slidesToShow: 2.5,
+    responsive: [
+        {
+            breakpoint: 1440,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3
+            }
         },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+        {
+            breakpoint: 1200,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 2
+            }
         },
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow:  1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '10px',
+                slidesToShow: 1
+            }
+        }
+    ],
+    prevArrow:"<img class='a-left control-c prev slick-prev' src='./assets/img/prev_btn.png'>",
+    nextArrow:"<img class='a-right control-c next slick-next' src='./assets/img/next_btn.png'>"
     });
-
+    
+    
 
     $('.detail_testi').slick({
         centerMode: true,

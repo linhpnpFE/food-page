@@ -23,6 +23,7 @@
 
 .box_services {
     display: flex;
+    justify-content: space-around;
 
     .detial_service {
         margin-left: 104px;
@@ -98,7 +99,7 @@
     .box_services {
 
         .detial_service {
-            margin-right: 10%;
+            margin-right: 3%;
             margin-left: 0px !important;
 
             .title_text {
