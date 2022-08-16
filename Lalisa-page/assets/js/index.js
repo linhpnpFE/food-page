@@ -51,7 +51,9 @@ $(document).ready(function () {
     $('.detail_testi').slick({
         centerMode: true,
         centerPadding: '60px',
-        slidesToShow: 2.35,
+        slidesToShow: 2.3,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 1024,
@@ -72,7 +74,12 @@ $(document).ready(function () {
                 }
             }
         ]
-        }); 
+    }); 
+
+    $('.image').slick({
+        prevArrow:".slick-prev-article",
+        nextArrow:".slick-next-article"
+    });
 
 })
 

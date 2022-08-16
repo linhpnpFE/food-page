@@ -7,14 +7,18 @@
   src: url("../fonts/slick.ttf");
 }
 .block_header {
-  padding: 30px 0px;
   border-bottom: 2px solid #F3F3F3;
   position: sticky;
   top: 0;
 }
 
+.navbar {
+  padding: 0;
+}
+
 li.nav-item {
   margin-right: 60px;
+  padding: 30px 0px;
 }
 
 li.nav-item .nav-link {
@@ -102,7 +106,8 @@ a:hover {
   margin-bottom: 30px;
   background-image: url("../img/vector_title_banner.png");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right 77%;
+  background-size: 10%;
 }
 
 .banner_des {
@@ -176,6 +181,7 @@ a:hover {
   padding: 26px 24px;
   background: #FFFFFF;
   box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+  margin-right: 29px;
 }
 .box_benefit .title_benefit {
   margin-top: 24px;
@@ -240,18 +246,16 @@ a:hover {
   font-size: 24px;
 }
 
-.slick-prev,
-.slick-next {
+.small_box_product .slick-prev,
+.small_box_product .slick-next {
   z-index: 1;
   width: 40px;
   height: 40px;
 }
-
-.slick-next {
+.small_box_product .slick-next {
   right: 62px;
 }
-
-.slick-prev {
+.small_box_product .slick-prev {
   left: 62px;
 }
 
@@ -291,7 +295,7 @@ a:hover {
 .content_product .feature_img img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .product_numb {
@@ -326,7 +330,7 @@ a:hover {
 .archive_img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /*===============End: Our Products==============*/
@@ -360,18 +364,31 @@ a:hover {
   display: flex;
   align-items: center;
   margin-top: 26px;
+  justify-content: space-between;
 }
-.info_valuer .avatar {
+.info_valuer .info {
+  display: flex;
+  align-items: center;
+}
+.info_valuer .info .avatar {
   width: 50px;
   height: 50px;
   overflow: hidden;
   margin-right: 14px;
 }
-.info_valuer .avatar img {
+.info_valuer .info .avatar img {
   width: 100%;
 }
-.info_valuer .name .title_text {
+.info_valuer .info .name .title_text {
   font-size: 20px;
+  white-space: nowrap;
+}
+.info_valuer .evaluate {
+  display: flex;
+  align-items: center;
+}
+.info_valuer .evaluate .title_text {
+  font-size: 18px;
 }
 
 /*===============End: Testimonials  =============*/
@@ -397,30 +414,24 @@ a:hover {
   margin-top: 30px;
 }
 
+.box_feature_img {
+  position: relative;
+}
 .box_feature_img .feature_photo {
   width: 100%;
   max-height: 565px;
   overflow: hidden;
-  position: relative;
 }
 .box_feature_img .feature_photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.box_feature_img .box_button {
-  box-shadow: 0px 4px 90px rgba(175, 173, 181, 0.2);
-  position: absolute;
-  right: 15px;
-}
-.box_feature_img .box_button .btn_group:nth-child(1) {
-  background: #FFFFFF;
-}
 
 .box_title_articles {
-  position: absolute;
+  position: absolute !important;
   bottom: 100px;
-  left: 40px;
+  padding-left: 25px;
 }
 .box_title_articles .cate_articles .description_text {
   color: #FFFFFF;
@@ -435,6 +446,7 @@ a:hover {
 .box_title_articles .detail_articles {
   margin-top: 6px;
   padding: 0px 72px 0px 0px;
+  max-width: 530px;
 }
 .box_title_articles .detail_articles .description_text {
   overflow: hidden;
@@ -450,6 +462,24 @@ a:hover {
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 500;
+}
+
+.image {
+  margin-bottom: 31px;
+}
+
+.box_button {
+  box-shadow: 0px 4px 90px rgba(175, 173, 181, 0.2);
+  position: absolute;
+  right: 15px;
+  bottom: 0px;
+  display: flex;
+}
+.box_button .btn_group {
+  width: 50%;
+}
+.box_button .btn_group:nth-child(1) {
+  background: #FFFFFF;
 }
 
 .box_blog {
@@ -472,7 +502,7 @@ a:hover {
 }
 
 .detail_blog {
-  margin-left: 50px;
+  margin-left: 20px;
   flex-shrink: 1;
 }
 .detail_blog .name_blog {
@@ -507,6 +537,7 @@ a:hover {
 .detail_blog .author_blog .title_text {
   font-size: 14px;
   margin-right: 24px;
+  white-space: nowrap;
 }
 .detail_blog .author_blog .description_text {
   font-size: 14px;
@@ -526,9 +557,6 @@ a:hover {
     margin-top: 30px;
     justify-content: space-around;
   }
-  .product_numb {
-    margin-top: 100px;
-  }
   .product_numb .box_archivement {
     display: none;
   }
@@ -540,7 +568,7 @@ a:hover {
     bottom: 20px;
   }
   .small_list_blog {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -553,6 +581,19 @@ a:hover {
   .btn_group {
     padding: 15px 46px;
     font-size: 16px;
+  }
+  .block_banner {
+    margin-top: 50px;
+  }
+  .banner_des {
+    margin-bottom: 30px;
+  }
+  .block_benefits,
+.block_product,
+.block_our_product,
+.block_testimonials,
+.block_artickes {
+    margin-top: 100px;
   }
   .box_banner_text .banner_title_text {
     font-size: 60px;
@@ -570,7 +611,19 @@ a:hover {
   .box_about_product .content_product .feature_img {
     margin-top: 50px;
   }
-  .box_feature_img .box_button {
+  .box_button {
+    display: none;
+  }
+  .name_blog .title_text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .author_blog .date_create {
+    display: none;
+  }
+  .author_blog .content_blog {
     display: none;
   }
   .box_aboutus .box_services {
@@ -581,14 +634,23 @@ a:hover {
   }
 }
 @media screen and (max-width: 767px) {
-  .author_blog .date_create {
-    display: none;
+  .box_benefit {
+    margin-top: 20px;
   }
   .discount {
     flex-direction: column;
   }
   .discount .button_discount {
     margin-top: 16px;
+  }
+  .detail_blog {
+    margin-left: 14px;
+  }
+  .detail_blog .name_blog {
+    margin-top: 4px;
+  }
+  .detail_blog .author_blog {
+    margin-top: 18px;
   }
 }
 @media screen and (max-width: 599px) {
@@ -607,14 +669,6 @@ a:hover {
   }
   .block_header {
     padding: 20px 0;
-  }
-  .block_banner,
-.block_benefits,
-.block_product,
-.block_our_product,
-.block_testimonials,
-.block_artickes {
-    margin-top: 50px;
   }
   .box_banner_text .banner_title_text {
     font-size: 26px;
@@ -650,11 +704,18 @@ a:hover {
   .box_title_articles .article_link .title_text {
     font-size: 12px;
   }
+  .info_valuer .info .name .title_text {
+    font-size: 14px;
+  }
+  .info_valuer .info .avatar {
+    width: 28px;
+    height: 28px;
+  }
+  .info_valuer .evaluate .title_text {
+    font-size: 14px;
+  }
   .detail_blog .cate_blog .description_text {
     font-size: 12px;
-  }
-  .detail_blog .content_blog {
-    display: none;
   }
   .detail_blog .name_blog {
     margin-top: 4px;
