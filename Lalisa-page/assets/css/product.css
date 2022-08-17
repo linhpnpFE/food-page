@@ -171,6 +171,11 @@ a:hover {
   font-weight: 700;
   line-height: 130%;
 }
+.btn_group:hover {
+  color: #518581;
+  background-color: #FFFFFF;
+  border: 2px solid #518581;
+}
 
 .block_banner {
   margin-top: 100px;
@@ -200,7 +205,8 @@ a:hover {
 }
 .banner_list_product .small_banner .banner_pic {
   width: 100%;
-  height: 500px;
+  max-height: 500px;
+  overflow: hidden;
 }
 .banner_list_product .small_banner .banner_pic img {
   width: 100%;
@@ -245,6 +251,7 @@ a:hover {
 }
 .detail_banner .title_banner .description_text {
   font-size: 24px;
+  color: #FFFFFF;
   margin-top: 20px;
 }
 
@@ -280,6 +287,7 @@ a:hover {
 .filter .filter_pic {
   width: 30px;
   height: 30px;
+  margin-right: 12px;
 }
 .filter .filter_pic img {
   width: 100%;
@@ -314,6 +322,9 @@ a:hover {
   border: 1.5px solid #F9F9F9;
   padding: 13px 20px;
 }
+.box_title_product .sort_by .sortby_pic {
+  margin-right: 15px;
+}
 
 .list_product {
   margin-top: 20px;
@@ -324,7 +335,8 @@ a:hover {
 }
 .box_product .product_picture {
   width: 100%;
-  height: 360px;
+  max-height: 360px;
+  overflow: hidden;
 }
 .box_product .product_picture img {
   height: 100%;
@@ -365,6 +377,8 @@ a:hover {
   color: #151411;
   font-weight: 500;
   font-size: 18px;
+  line-height: 180%;
+  padding: 5px 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -384,20 +398,24 @@ a:hover {
   .sort_by {
     display: none !important;
   }
+  .swiper-button-next,
+.swiper-button-prev {
+    display: none;
+  }
 }
 @media screen and (max-width: 599px) {
   .block_title {
     font-size: 14px;
   }
   .title_text {
-    font-size: 26px;
+    font-size: 14px !important;
   }
   .description_text {
-    font-size: 14px;
+    font-size: 12px;
   }
   .btn_group {
     padding: 15px 26px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .banner_title_text {
     font-size: 26px !important;

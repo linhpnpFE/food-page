@@ -21,6 +21,13 @@ li.nav-item {
   padding: 30px 0px;
 }
 
+.page_landing {
+  border-bottom: 3px solid #518581;
+}
+.page_landing .nav-link {
+  color: #518581 !important;
+}
+
 li.nav-item .nav-link {
   font-family: "Eudoxus Sans";
   font-weight: 500;
@@ -96,6 +103,11 @@ a:hover {
   font-size: 18px;
   font-weight: 700;
   line-height: 130%;
+}
+.btn_group:hover {
+  color: #518581;
+  background-color: #FFFFFF;
+  border: 1px solid #518581;
 }
 
 .block_banner {
@@ -480,6 +492,13 @@ a:hover {
 }
 .box_button .btn_group:nth-child(1) {
   background: #FFFFFF;
+}
+.box_button .btn_group:nth-child(1):hover {
+  border: none;
+}
+.box_button .btn_group:nth-child(2):hover {
+  border: none;
+  background-color: #518581;
 }
 
 .box_blog {

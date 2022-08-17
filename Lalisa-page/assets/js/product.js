@@ -1,6 +1,7 @@
 $(document).ready(function(){
     var swiper = new Swiper(".banner_list_product", {
         cssMode: true,
+        loop:true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

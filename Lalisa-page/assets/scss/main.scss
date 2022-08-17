@@ -34,6 +34,12 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 130%;
+
+    &:hover {
+        color:#518581;
+        background-color: #FFFFFF;
+        border: 1px solid #518581;
+    }
 }
 
 // End css for title and description ///
@@ -515,6 +521,18 @@
 
         &:nth-child(1) {
             background: #FFFFFF;
+            
+            &:hover {
+                border: none;    
+            }
+        }
+
+        &:nth-child(2) {
+
+            &:hover {
+                border: none;  
+                background-color: #518581;  
+            }
         }
     }
 }
