@@ -167,176 +167,95 @@ a:hover {
 .btn_group {
   font-family: "Eudoxus Sans";
   background-color: #518581;
-  padding: 15px 46px;
+  padding: 16px 0px;
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 700;
   line-height: 130%;
-}
-.btn_group:hover {
-  color: #518581;
-  background-color: #FFFFFF;
-  border: 2px solid #518581;
+  white-space: nowrap;
 }
 
-.block_banner {
+.block_detail_product {
   margin-top: 100px;
 }
-
-.banner_title {
-  margin-bottom: 30px;
-}
-
-.banner_des {
-  margin-bottom: 50px;
-}
-
-.box_banner_text {
-  max-width: 724px;
-  text-align: center;
-  margin: auto;
-}
-.box_banner_text .banner_title_text {
-  font-size: 64px;
-}
-
-.banner_list_product .small_banner {
+.block_detail_product .image {
   width: 100%;
-  height: auto;
-  position: relative;
-}
-.banner_list_product .small_banner .banner_pic {
-  width: 100%;
-  max-height: 500px;
+  max-height: 600px;
   overflow: hidden;
 }
-.banner_list_product .small_banner .banner_pic img {
+.block_detail_product .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-.banner_list_product .swiper-button-next::after {
-  content: "";
-  background-image: url("/assets/img/next_btn.png");
-  background-repeat: no-repeat;
-  padding: 18px 18px;
-  background-size: 100% 100%;
-}
-.banner_list_product .swiper-button-prev::after {
-  content: "";
-  background-image: url("/assets/img/prev_btn.png");
-  background-repeat: no-repeat;
-  padding: 18px 18px;
-  background-size: 100% 100%;
+  object-fit: contain;
 }
 
-.detail_banner {
-  position: absolute;
-  top: 50%;
-  bottom: 50%;
-  text-align: start !important;
-  right: 0;
-  left: 15px;
-  padding: 0;
+.description {
+  margin-top: 32px;
 }
-.detail_banner .button_group .btn_group {
-  font-size: 14px;
-  border-radius: 16px;
-  font-weight: 500;
-  padding: 8px 16px;
+.description .detail_product {
+  margin-top: 10px;
 }
-.detail_banner .title_banner {
-  margin-top: 15px;
+.description .box_color {
+  margin-top: 30px;
 }
-.detail_banner .title_banner .title_text {
-  color: #FFFFFF;
+.description .box_color .title_text {
+  font-size: 18px;
 }
-.detail_banner .title_banner .description_text {
-  font-size: 24px;
-  color: #FFFFFF;
+.description .box_color .list_color {
+  display: flex;
   margin-top: 20px;
 }
-
-.banner_search {
+.description .box_color .list_color .color {
+  width: 50px;
+  height: 50px;
+}
+.description .box_color .list_color .color:nth-child(1) {
+  background-color: #151411;
+}
+.description .box_color .list_color .color:nth-child(2) {
+  background-color: #314443;
+}
+.description .box_color .list_color .color:nth-child(3) {
+  background-color: #C5A26E;
+}
+.description .box_color .list_color .color:nth-child(4) {
+  background-color: #D8DBE0;
+}
+.description .contain {
+  margin-top: 20px;
+}
+.description .product_cost {
+  margin-top: 30px;
+}
+.description .group_button {
   margin-top: 50px;
-  display: flex;
-  align-items: center;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 120px rgba(175, 173, 181, 0.15);
-  position: relative;
 }
-
-.input-group {
-  align-items: center !important;
-}
-.input-group input {
-  border: 0;
-}
-.input-group ::placeholder {
-  font-family: "Eudoxus Sans";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 180%;
-  color: #AFADB5;
-}
-
-.filter {
-  display: flex;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 120px rgba(175, 173, 181, 0.15);
-  padding: 27px 52px;
-}
-.filter .filter_pic {
-  width: 30px;
-  height: 30px;
-  margin-right: 12px;
-}
-.filter .filter_pic img {
+.description .group_button .col-md-6:nth-child(1) .btn_group {
   width: 100%;
 }
-.filter .fiter_text .description_text {
+.description .group_button .col-md-6:nth-child(1) .btn_group:hover {
+  color: #518581;
+  background-color: #FFFFFF;
+  border: 1px solid #518581;
+}
+.description .group_button .col-md-6:nth-child(2) .btn_group {
+  width: 100%;
   color: #151411;
+  background-color: #FFFFFF;
+  border: 1px solid #F3F3F3;
+}
+.description .group_button .col-md-6:nth-child(2) .btn_group:hover {
+  border: 1px solid #518581;
 }
 
-.block_total_product {
+.block_list_item {
   margin-top: 50px;
 }
-
-.box_title_product {
-  display: flex;
-  justify-content: space-between;
+.block_list_item .list_item_title {
+  font-size: 32px;
 }
-.box_title_product .title_product {
-  display: flex;
-  align-items: center;
-}
-.box_title_product .title_product .count_product {
-  color: #518581;
-  font-size: 16px;
-  background: #F9F9F9;
-  border-radius: 20px;
-  padding: 10px 16px;
-  margin-left: 10px;
-}
-.box_title_product .sort_by {
-  display: flex;
-  align-items: center;
-  border: 1.5px solid #F9F9F9;
-  padding: 13px 20px;
-}
-.box_title_product .sort_by .sortby_pic {
-  margin-right: 15px;
-}
-.box_title_product .sort_by .sort_text .description_text {
-  color: #151411;
-}
-.box_title_product .sort_by:hover {
-  border: 1.5px solid #518581;
-  border-radius: 8px;
-}
-
-.list_product {
-  margin-top: 20px;
+.block_list_item .box_list_items {
+  margin-top: 30px;
 }
 
 .box_product {
@@ -372,47 +291,21 @@ a:hover {
   font-size: 24px;
 }
 
-.box_panigation {
-  margin-top: 80px;
-}
-
-.pagination .active .page-link {
-  background-color: #518581;
-  border: 1.5px solid #AFADB5;
-  color: #FFFFFF;
-}
-.pagination .page-link {
-  font-family: "Eudoxus Sans";
-  color: #151411;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 180%;
-  padding: 5px 15px;
-}
-
 @media screen and (max-width: 767px) {
   .title_text {
-    font-size: 40px;
+    font-size: 26px;
   }
   .description_text {
-    font-size: 16px;
+    font-size: 14px;
   }
   .btn_group {
-    padding: 15px 46px;
-    font-size: 16px;
+    font-size: 14px;
   }
-  .block_banner {
-    margin-top: 50px;
+  .description .detail_product {
+    margin-top: 4px;
   }
-  .filter {
-    display: none;
-  }
-  .sort_by {
-    display: none !important;
-  }
-  .swiper-button-next,
-.swiper-button-prev {
-    display: none;
+  .description .box_color {
+    margin-top: 20px;
   }
   .box_product {
     margin-top: 14px;
@@ -429,29 +322,10 @@ a:hover {
   .box_product .product_cost {
     margin-top: 14px;
   }
-  .box_panigation {
-    margin-top: 32px;
+  .group_button {
+    margin-top: 30px;
   }
-  .pagination .page-item .page-link {
-    padding: 2px 10px;
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 599px) {
-  .block_title {
-    font-size: 14px;
-  }
-  .title_text {
-    font-size: 14px !important;
-  }
-  .description_text {
-    font-size: 12px;
-  }
-  .btn_group {
-    padding: 15px 26px;
-    font-size: 12px;
-  }
-  .banner_title_text {
-    font-size: 26px !important;
+  .group_button .col-md-6:nth-child(2) {
+    margin-top: 10px !important;
   }
 }

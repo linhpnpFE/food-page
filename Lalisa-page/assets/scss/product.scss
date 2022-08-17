@@ -228,6 +228,18 @@
         .sortby_pic {
             margin-right: 15px;
         }
+
+        .sort_text {
+
+            .description_text {
+                color: #151411;
+            }
+        }
+
+        &:hover{
+            border: 1.5px solid #518581;
+            border-radius: 8px;
+        }
     }
 }
 
@@ -315,6 +327,10 @@
         padding: 15px 46px;
         font-size: 16px;
     }
+
+    .block_banner {
+        margin-top: 50px;
+    }
     
     .filter {
         display: none;
@@ -329,6 +345,40 @@
         display: none;
     }
 
+    .box_product {
+        margin-top: 14px;
+
+        .cate_product {
+            margin-top: 14px;
+        }
+
+        .name_product {
+            margin-top: 6px;
+        }
+
+        .detail_product {
+            margin-top: 4px;
+        }
+
+        .product_cost{
+            margin-top: 14px;
+        }
+    }
+
+    .box_panigation {
+        margin-top: 32px;
+    }
+
+    .pagination {
+
+        .page-item {
+           
+            .page-link {
+                padding: 2px 10px;
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 

@@ -40,6 +40,9 @@ li.nav-item .nav-link {
 }
 
 @media (max-width: 992px) {
+  .navbar-expand-lg {
+    padding: 15px;
+  }
   .navbar-expand-lg .navbar-nav {
     align-items: center;
   }
@@ -811,8 +814,7 @@ a:hover {
 }
 @media screen and (max-width: 599px) {
   .block_footer .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 20px 15px;
   }
   .box_services .detial_service {
     margin-right: 3%;
