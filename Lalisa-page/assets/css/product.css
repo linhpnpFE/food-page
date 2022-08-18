@@ -154,6 +154,10 @@ a:hover {
   line-height: 130%;
   font-size: 44px;
   color: #151411;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .description_text {
@@ -176,7 +180,7 @@ a:hover {
 .btn_group:hover {
   color: #518581;
   background-color: #FFFFFF;
-  border: 2px solid #518581;
+  border: 1px solid #518581;
 }
 
 .block_banner {
@@ -215,24 +219,22 @@ a:hover {
   height: 100%;
   object-fit: cover;
 }
-.banner_list_product .swiper-button-next::after {
-  content: "";
-  background-image: url("/assets/img/next_btn.png");
-  background-repeat: no-repeat;
-  padding: 18px 18px;
-  background-size: 100% 100%;
+.banner_list_product .slick-prev,
+.banner_list_product .slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
 }
-.banner_list_product .swiper-button-prev::after {
-  content: "";
-  background-image: url("/assets/img/prev_btn.png");
-  background-repeat: no-repeat;
-  padding: 18px 18px;
-  background-size: 100% 100%;
+.banner_list_product .slick-next {
+  right: 62px;
+}
+.banner_list_product .slick-prev {
+  left: 62px;
 }
 
 .detail_banner {
   position: absolute;
-  top: 50%;
+  top: 30%;
   bottom: 50%;
   text-align: start !important;
   right: 0;
@@ -338,6 +340,12 @@ a:hover {
 .list_product {
   margin-top: 20px;
 }
+.list_product .col-md-4 {
+  flex-basis: 50%;
+}
+.list_product .col-md-4:nth-child(10) {
+  display: none;
+}
 
 .box_product {
   margin-top: 30px;
@@ -365,6 +373,12 @@ a:hover {
 .box_product .detail_product {
   margin-top: 6px;
 }
+.box_product .detail_product .description_text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 .box_product .product_cost {
   margin-top: 18px;
 }
@@ -390,6 +404,12 @@ a:hover {
   padding: 5px 15px;
 }
 
+@media screen and (max-width: 1199px) {
+  .slick-prev,
+.slick-next {
+    display: none !important;
+  }
+}
 @media screen and (max-width: 767px) {
   .title_text {
     font-size: 40px;
@@ -410,9 +430,8 @@ a:hover {
   .sort_by {
     display: none !important;
   }
-  .swiper-button-next,
-.swiper-button-prev {
-    display: none;
+  .detail_banner {
+    top: 13%;
   }
   .box_product {
     margin-top: 14px;
@@ -428,6 +447,9 @@ a:hover {
   }
   .box_product .product_cost {
     margin-top: 14px;
+  }
+  .list_product .col-md-4:nth-child(10) {
+    display: block;
   }
   .box_panigation {
     margin-top: 32px;
@@ -453,5 +475,15 @@ a:hover {
   }
   .banner_title_text {
     font-size: 26px !important;
+  }
+  .button_group .btn_group {
+    font-size: 10px !important;
+  }
+  .title_banner .title_text {
+    font-size: 16px;
+  }
+  .title_banner .description_text {
+    font-size: 12px !important;
+    margin-top: 4px !important;
   }
 }

@@ -154,6 +154,10 @@ a:hover {
   line-height: 130%;
   font-size: 44px;
   color: #151411;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .description_text {
@@ -162,6 +166,10 @@ a:hover {
   font-weight: 500;
   line-height: 180%;
   font-size: 18px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .btn_group {
@@ -257,6 +265,12 @@ a:hover {
 .block_list_item .box_list_items {
   margin-top: 30px;
 }
+.block_list_item .box_list_items .col-md-4 {
+  flex-basis: 50%;
+}
+.block_list_item .box_list_items .col-md-4:nth-child(4) {
+  display: none;
+}
 
 .box_product {
   margin-top: 30px;
@@ -322,10 +336,29 @@ a:hover {
   .box_product .product_cost {
     margin-top: 14px;
   }
+  .list_color .color {
+    width: 30px !important;
+    height: 30px !important;
+  }
   .group_button {
     margin-top: 30px;
   }
   .group_button .col-md-6:nth-child(2) {
     margin-top: 10px !important;
+  }
+  .box_list_items .col-md-4:nth-child(4) {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 599px) {
+  .title_text {
+    font-size: 14px !important;
+  }
+  .description_text {
+    font-size: 12px;
+  }
+  .btn_group {
+    padding: 15px 26px;
+    font-size: 12px;
   }
 }

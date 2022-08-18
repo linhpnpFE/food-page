@@ -1,15 +1,6 @@
 $(document).ready(function(){
-    var swiper = new Swiper(".banner_list_product", {
-        cssMode: true,
-        loop:true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
-    });
+  $('.banner_list_product').slick({
+    prevArrow:"<img class='a-left control-c prev slick-prev' src='../assets/img/prev_btn.png'>",
+    nextArrow:"<img class='a-right control-c next slick-next' src='../assets/img/next_btn.png'>"
+  });
 })

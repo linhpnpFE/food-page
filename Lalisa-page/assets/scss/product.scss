@@ -25,6 +25,10 @@
     line-height: 130%;
     font-size: 44px;
     color: #151411;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .description_text {
@@ -33,6 +37,7 @@
     font-weight: 500;
     line-height: 180%;
     font-size: 18px;
+
 }
 
 .btn_group {
@@ -47,7 +52,7 @@
     &:hover {
         color:#518581;
         background-color: #FFFFFF;
-        border: 2px solid #518581;
+        border: 1px solid #518581;
     }
 }
 
@@ -94,27 +99,26 @@
             }
         }
     }
-    
-    .swiper-button-next::after {
-        content: "";
-        background-image: url("/assets/img/next_btn.png");
-        background-repeat: no-repeat;
-        padding: 18px 18px;
-        background-size: 100% 100%;
+
+    .slick-prev, 
+    .slick-next {
+        z-index: 1;
+        width: 40px;
+        height: 40px;
     }
-    
-    .swiper-button-prev::after {
-        content: "";
-        background-image: url("/assets/img/prev_btn.png");
-        background-repeat: no-repeat;
-        padding: 18px 18px;
-        background-size: 100% 100%;
+
+    .slick-next {
+        right: 62px;
     }
+
+    .slick-prev {
+        left: 62px;
+    } 
 }
 
 .detail_banner {
     position: absolute;
-    top: 50%;
+    top: 30%;
     bottom: 50%;
     text-align: start !important;
     right: 0;
@@ -245,6 +249,14 @@
 
 .list_product {
     margin-top: 20px;
+
+    .col-md-4 {
+        flex-basis: 50%;
+
+        &:nth-child(10) {
+            display: none;
+        }
+    }
 }
 
 .box_product {
@@ -277,6 +289,13 @@
     
     .detail_product {
         margin-top: 6px;
+        
+        .description_text {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
     }
     
     .product_cost {
@@ -313,6 +332,13 @@
     }
 }
 
+@media screen and (max-width:1199px) {
+    .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
+}
+
 @media screen and (max-width:767px) {
     
     .title_text {
@@ -340,10 +366,13 @@
         display: none !important;
     }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-        display: none;
+    
+
+    .detail_banner {
+        top: 13%;
     }
+
+    
 
     .box_product {
         margin-top: 14px;
@@ -362,6 +391,16 @@
 
         .product_cost{
             margin-top: 14px;
+        }
+    }
+
+    .list_product {
+    
+        .col-md-4 {
+    
+            &:nth-child(10) {
+                display: block;
+            }
         }
     }
 
@@ -403,5 +442,24 @@
 
     .banner_title_text {
         font-size: 26px !important;
+    }
+
+    .button_group {
+
+        .btn_group {
+            font-size: 10px !important;
+        }
+    }
+
+    .title_banner {
+
+        .title_text {
+            font-size: 16px;
+        }
+
+        .description_text {
+            font-size: 12px !important;
+            margin-top: 4px !important;
+        }
     }
 }
