@@ -208,20 +208,18 @@ a:hover {
   font-size: 64px;
 }
 
+.banner .detail_blog {
+  margin: 0px 80px;
+  position: relative;
+  margin-top: -7%;
+  background-color: #FFFFFF;
+  padding: 47px 40px;
+}
 .banner .detail_blog .name_blog {
   margin-top: 21px;
 }
 .banner .detail_blog .name_blog .title_text {
   font-size: 24px;
-}
-.banner .detail_blog .content_blog {
-  margin-top: 14px;
-}
-.banner .detail_blog .content_blog .description_text {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
 }
 .banner .detail_blog .author_blog {
   display: flex;

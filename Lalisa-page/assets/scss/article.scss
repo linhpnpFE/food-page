@@ -81,23 +81,17 @@
 .banner {
 
     .detail_blog {
+        margin: 0px 80px;
+        position: relative;
+        margin-top: -7%;
+        background-color: #FFFFFF;
+        padding: 47px 40px;
     
         .name_blog {
             margin-top: 21px;
     
             .title_text {
                 font-size: 24px;
-            }
-        }
-    
-        .content_blog {
-            margin-top: 14px;
-    
-            .description_text {
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                -webkit-box-orient: vertical;
             }
         }
     
