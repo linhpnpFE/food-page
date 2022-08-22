@@ -11,6 +11,14 @@
 li.nav-item {
     margin-right: 60px;
     padding: 30px 0px;
+
+    &:hover {
+        border-bottom: 3px solid #518581 !important;
+
+        .nav-link {
+            color: #518581 !important;
+        }
+    }
 }
 
 .page_landing {

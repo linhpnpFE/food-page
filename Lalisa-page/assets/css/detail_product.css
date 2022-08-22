@@ -20,6 +20,12 @@ li.nav-item {
   margin-right: 60px;
   padding: 30px 0px;
 }
+li.nav-item:hover {
+  border-bottom: 3px solid #518581 !important;
+}
+li.nav-item:hover .nav-link {
+  color: #518581 !important;
+}
 
 .page_landing {
   border-bottom: 3px solid #518581;
