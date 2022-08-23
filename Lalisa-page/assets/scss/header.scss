@@ -2,6 +2,7 @@
     border-bottom: 2px solid #F3F3F3;
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 
 .navbar {
@@ -40,6 +41,40 @@ li.nav-item .nav-link {
     margin-right: 28px;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    background-color: #F3F3F3;
+    transition: 0.5s;
+    padding-top: 60px;
+
+    li.nav-item {
+        margin-right: 60px;
+        padding: 15px 0px;
+    }
+
+    .options_navbar {
+        display: flex;
+        justify-content: space-around;
+    } 
+
+    .item_close {
+        width: 100%;
+
+        .close_icon {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+}
 
 @media (max-width: 992px) {
     .navbar-expand-lg {

@@ -22,11 +22,11 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="index.html"><img src="../assets/img/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" id="open_button" type="button">
                         <span class="navbar-toggler-icon"><img src="../assets/img/menu.png" alt=""></span>
                     </button>
                     
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item page_landing">
                                 <a class="nav-link" href="product.html">Product</a>
@@ -43,10 +43,40 @@
                         </ul>
                         <div class="my-2 my-lg-0">
                             <div class="options_navbar">
-                                <a class="icon_option" href="">
+                                <a class="icon_option" href="#">
                                     <img src="../assets/img/cart.png" alt="">
                                 </a>
-                                <a class="icon_option" href="">
+                                <a class="icon_option" href="#">
+                                    <img src="../assets/img/user.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidenav" id="mySidenav">
+                        <div class="item_close">
+                            <a class="close_icon">&times;</a>
+                        </div>
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item page_landing">
+                                <a class="nav-link" href="product.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="article.html">Article</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html">About Us</a>
+                            </li>
+                        </ul>
+                        <div class="my-2 my-lg-0">
+                            <div class="options_navbar">
+                                <a class="icon_option" href="#">
+                                    <img src="../assets/img/cart.png" alt="">
+                                </a>
+                                <a class="icon_option" href="#">
                                     <img src="../assets/img/user.png" alt="">
                                 </a>
                             </div>
@@ -254,6 +284,7 @@
     <script src="../assets/js/slick.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/all.min.js"></script>
+    <script src="../assets/js/header.js"></script>
     <script src="../assets/js/product.js"></script>
 </body>
 
