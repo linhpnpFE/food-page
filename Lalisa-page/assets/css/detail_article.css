@@ -210,21 +210,6 @@ a:hover {
   font-size: 18px;
 }
 
-.btn_group {
-  font-family: "Eudoxus Sans";
-  background-color: #518581;
-  padding: 15px 46px;
-  color: #FFFFFF;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 130%;
-}
-.btn_group:hover {
-  color: #518581;
-  background-color: #FFFFFF;
-  border: 1px solid #518581;
-}
-
 .block_banner {
   margin-top: 100px;
 }
@@ -238,7 +223,7 @@ a:hover {
 }
 
 .box_banner_text {
-  max-width: 724px;
+  max-width: 1146px;
   text-align: center;
   margin: auto;
 }
@@ -246,177 +231,37 @@ a:hover {
   font-size: 64px;
 }
 
-.box_vid {
-  margin-top: 30px;
-}
-.box_vid video {
-  max-height: 550px;
+.banner_pic {
+  margin-top: 50px;
   width: 100%;
+  max-height: 550px;
+  overflow: hidden;
+}
+.banner_pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.block_mission {
-  margin-top: 180px;
-}
-.block_mission .row {
-  margin-top: 14px;
-}
-
-.box_archivement {
-  display: flex;
+.block_content {
   margin-top: 50px;
 }
-.box_archivement .detail_archivement {
-  margin-top: 10px;
+.block_content .content .description_text:nth-child(2) {
+  margin-top: 50px;
 }
-
-.small_box_archivement {
-  margin-right: 50px;
-}
-
-.box_mission {
-  display: flex;
-}
-.box_mission:nth-child(n+2) {
-  margin-top: 30px;
-}
-.box_mission .icon {
-  width: 62px;
-  height: 62px;
+.block_content .image {
+  margin-top: 50px;
+  max-height: 480px;
+  width: 100%;
   overflow: hidden;
-  flex-shrink: 0;
-  margin-right: 25px;
 }
-.box_mission .icon img {
+.block_content .image img {
   width: 100%;
 }
-.box_mission .description .title .title_text {
-  font-size: 26px;
+.block_content .author_photo {
+  margin-top: 10px;
+  float: right;
 }
-.box_mission .description .content {
-  margin-top: 16px;
-}
-
-.block_team {
-  margin-top: 180px;
-}
-.block_team .box_detail_team {
-  margin-top: 14px;
-}
-.block_team .list_team {
-  margin-top: 20px;
-}
-
-.box_team {
-  margin-top: 30px;
-}
-.box_team .image {
-  width: 100%;
-  max-height: 360px;
-  max-width: 390px;
-}
-.box_team .image img {
-  width: 100%;
-}
-.box_team .name {
-  margin-top: 26px;
-}
-.box_team .name .title_text {
-  font-size: 26px;
-}
-.box_team .position {
-  margin-top: 6px;
-}
-
-.talk {
-  margin-top: 181px;
-  display: flex;
-  justify-content: space-between;
-}
-.talk .talk_title {
-  max-width: 35%;
-}
-.talk .btn_group {
-  white-space: nowrap;
-}
-.talk .btn_group:hover {
-  color: #FFFFFF;
-  background-color: #518581;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-
-@media screen and (max-width: 1023px) {
-  .title_text {
-    font-size: 40px;
-  }
-  .description_text {
-    font-size: 16px;
-  }
-  .btn_group {
-    padding: 15px 46px;
-    font-size: 16px;
-  }
-  .block_banner {
-    margin-top: 50px;
-  }
-  .block_mission {
-    margin-top: 100px;
-  }
-  .block_team {
-    margin-top: 67px;
-  }
-  .box_archivement {
-    margin-top: 30px;
-  }
-  .small_box_archivement {
-    margin-right: 20px;
-  }
-  .list_mission {
-    margin-top: 30px;
-  }
-  .box_mission .icon {
-    width: 44px;
-    height: 44px;
-  }
-}
-@media screen and (max-width: 599px) {
-  .title_text {
-    font-size: 24px;
-  }
-  .description_text {
-    font-size: 14px;
-  }
-  .description .title_text {
-    font-size: 16px !important;
-  }
-  .box_banner_text .banner_title_text {
-    font-size: 26px;
-  }
-  .box_detail_team {
-    margin-top: 8px;
-  }
-  .box_detail_team .description_text {
-    margin-top: 20px;
-  }
-  .box_team {
-    margin-top: 20px;
-  }
-  .box_team .name {
-    margin-top: 14px;
-  }
-  .box_team .name .title_text {
-    font-size: 14px !important;
-  }
-  .box_team .description_text {
-    font-size: 12px !important;
-  }
-  .talk {
-    margin-top: 100px;
-    flex-direction: column;
-  }
-  .talk .talk_title {
-    max-width: 100%;
-  }
-  .talk .button_talk {
-    margin-top: 16px;
-  }
+.block_content .author_photo .description_text {
+  font-size: 14px;
 }

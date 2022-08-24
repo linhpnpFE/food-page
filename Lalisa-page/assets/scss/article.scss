@@ -540,6 +540,7 @@
             
             .title_text {
                 margin-right: 10px;
+                font-size: 12px !important;
             }
         }
     }
@@ -548,7 +549,7 @@
 @media screen and (max-width:599px) {
 
     .title_text {
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
 
     .description_text {

@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Eudoxus Sans';
+    src: url("/assets/fonts/EudoxusSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Slick';
+    src: url("/assets/fonts/slick.ttf");
+}
+
+@import "header";
+@import "custom_css";
+@import "footer";
+
+
+.block_title {
+    font-family: 'Eudoxus Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFB23F;
+}
+
+.title_text {
+    font-family: 'Eudoxus Sans';
+    font-weight: 700;
+    line-height: 130%;
+    font-size: 44px;
+    color: #151411;
+}
+
+.description_text {
+    font-family: 'Eudoxus Sans';
+    color: #AFADB5;
+    font-weight: 500;
+    line-height: 180%;
+    font-size: 18px;
+
+}
+
+
+////////////Start: Banner ///////////
+.block_banner {
+    margin-top: 100px;
+}
+
+.banner_title {
+    margin-bottom: 30px;
+}
+
+.banner_des {
+    margin-bottom: 50px;
+}
+
+.box_banner_text {
+    max-width: 1146px;
+    text-align: center;
+    margin: auto;
+    
+    .banner_title_text {
+        font-size: 64px;
+    }
+}
+
+.banner_pic {
+    margin-top: 50px;
+    width: 100%;
+    max-height: 550px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+
+.block_content {
+    margin-top: 50px;
+
+    .content {
+
+        .description_text {
+
+            &:nth-child(2) {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .image {
+        margin-top: 50px;
+        max-height: 480px;
+        width: 100%; 
+        overflow: hidden;
+        
+        img{
+            width: 100%;
+        }
+    }
+
+    .author_photo {
+        margin-top: 10px;
+        float: right;
+
+        .description_text {
+            font-size: 14px;
+        }
+    }
+}
+
