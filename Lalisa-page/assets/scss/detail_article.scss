@@ -35,7 +35,16 @@
     font-weight: 500;
     line-height: 180%;
     font-size: 18px;
+}
 
+.btn_group {
+    font-family: 'Eudoxus Sans';
+    background-color: #518581;
+    padding: 15px 46px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
 }
 
 
@@ -110,3 +119,249 @@
     }
 }
 
+.box_2 {
+    margin-top: 15px;
+
+    .title_text {
+        font-size: 24px;
+    }
+
+    .row {
+        margin-top: 12px;
+    }
+
+    .image {
+        width: 100%;
+        max-height: 480px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.box_3 {
+    margin-top: 50px;
+
+    .row {
+        margin-top: 12px;
+    }
+
+    .title_text {
+        font-size: 24px;
+    }
+}
+
+.block_topic {
+    margin-top: 180px;
+
+    .title {
+        margin-top: 14px;
+    }
+
+    .list_topic {
+        margin-top: 50px;
+    }
+}
+
+.small_new {
+    
+    .image {
+        width: 100%;
+        max-height: 360px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .cate_blog {
+        margin-top: 26px;
+    }
+
+    .name_blog {
+        margin-top: 10px; 
+
+        .title_text {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            font-size: 26px;
+        }
+    }
+
+    .content_blog {
+        margin-top: 6px;
+
+        .description_text {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    .author_blog {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+
+        .author_avatar {
+            width: 28px;
+            height: 28px;
+            overflow: hidden;
+            margin-right: 10px;
+            flex-shrink: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .title_text {
+            font-size: 14px;
+            margin-right: 24px;
+            white-space: nowrap;
+
+        }
+
+        .description_text {
+            font-size: 14px;
+            white-space: nowrap;
+        }
+    }
+}
+
+.sub {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+
+    .button_talk {
+
+        .btn_group {
+            white-space: nowrap;
+
+            &:hover {
+                color: #FFFFFF;
+                background-color: #518581;
+                box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    
+
+    .title_text {
+        font-size: 14px;
+    }
+
+    .description_text {
+        font-size: 14px;
+    }
+
+    .banner_title {
+        .title_text {
+            font-size: 26px;
+        }
+    }
+
+    .block_banner {
+        margin-top: 50px;
+    }
+
+    .box_1 {
+
+        .content {
+
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+
+        .author_photo {
+            display: none;
+        }
+    }
+
+    .box_2 {
+        margin-top: 30px;
+
+        .image {
+            margin-top: 30px;
+        }
+    }
+    
+    .box_3 {
+        margin-top: 30px;
+    }
+
+    .block_topic {
+        margin-top: 100px;
+
+        .title {
+
+            .title_text {
+                font-size: 22px;
+            }
+        }
+    }
+
+    .small_new {
+        margin-top: 20px;
+
+        .cate_blog {
+            margin-top: 16px;
+        }
+
+        .name_blog {
+            margin-top: 6px;
+
+
+            .title_text {
+                font-size: 14px;
+            }
+        }
+        
+        .content_blog {
+            margin-top: 4px;
+        }
+
+        .author_blog {
+            margin-top: 13px;
+
+            .author_avatar{
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+            }
+            
+            .title_text {
+                margin-right: 10px;
+                font-size: 12px !important;
+            }
+            
+            .date_create {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .sub {
+        margin-top: 100px;
+        flex-direction: column;
+
+        .title_text {
+            font-size: 22px;
+        }
+
+        .button_talk {
+            margin-top: 20px;
+        }
+    }
+}

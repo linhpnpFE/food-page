@@ -108,11 +108,11 @@
     }
 
     .slick-next {
-        right: 62px;
-    }
+        right: 20px;
+    } 
 
     .slick-prev {
-        left: 62px;
+        left: 20px;
     } 
 }
 
@@ -329,13 +329,6 @@
         font-size: 18px;
         line-height: 180%;
         padding: 5px 15px;
-    }
-}
-
-@media screen and (max-width:1199px) {
-    .slick-prev,
-    .slick-next {
-        display: none !important;
     }
 }
 
