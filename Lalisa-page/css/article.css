@@ -1,0 +1,98 @@
+@media (min-width : 992px) {
+    main img {
+        height: 100%;
+    }
+    .article-box {
+        width: 100%;
+        transform: translateY(-40%);
+    }
+    .article-box2 {
+        width: 800px;
+        padding: 40px 30px;
+        box-shadow: 2px 2px 10px black;
+        border: 2px #ccc solid;
+        background-color: #fff;
+    }
+    .article-box3 {
+        margin-bottom: 120px;
+    }
+    .article-img {
+        width: 28px;
+    }
+    .article-slide .swiper-button-next, .swiper-button-prev {
+        top: 40%;
+    }
+    .article-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #FFB23F;
+    }
+    .article-title2 {
+        font-size: 44px;
+        font-weight: 700;
+        color: #151411;
+    }
+    .article-title3 , .article-title6 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #AFADB5;
+    }
+    .article-title4-box {
+        white-space: nowrap;
+        width: 470px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #151411;
+    }
+    .article-title4 , .article-title5{
+        font-size: 26px;
+        font-weight: 700;
+        color: #151411;
+        margin-bottom: 0;
+    }
+    .article-title5 , .article-title6 {
+        font-size: 14px;
+    }
+    .article-title7 {
+        list-style: none;
+    }
+    .article-title8 {
+        color: #151411;
+        background: #F9F9F9;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 20px 20px;
+        box-shadow: 1px 1px 8px #ccc;
+    }
+    .article-title9 {
+        border: 1px #ccc solid;
+        padding: 10px 20px;
+    }
+    .article-title10 {
+        font-size: 25px;
+        color: #151411;
+        font-weight: 700;
+    }
+    .article-title11 {
+        text-align: center;
+    }
+    .article-title12 {
+       color: #151411;
+       font-size: 18px;
+       font-weight: 700;
+       padding: 10px 30px;
+       border: 1px #ccc solid;
+    }
+    .article-title13 {
+        background-color: #518581;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        padding: 14px 36px;
+    }
+    .article-img2 {
+        width: 210px;
+        height: 210px;
+        flex-shrink: 0;
+    }
+}

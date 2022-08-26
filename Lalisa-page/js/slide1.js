@@ -21,3 +21,15 @@ var swiper = new Swiper(".mySwiper2", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+var swiper = new Swiper(".mySwiper3", {
+  cssMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
