@@ -312,9 +312,10 @@ a:hover {
 .box_team .image {
   width: 100%;
   max-height: 360px;
-  max-width: 390px;
+  overflow: hidden;
 }
 .box_team .image img {
+  object-fit: contain;
   width: 100%;
 }
 .box_team .name {

@@ -160,9 +160,9 @@
     .image {
         width: 100%;
         max-height: 360px;
-        max-width: 390px; 
-        
+        overflow: hidden;        
         img {
+            object-fit: contain;
             width: 100%;
         }
     }
