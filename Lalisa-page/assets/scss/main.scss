@@ -65,10 +65,23 @@
     text-align: center;
     margin: auto;
     
-    .banner_title_text {
-        font-size: 64px;
-    }
+    .banner_title {
+        position: relative;
+
+        .banner_title_text {
+            font-size: 64px;
+        }
+
+        img {
+            position: absolute;
+            left: -15%;
+            max-width: 142px;
+            max-height: 165px;
+        }
+    } 
 }
+
+
 
 .banner_search {
     display: flex;
@@ -840,10 +853,7 @@
         font-size: 14px;
     }
 
-    
-    .block_header {
-        padding: 20px 0;
-    }
+  
 
     // .block_banner, 
     // .block_benefits, 
@@ -858,7 +868,14 @@
     .box_banner_text {
 
         .banner_title_text {
-            font-size: 26px;
+            font-size: 26px !important;
+        }
+
+        img {
+            left: -20px !important;
+            max-width: 80px !important;
+            max-height: 82px !important;
+            top: 20px;
         }
     }
 
