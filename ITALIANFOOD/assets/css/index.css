@@ -1,0 +1,473 @@
+/* start adding fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:wght@300;400;600;700&display=swap');
+@font-face {
+  font-family: 'Gabelisa';
+  src: url('Gabelisa.eot');
+  src: url('Gabelisa.eot?#iefix') format('embedded-opentype'),
+      url('Gabelisa.woff2') format('woff2'),
+      url('Gabelisa.woff') format('woff'),
+      url('Gabelisa.ttf') format('truetype'),
+      url('Gabelisa.svg#Gabelisa') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* End adding font */
+
+/* start reseting css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+/* End reseting css */
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 5.4125em;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: max-content;
+
+}
+
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Montserrat', serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+#header-banner {
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+header {
+  padding: 40px;
+  width: 1440px;
+  margin: auto;
+
+}
+.intro {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.intro__logo {
+  width: 251px;
+  height: 63px;
+}
+
+.intro__start {
+  height: fit-content;
+  display: flex;
+  align-items: end;
+}
+
+.intro__start-contact {
+  text-align: -webkit-right;
+  padding-right: 15px;
+}
+
+.intro__start-contact-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  width: max-content;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+.intro__start-contact-phone {
+  font-size: 1.75em;
+  width: max-content;
+  font-weight: 700;
+}
+
+.intro__start-icon {
+  width: 29px;
+  height: 53px;
+  margin-bottom: 5px;
+}
+
+.intro__btn {
+  display: none;
+}
+
+#nav__click {
+  display: none;
+}
+
+.nav {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.nav__bar {
+  text-align: end;
+}
+
+.nav__bar-item {
+  display: inline-flex;
+}
+
+.nav__bar-item + .nav__bar-item {
+  padding-left: 60px;
+}
+
+.nav__bar-item-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1em;
+  font-family: 'Montserrat', serif;
+  letter-spacing: 2px;
+  color: #000
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__content {
+  text-align: center;
+  width:max-content;
+}
+
+.banner__content-subtitle {
+  display: grid;
+  text-align: center;
+  margin-top: -60px;
+}
+
+.banner__content-subtitle-img {
+  position: relative;
+  width: 59px;
+  height: 96px;
+  top:70%;
+  margin-top: 0px;
+}
+
+.banner__content-subtitle-text {
+  font-size: 3.37em;
+  font-family: 'Gabelisa', cursive;
+}
+
+.banner__content-title {
+  padding: 15px 0;
+}
+
+.banner__content-des {
+  font-size: 1.5975em;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-table;
+  border-bottom: 2px solid #ccb301;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.banner__content-discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.banner__content-discount-text {
+  font-size: 1.1625em;
+  font-family: 'Fredericka the Great', cursive;
+  text-transform: uppercase;
+  padding-right: 8px;
+}
+
+.banner__content-discount-number {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 3.4075em;
+  padding-left: 8px;
+}
+
+.banner__content-btn {
+  font-size: 1.1625em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Montserrat', serif;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid black;
+}
+
+.banner__img {
+  width: 100%;
+}
+
+.banner__img-pasta {
+  position: absolute;
+  padding-left: 30px;
+  width: 110px;
+  height: auto;
+}
+
+.banner__img-tomato {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  width: 10%;
+}
+
+.banner__img-dish {
+  top:0;
+  right:0px;
+  width: 567px;
+  width: 79%;
+}
+
+.banner__img-leaf {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  width: 10%;
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  header {
+    width: 100%;
+  }
+
+  .banner__content-subtitle {
+    margin-top: -75px;
+  }
+  
+  .banner__content-subtitle-text {
+    font-size: 3em;
+  }
+
+  .banner__content-title {
+    font-size: 4.5em;
+  }
+
+  .banner__content-des {
+    font-size: 1.4em;
+  }
+
+  .banner__img-pasta {
+    width: 8%;
+  }
+
+  .banner__img-dish {
+    width: 78%;
+  }
+
+
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+header {
+  width: 100%;
+  padding: 20px 10px;
+  padding-bottom: 50px;
+}
+.banner {
+  align-items: center;
+}
+.banner__content-subtitle-img {
+  width: 30px;
+  height: auto;
+}
+
+.banner__content-subtitle-text {
+  font-size: 3em;
+  z-index: 5;
+
+}
+
+.banner__content-title {
+  font-size: 3.5em;
+  padding: 10px 0;
+}
+
+.banner__content-des {
+  font-size: 1.1em;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.banner__content-discount {
+  padding-bottom: 20px;
+}
+
+.banner__img-pasta {
+  width: 8%;
+  padding-left: 10px;
+  z-index: 1;
+}
+
+.banner__img-dish {
+  width: 77%;
+}
+
+}
+
+@media (max-width: 740px) {
+
+html {
+  width:inherit;
+}
+
+header {
+  width: 100%;
+  padding: 0.8em;
+}
+
+.intro__logo {
+  width: 150px;
+  height:fit-content;
+  margin-bottom: 5px;
+}
+
+.intro__start {
+  display: none;
+}
+
+.intro__btn {
+  display: block;
+  text-align: end;
+  margin-top: -70px;
+}
+
+.fa-bars {
+  font-size: 28px;
+  cursor: pointer;
+  display: block;
+}
+#nav__click:checked ~ .intro__btn i:before {
+  content: "\f00d";
+}
+
+.nav {
+  padding-bottom: 0;
+}
+
+nav ul {
+  padding-top: 0;
+  position: fixed;
+  top: 60px;
+  left: -100%;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100%;
+  display: block;
+  color:white;
+  transition: all 0.5s ease;
+  z-index:20;
+}
+
+#nav__click:checked ~ ul {
+  left: 0;
+}
+.nav__bar-item {
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  border-bottom:1px solid rgba(155, 155, 155, 0.3);
+}
+
+.nav__bar-item:hover {
+  background-color: #fff;
+}
+
+.nav__bar-item + .nav__bar-item {
+  padding-left: 0px;
+}
+
+.nav__bar-item-link {
+  color:white;
+}
+.nav__bar-item:hover .nav__bar-item-link {
+  color: #000;
+}
+
+.banner {
+  display: block;
+}
+
+.banner__content {
+  width: 100%;
+}
+
+.banner__content-subtitle {
+  margin-top: -50px;
+}
+
+.banner__content-subtitle-img {
+  width: 35px;
+  height: auto;
+  right: -5%;
+}
+
+.banner__content-subtitle-text {
+  font-size: 3em;
+  z-index: 10;
+}
+
+.banner__content-title {
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+  margin:0;
+}
+
+.banner__content-des {
+  font-size: 1.1em;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.banner__content-discount {
+  padding-bottom: 20px;
+}
+
+.banner__img {
+  margin-top: 10px;
+}
+
+.banner__img-pasta {
+  width: 15%;
+  padding-left: 5px;
+}
+
+.banner__img-tomato {
+  width: 12%;
+}
+
+.banner__img-dish {
+  width: 71%;
+}
+
+.banner__img-leaf {
+  width: 12%;
+}
+
+}
