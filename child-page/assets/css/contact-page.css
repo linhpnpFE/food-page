@@ -1,0 +1,307 @@
+.customer {
+    padding: 105px 0 195px;
+    position: relative;
+}
+
+.customer h1 {
+    font-size: 4.8875em;
+    line-height: 1;
+    max-width: 640px;
+    padding-bottom: 35px;
+}
+
+.customer .card {
+    padding: 65px 35px;
+    border-radius: 10px;
+    border: 3px solid #232323;
+    background-color: #ffffff00;
+}
+
+.slick-slide {
+    margin: 10px;
+    position: relative;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    padding: 17px 22px;
+    border-radius: 10px;
+    z-index:5;
+    transform: translateY(-50%);
+}
+
+.slick-arrow:hover {
+    background-color: #232323;
+}
+
+.slick-arrow svg {
+    font-size: 37px;
+}
+
+.slick-arrow:hover > svg > path {
+    color: #e7e7e7;
+}
+
+.slick-prev {
+    left: -30px;
+}
+
+.slick-next {
+    right: -30px;
+}
+
+.customer__slide-img {
+    width: 140px;
+}
+
+.card h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: #6d6d6d;
+    margin-bottom: 0;
+}
+
+.customer__slide-img img {
+    width: 100%;
+}
+
+.contact {
+    padding-bottom: 100px;
+}
+
+.contact h2 {
+    font-size: 4.885em;
+    line-height: 1;
+    margin-bottom: 40px;
+} 
+
+.contact__content {
+    padding-right: 50px;
+}
+
+.contact__content form input, textarea{
+    width: 100%;
+    border: 3px solid #232323;
+    margin-bottom: 22px;
+    border-radius: 5px;
+    font-size: 1.2525em;
+    padding: 15px 35px;
+    background-color: #ffffff00;
+}
+
+.contact__content input[type="submit"] {
+    color: #e7e7e7;
+    background-color: #232323;
+    margin-top: 48px;
+    font-size: 1.5em;
+}
+
+.input-mobile {
+    display: none;
+}
+
+.contact__img {
+    text-align: end;
+    padding-left: 50px;
+}
+
+.contact__img img {
+    width: 100%;
+}
+
+.customer__decor1 {
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+}
+
+.customer__decor1 img {
+    width: 100%;
+}
+
+.customer__decor2 {
+    position: absolute;
+    left: 0;
+    top: 5%;
+}
+
+.customer__decor2 img {
+    width: 100%;
+}
+
+@media (min-width: 1440px) {
+    .container {
+      max-width: 1220px;
+      padding: 0;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .container {
+        max-width: 1100px;
+        padding: 0;
+    }
+
+    .customer__slide {
+        width: 90%;
+    }
+
+    .contact__content input[type="submit"] {
+        margin-top: 12px;
+    }
+
+    .contact__img {
+        padding-left: 13px;
+    }
+
+    .contact__img img {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .container {
+        max-width: 980px;
+        margin: auto;
+    }
+
+    .customer {
+        padding: 100px 0;
+        position: relative;
+    }
+
+    .customer__decor1 {
+        bottom: 5%;
+    }
+    
+    .customer__decor2 {
+        top: -5%;
+    }
+
+    .contact__content {
+        padding-right: 0px;
+    }
+
+    .input-pc {
+        display: none;
+    }
+
+    .input-mobile {
+        display: block;
+    }
+
+    .contact__content input[type="submit"] {
+        margin-top: 0;
+    }
+
+    .contact__img {
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .customer {
+        padding: 100px 0;
+    }
+
+    .customer h1 {
+        font-size: 4em;
+        line-height: 1;
+        max-width: 640px;
+        padding-bottom: 35px;
+    }
+
+    .customer__decor1 {
+        bottom: 2%;
+    }
+
+    .customer__decor2 {
+        top: -8%;
+    }
+
+    .contact {
+        width: 500px;
+    }
+
+    .contact__content, .contact__img {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .customer {
+        padding: 100px 0;
+    }
+
+    .customer h1 {
+        font-size: 3.5em;
+        line-height: 1;
+        max-width: 640px;
+        padding-bottom: 35px;
+    }
+
+    .customer .card {
+        padding: 40px 20px;
+    }
+
+    .slick-arrow {
+        padding: 10px;
+    }
+
+    .slick-arrow svg {
+        font-size: 25px;
+    }
+
+    .slick-prev {
+        left: -15px;
+    }
+
+    .slick-next {
+        right: -15px;
+    }
+
+    .customer__decor1 {
+        bottom: 2%;
+        width: 70%;
+    }
+
+    .customer__decor2 {
+        top: 1%;
+        width: 50%;
+    }
+
+    .contact .row {
+        margin: 0;
+    }
+
+    .contact__content, .contact__img {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .contact__content h2 {
+        font-size: 3em;
+    }
+
+    .contact__content input[type="submit"] {
+        margin-top: 20px;
+    }
+
+    .contact__img {
+        margin-top: 20px;
+    }
+}
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page - Child Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/bootstrap.css">
+        <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" href="./assets/css/contact-page.css">
+    </head>
+    
+    <body class="contact-page">
+        <section class="customer">
+            <div class="container text-center">
+                <h1 class="m-auto">Here's what they have to say</h1>
+                <div class="customer__slide row m-auto">
+                    <div class="card">
+                        <div class="customer__slide-img m-auto">
+                            <img src="./assets/img/contact-page/avatar.png" alt="">
+                        </div>
+                        <h2>Customer Name</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="card">
+                        <div class="customer__slide-img m-auto">
+                            <img src="./assets/img/contact-page/avatar.png" alt="">
+                        </div>
+                        <h2>Customer Name</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="card">
+                        <div class="customer__slide-img m-auto">
+                            <img src="./assets/img/contact-page/avatar.png" alt="">
+                        </div>
+                        <h2>Customer Name</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="card">
+                        <div class="customer__slide-img m-auto">
+                            <img src="./assets/img/contact-page/avatar.png" alt="">
+                        </div>
+                        <h2>Customer Name</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei usmod tempor incid idunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="customer__decor1 text-right">
+                <img src="./assets/img/contact-page/customer-decor-1.png" alt="">
+            </div>
+            <div class="customer__decor2 text-left">
+                <img src="./assets/img/contact-page/customer-decor-2.png" alt="">
+            </div>
+        </section>
+
+        <section class="contact container">
+            <div class="row">
+                <div class="contact__content col-5">
+                    <h2>Be update!</h2>
+                    <form action="">
+                        <input type="text" name="fname" id="fname" placeholder="First Name*" required>
+                        <input type="text" name="lname" id="lname" placeholder="Last Name*" required>
+                        <input type="email" name="email" id="email" placeholder="Email Subject*" required>
+                        <textarea class="input-pc" rows="8" name="messenger" id="messenger" placeholder="Write something here..."></textarea>
+                        <textarea class="input-mobile" rows="4" name="messenger" id="messenger" placeholder="Write something here..."></textarea>
+                        <input type="submit" value="Submit Email">
+                    </form>
+                </div>
+                <div class="contact__img col-7">
+                    <img src="./assets/img/contact-page/contact.png" alt="">
+                </div>
+            </div>
+        </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script>
+        $('.customer__slide').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: false,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-arrow-left'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa-solid fa-arrow-right'></i></button>",
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+            },
+            {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+        });
+    </script>
+    </body>
+</html>
